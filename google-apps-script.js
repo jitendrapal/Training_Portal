@@ -12,8 +12,14 @@
 
 function doPost(e) {
   try {
-    // Get the active spreadsheet (or create one)
-    const sheet = SpreadsheetApp.getActiveSheet();
+    // Log the incoming request for debugging
+    console.log("Received request:", JSON.stringify(e));
+
+    // Get spreadsheet by ID (more reliable than getActiveSheet)
+    // Replace with your actual Google Sheet ID from the URL
+    const SHEET_ID = "YOUR_SHEET_ID_HERE"; // Get this from your Google Sheet URL
+    const spreadsheet = SpreadsheetApp.openById(SHEET_ID);
+    const sheet = spreadsheet.getActiveSheet();
 
     // Parse the incoming data - handle different ways data might come in
     let data;

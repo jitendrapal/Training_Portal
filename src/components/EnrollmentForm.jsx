@@ -51,7 +51,7 @@ const EnrollmentForm = () => {
       console.log("Sending to Google Apps Script...");
 
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxMTtCqnNzcNIC1CwEHxV3aIcvbpJvAcSWGExv6gho-YL_swRJefx1zFH3VZM2VOrhjdg/exec",
+        "https://script.google.com/macros/s/AKfycbwFNKXFzRawwTDeI_BGuJXTo-mwEEEuFVkEprRQQVzlnHWPc7tdPwVgbmmPExQyJNcuQQ/exec",
         {
           method: "POST",
           mode: "no-cors",
