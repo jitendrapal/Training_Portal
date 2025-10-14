@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 const EnrollmentForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const EnrollmentForm = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const courses = [
     "Java Full Stack Developer",
@@ -17,105 +18,83 @@ const EnrollmentForm = () => {
     "Python Full Stack Developer",
   ];
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // Optimized form change handler
+  const handleChange = useCallback((e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  }, []);
 
-  const scrollToHome = () => {
+  // Fast scroll to home with immediate feedback
+  const scrollToHome = useCallback(() => {
     const homeElement = document.getElementById("home");
     if (homeElement) {
       homeElement.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // Show form with fast animation
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
-    try {
-      // Option 1: Submit to Google Sheets via Google Apps Script (ACTIVE)
-      console.log("Submitting form data:", formData);
+  const handleSubmit = useCallback(
+    async (e) => {
+      e.preventDefault();
 
-      // Create FormData for POST request
-      const formDataToSend = new FormData();
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("course", formData.course);
-      formDataToSend.append("message", formData.message);
-      formDataToSend.append("timestamp", new Date().toLocaleString());
-      formDataToSend.append("source", "TechAcademy Website");
+      // Immediate UI feedback for better UX
+      setIsSubmitting(true);
 
-      const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbwxep43XiPvMEc2Ihz7dMRhbgsCWLaZnGXShv_cvmLMEN2W1pfZtvhxrCqEtwt4bjJO/exec";
-
-      console.log("Sending to Google Apps Script via POST...");
-
-      const response = await fetch(scriptUrl, {
-        method: "POST",
-        mode: "no-cors",
-        body: formDataToSend,
-      });
-
-      console.log("Form submitted successfully");
-
-      // Option 2: Submit to Formspree (DISABLED)
-      // const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     name: formData.name,
-      //     email: formData.email,
-      //     phone: formData.phone,
-      //     course: formData.course,
-      //     message: formData.message,
-      //     timestamp: new Date().toLocaleString(),
-      //     source: "TechAcademy Website",
-      //   }),
-      // });
-
-      // Since mode is 'no-cors', we can't read the response
-      // But the data will still be submitted to Google Sheets
-      setIsSubmitted(true);
-      setIsSubmitting(false);
-
-      // Reset form and scroll to home after 4 seconds
+      // Show success immediately for better perceived performance
       setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          course: "",
-          message: "",
-        });
-        // Scroll to home section
-        scrollToHome();
-      }, 4000);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      // Still show success message to user
-      setIsSubmitted(true);
-      setIsSubmitting(false);
+        setIsSubmitted(true);
+        setIsSubmitting(false);
+      }, 500);
 
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          course: "",
-          message: "",
+      try {
+        // Submit to Google Sheets in background (non-blocking)
+        const formDataToSend = new FormData();
+        formDataToSend.append("name", formData.name);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("phone", formData.phone);
+        formDataToSend.append("course", formData.course);
+        formDataToSend.append("message", formData.message);
+        formDataToSend.append("timestamp", new Date().toLocaleString());
+        formDataToSend.append("source", "TechAcademy Website");
+
+        const scriptUrl =
+          "https://script.google.com/macros/s/AKfycbwxep43XiPvMEc2Ihz7dMRhbgsCWLaZnGXShv_cvmLMEN2W1pfZtvhxrCqEtwt4bjJO/exec";
+
+        // Submit in background without blocking UI
+        fetch(scriptUrl, {
+          method: "POST",
+          mode: "no-cors",
+          body: formDataToSend,
+        }).catch((error) => {
+          console.log("Background submission error:", error);
         });
-        scrollToHome();
-      }, 4000);
-    }
-  };
+
+        // Auto-redirect after 3 seconds for better UX
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            course: "",
+            message: "",
+          });
+          scrollToHome();
+        }, 3000);
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        // Still show success for better UX
+      }
+    },
+    [formData, scrollToHome]
+  );
 
   if (isSubmitted) {
     return (
@@ -158,7 +137,13 @@ const EnrollmentForm = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
-          <div className="text-white">
+          <div
+            className={`text-white transition-all duration-500 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-8"
+            }`}
+          >
             <h2 className="text-4xl font-bold mb-6">
               Ready to Start Your Tech Career?
             </h2>
@@ -228,7 +213,13 @@ const EnrollmentForm = () => {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div
+            className={`bg-white rounded-2xl shadow-xl p-8 transition-all duration-500 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-8"
+            }`}
+          >
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Get Started Today
@@ -253,7 +244,7 @@ const EnrollmentForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -272,7 +263,7 @@ const EnrollmentForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300"
                   placeholder="Enter your email address"
                 />
               </div>
@@ -333,7 +324,7 @@ const EnrollmentForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300 resize-none"
                   placeholder="Tell us about your background and goals..."
                 />
               </div>
@@ -341,7 +332,7 @@ const EnrollmentForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
+                className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? (
                   <>
