@@ -36,44 +36,43 @@ const EnrollmentForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Option 1: Submit to Google Sheets via Google Apps Script
-      // Replace YOUR_SCRIPT_ID with your actual Google Apps Script ID
-      // const response = await fetch(
-      //   "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec",
-      //   {
-      //     method: "POST",
-      //     mode: "no-cors",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({
-      //       name: formData.name,
-      //       email: formData.email,
-      //       phone: formData.phone,
-      //       course: formData.course,
-      //       message: formData.message,
-      //       timestamp: new Date().toLocaleString(),
-      //       source: "TechAcademy Website",
-      //     }),
-      //   }
-      // );
+      // Option 1: Submit to Google Sheets via Google Apps Script (ACTIVE)
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxMTtCqnNzcNIC1CwEHxV3aIcvbpJvAcSWGExv6gho-YL_swRJefx1zFH3VZM2VOrhjdg/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            course: formData.course,
+            message: formData.message,
+            timestamp: new Date().toLocaleString(),
+            source: "TechAcademy Website",
+          }),
+        }
+      );
 
-      // Option 2: Submit to Formspree (Easier setup - just replace YOUR_FORM_ID)
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          course: formData.course,
-          message: formData.message,
-          timestamp: new Date().toLocaleString(),
-          source: "TechAcademy Website",
-        }),
-      });
+      // Option 2: Submit to Formspree (DISABLED)
+      // const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     name: formData.name,
+      //     email: formData.email,
+      //     phone: formData.phone,
+      //     course: formData.course,
+      //     message: formData.message,
+      //     timestamp: new Date().toLocaleString(),
+      //     source: "TechAcademy Website",
+      //   }),
+      // });
 
       // Since mode is 'no-cors', we can't read the response
       // But the data will still be submitted to Google Sheets
