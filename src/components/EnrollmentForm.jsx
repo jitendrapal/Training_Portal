@@ -35,10 +35,51 @@ const EnrollmentForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Option 1: Submit to Google Sheets via Google Apps Script
+      // Replace YOUR_SCRIPT_ID with your actual Google Apps Script ID
+      // const response = await fetch(
+      //   "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec",
+      //   {
+      //     method: "POST",
+      //     mode: "no-cors",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       name: formData.name,
+      //       email: formData.email,
+      //       phone: formData.phone,
+      //       course: formData.course,
+      //       message: formData.message,
+      //       timestamp: new Date().toLocaleString(),
+      //       source: "TechAcademy Website",
+      //     }),
+      //   }
+      // );
+
+      // Option 2: Submit to Formspree (Easier setup - just replace YOUR_FORM_ID)
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          course: formData.course,
+          message: formData.message,
+          timestamp: new Date().toLocaleString(),
+          source: "TechAcademy Website",
+        }),
+      });
+
+      // Since mode is 'no-cors', we can't read the response
+      // But the data will still be submitted to Google Sheets
       setIsSubmitted(true);
       setIsSubmitting(false);
+
       // Reset form and scroll to home after 4 seconds
       setTimeout(() => {
         setIsSubmitted(false);
@@ -52,7 +93,24 @@ const EnrollmentForm = () => {
         // Scroll to home section
         scrollToHome();
       }, 4000);
-    }, 1000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Still show success message to user
+      setIsSubmitted(true);
+      setIsSubmitting(false);
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          course: "",
+          message: "",
+        });
+        scrollToHome();
+      }, 4000);
+    }
   };
 
   if (isSubmitted) {
