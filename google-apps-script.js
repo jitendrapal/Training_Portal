@@ -13,7 +13,7 @@
 function doPost(e) {
   try {
     // Log the incoming request for debugging
-    console.log("Received request:", JSON.stringify(e));
+    console.log("POST request received:", JSON.stringify(e));
 
     // Get spreadsheet by ID (more reliable than getActiveSheet)
     // Replace with your actual Google Sheet ID from the URL
@@ -21,19 +21,23 @@ function doPost(e) {
     const spreadsheet = SpreadsheetApp.openById(SHEET_ID);
     const sheet = spreadsheet.getActiveSheet();
 
-    // Parse the incoming data - handle different ways data might come in
-    let data;
+    // Parse the incoming data - handle FormData from POST requests
+    let data = {};
 
-    if (e.postData && e.postData.contents) {
-      // Data sent as JSON in body
-      data = JSON.parse(e.postData.contents);
-    } else if (e.parameter) {
-      // Data sent as form parameters
+    if (e.parameter && Object.keys(e.parameter).length > 0) {
+      // FormData sent as parameters (most common with FormData)
       data = e.parameter;
+      console.log("Using POST form parameters:", JSON.stringify(data));
+    } else if (e.postData && e.postData.contents) {
+      // JSON data in POST body
+      try {
+        data = JSON.parse(e.postData.contents);
+        console.log("Using POST JSON data:", JSON.stringify(data));
+      } catch (parseError) {
+        console.log("Failed to parse JSON, using empty data");
+      }
     } else {
-      // Log what we received for debugging
-      console.log("Received event:", JSON.stringify(e));
-      throw new Error("No data received in request");
+      console.log("No data found in POST request");
     }
 
     // Check if headers exist, if not create them
