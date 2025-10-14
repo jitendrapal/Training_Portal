@@ -37,23 +37,21 @@ const EnrollmentForm = () => {
 
     try {
       // Option 1: Submit to Google Sheets via Google Apps Script (ACTIVE)
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("course", formData.course);
+      formDataToSend.append("message", formData.message);
+      formDataToSend.append("timestamp", new Date().toLocaleString());
+      formDataToSend.append("source", "TechAcademy Website");
+
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbxMTtCqnNzcNIC1CwEHxV3aIcvbpJvAcSWGExv6gho-YL_swRJefx1zFH3VZM2VOrhjdg/exec",
         {
           method: "POST",
           mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            course: formData.course,
-            message: formData.message,
-            timestamp: new Date().toLocaleString(),
-            source: "TechAcademy Website",
-          }),
+          body: formDataToSend,
         }
       );
 
