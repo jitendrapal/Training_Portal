@@ -51,7 +51,7 @@ const EnrollmentForm = () => {
       });
 
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbwFNKXFzRawwTDeI_BGuJXTo-mwEEEuFVkEprRQQVzlnHWPc7tdPwVgbmmPExQyJNcuQQ/exec";
+        "https://script.google.com/macros/s/AKfycbw-YHR5O3fOdiHCXwmrVH_55GKaZu-uiQvqvX2yCwXIic115NvBNPyazYphrkeYvdYC8A/exec";
       const fullUrl = `${scriptUrl}?${params.toString()}`;
 
       console.log("Sending to Google Apps Script via GET...");
