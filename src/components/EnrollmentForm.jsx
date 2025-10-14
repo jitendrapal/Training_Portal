@@ -50,7 +50,7 @@ const EnrollmentForm = () => {
       formDataToSend.append("source", "TechAcademy Website");
 
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbw-YHR5O3fOdiHCXwmrVH_55GKaZu-uiQvqvX2yCwXIic115NvBNPyazYphrkeYvdYC8A/exec";
+        "https://script.google.com/macros/s/AKfycbwxep43XiPvMEc2Ihz7dMRhbgsCWLaZnGXShv_cvmLMEN2W1pfZtvhxrCqEtwt4bjJO/exec";
 
       console.log("Sending to Google Apps Script via POST...");
 
