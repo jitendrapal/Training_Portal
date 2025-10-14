@@ -37,6 +37,8 @@ const EnrollmentForm = () => {
 
     try {
       // Option 1: Submit to Google Sheets via Google Apps Script (ACTIVE)
+      console.log("Submitting form data:", formData);
+
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
@@ -46,6 +48,8 @@ const EnrollmentForm = () => {
       formDataToSend.append("timestamp", new Date().toLocaleString());
       formDataToSend.append("source", "TechAcademy Website");
 
+      console.log("Sending to Google Apps Script...");
+
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbxMTtCqnNzcNIC1CwEHxV3aIcvbpJvAcSWGExv6gho-YL_swRJefx1zFH3VZM2VOrhjdg/exec",
         {
@@ -54,6 +58,8 @@ const EnrollmentForm = () => {
           body: formDataToSend,
         }
       );
+
+      console.log("Form submitted successfully");
 
       // Option 2: Submit to Formspree (DISABLED)
       // const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
