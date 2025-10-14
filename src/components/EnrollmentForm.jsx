@@ -39,25 +39,28 @@ const EnrollmentForm = () => {
       // Option 1: Submit to Google Sheets via Google Apps Script (ACTIVE)
       console.log("Submitting form data:", formData);
 
-      const formDataToSend = new FormData();
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("course", formData.course);
-      formDataToSend.append("message", formData.message);
-      formDataToSend.append("timestamp", new Date().toLocaleString());
-      formDataToSend.append("source", "TechAcademy Website");
+      // Create URL with parameters (GET request - more reliable)
+      const params = new URLSearchParams({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        course: formData.course,
+        message: formData.message,
+        timestamp: new Date().toLocaleString(),
+        source: "TechAcademy Website",
+      });
 
-      console.log("Sending to Google Apps Script...");
+      const scriptUrl =
+        "https://script.google.com/macros/s/AKfycbwFNKXFzRawwTDeI_BGuJXTo-mwEEEuFVkEprRQQVzlnHWPc7tdPwVgbmmPExQyJNcuQQ/exec";
+      const fullUrl = `${scriptUrl}?${params.toString()}`;
 
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwFNKXFzRawwTDeI_BGuJXTo-mwEEEuFVkEprRQQVzlnHWPc7tdPwVgbmmPExQyJNcuQQ/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          body: formDataToSend,
-        }
-      );
+      console.log("Sending to Google Apps Script via GET...");
+      console.log("URL:", fullUrl);
+
+      const response = await fetch(fullUrl, {
+        method: "GET",
+        mode: "no-cors",
+      });
 
       console.log("Form submitted successfully");
 

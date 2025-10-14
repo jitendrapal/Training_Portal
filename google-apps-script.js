@@ -100,10 +100,65 @@ function doPost(e) {
 }
 
 function doGet(e) {
-  // Handle GET requests (for testing)
-  return ContentService.createTextOutput(
-    "TechAcademy Enrollment Form Handler is working!"
-  ).setMimeType(ContentService.MimeType.TEXT);
+  try {
+    console.log("GET request received:", JSON.stringify(e));
+
+    // Get spreadsheet by ID
+    const SHEET_ID = "YOUR_SHEET_ID_HERE"; // Replace with your actual Sheet ID
+    const sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
+
+    // Get parameters from URL
+    const data = e.parameter || {};
+    console.log("GET parameters:", JSON.stringify(data));
+
+    // Check if we have data
+    if (!data.name && !data.email) {
+      return ContentService.createTextOutput(
+        "TechAcademy Enrollment Form Handler is working! No data to save."
+      );
+    }
+
+    // Add headers if first time
+    if (sheet.getLastRow() === 0) {
+      const headers = [
+        "Timestamp",
+        "Name",
+        "Email",
+        "Phone",
+        "Course",
+        "Message",
+        "Source",
+        "Status",
+      ];
+      sheet.appendRow(headers);
+
+      // Format headers
+      const headerRange = sheet.getRange(1, 1, 1, headers.length);
+      headerRange.setFontWeight("bold");
+      headerRange.setBackground("#4285f4");
+      headerRange.setFontColor("white");
+    }
+
+    // Add the data
+    const rowData = [
+      data.timestamp || new Date().toLocaleString(),
+      data.name || "",
+      data.email || "",
+      data.phone || "",
+      data.course || "",
+      data.message || "",
+      data.source || "Website",
+      "New",
+    ];
+
+    sheet.appendRow(rowData);
+    console.log("Data added to sheet via GET:", rowData);
+
+    return ContentService.createTextOutput("Success: Enrollment data saved!");
+  } catch (error) {
+    console.error("Error in doGet:", error.toString());
+    return ContentService.createTextOutput("Error: " + error.toString());
+  }
 }
 
 function sendEmailNotification(data) {
