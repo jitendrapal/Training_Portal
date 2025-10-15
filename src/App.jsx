@@ -1,23 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Courses from "./components/Courses";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import EnrollmentForm from "./components/EnrollmentForm";
+import Home from "./pages/Home";
+import CoursesPage from "./pages/CoursesPage";
+import AboutPage from "./pages/AboutPage";
+import EnrollPage from "./pages/EnrollPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <Courses />
-      <WhyChooseUs />
-      <Testimonials />
-      <EnrollmentForm />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/enroll" element={<EnrollPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

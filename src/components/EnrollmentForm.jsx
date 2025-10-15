@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const EnrollmentForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,13 +29,10 @@ const EnrollmentForm = () => {
     }));
   }, []);
 
-  // Fast scroll to home with immediate feedback
-  const scrollToHome = useCallback(() => {
-    const homeElement = document.getElementById("home");
-    if (homeElement) {
-      homeElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
+  // Navigate to home page after submission
+  const navigateToHome = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
 
   // Show form with fast animation
   useEffect(() => {
@@ -86,14 +85,14 @@ const EnrollmentForm = () => {
             course: "",
             message: "",
           });
-          scrollToHome();
+          navigateToHome();
         }, 3000);
       } catch (error) {
         console.error("Error submitting form:", error);
         // Still show success for better UX
       }
     },
-    [formData, scrollToHome]
+    [formData, navigateToHome]
   );
 
   if (isSubmitted) {

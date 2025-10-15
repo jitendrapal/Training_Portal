@@ -1,19 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background with gradient and pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600"></div>
       <div className="absolute inset-0 tech-pattern opacity-20"></div>
-      
+
       {/* Floating elements for visual appeal */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
@@ -24,31 +28,32 @@ const Hero = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Become a{' '}
+              Become a{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 Job-Ready
-              </span>{' '}
+              </span>{" "}
               Full Stack Developer
             </h1>
-            
+
             <p className="mt-6 text-xl text-gray-200 max-w-2xl">
-              Learn industry-relevant skills like Java, React, Node.js, and Python from expert trainers. 
-              Master the skills that tech companies want and launch your career in just 6 months.
+              Learn industry-relevant skills like Java, React, Node.js, and
+              Python from expert trainers. Master the skills that tech companies
+              want and launch your career in just 6 months.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button
-                onClick={() => scrollToSection('courses')}
-                className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              <Link
+                to="/courses"
+                className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
               >
                 View Courses
-              </button>
-              <button
-                onClick={() => scrollToSection('enroll')}
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 transform hover:scale-105"
+              </Link>
+              <Link
+                to="/enroll"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 transform hover:scale-105 text-center"
               >
                 Book Your Spot
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}
@@ -82,36 +87,50 @@ const Hero = () => {
                   <div className="ml-4 text-gray-400">App.jsx</div>
                 </div>
                 <div className="text-green-400">
-                  <div className="text-blue-400">import</div> React <div className="text-blue-400">from</div> <div className="text-yellow-300">'react'</div>
+                  <div className="text-blue-400">import</div> React{" "}
+                  <div className="text-blue-400">from</div>{" "}
+                  <div className="text-yellow-300">'react'</div>
                 </div>
                 <div className="mt-2 text-purple-400">
-                  <div className="text-blue-400">function</div> <div className="text-yellow-300">App</div>() {'{'}
+                  <div className="text-blue-400">function</div>{" "}
+                  <div className="text-yellow-300">App</div>() {"{"}
                 </div>
                 <div className="ml-4 mt-1 text-gray-300">
                   <div className="text-blue-400">return</div> (
                 </div>
                 <div className="ml-8 text-green-400">
-                  &lt;<div className="text-red-400">div</div> <div className="text-blue-400">className</div>=<div className="text-yellow-300">"app"</div>&gt;
+                  &lt;<div className="text-red-400">div</div>{" "}
+                  <div className="text-blue-400">className</div>=
+                  <div className="text-yellow-300">"app"</div>&gt;
                 </div>
                 <div className="ml-12 text-gray-300">
-                  &lt;<div className="text-red-400">h1</div>&gt;Hello World!&lt;/<div className="text-red-400">h1</div>&gt;
+                  &lt;<div className="text-red-400">h1</div>&gt;Hello
+                  World!&lt;/<div className="text-red-400">h1</div>&gt;
                 </div>
                 <div className="ml-8 text-green-400">
                   &lt;/<div className="text-red-400">div</div>&gt;
                 </div>
                 <div className="ml-4 text-gray-300">)</div>
-                <div className="text-purple-400">{'}'}</div>
+                <div className="text-purple-400">{"}"}</div>
               </div>
-              
+
               {/* Tech stack icons */}
               <div className="mt-6 flex justify-center space-x-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">JS</div>
-                <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center text-white font-bold">R</div>
-                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold">N</div>
-                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-white font-bold">P</div>
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                  JS
+                </div>
+                <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center text-white font-bold">
+                  R
+                </div>
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold">
+                  N
+                </div>
+                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-white font-bold">
+                  P
+                </div>
               </div>
             </div>
-            
+
             {/* Floating tech badges */}
             <div className="absolute -top-4 -right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-bounce">
               React
@@ -133,7 +152,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
