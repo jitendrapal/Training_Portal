@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppWidget from "./components/WhatsAppWidget";
+import UrgencyBanner from "./components/UrgencyBanner";
 import Home from "./pages/Home";
 import CoursesPage from "./pages/CoursesPage";
 import AboutPage from "./pages/AboutPage";
@@ -12,6 +14,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-white">
         <Header />
+        <UrgencyBanner />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -21,6 +24,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppWidget />
       </div>
     </Router>
   );

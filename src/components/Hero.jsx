@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(24 * 60 * 60); // 24 hours in seconds
+
+  // Show popup after 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Countdown timer
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const formatTime = (seconds) => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+  };
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -151,6 +179,85 @@ const Hero = () => {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+
+      {/* Urgency Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 relative animate-bounce-in shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl font-bold"
+            >
+              ×
+            </button>
+
+            {/* Urgency Content */}
+            <div className="text-center">
+              {/* Fire Icon */}
+              <div className="text-6xl mb-4 animate-pulse">🔥</div>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                🚨 HURRY UP! SEATS ARE LIMITED
+              </h3>
+
+              <p className="text-gray-600 mb-4">
+                Only{" "}
+                <span className="font-bold text-red-600">5 seats left</span> in
+                this batch!
+              </p>
+
+              {/* Countdown Timer */}
+              <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-lg p-4 mb-6">
+                <div className="text-sm font-medium mb-1">
+                  ⏰ OFFER EXPIRES IN:
+                </div>
+                <div className="text-3xl font-bold font-mono">
+                  {formatTime(timeLeft)}
+                </div>
+              </div>
+
+              {/* Benefits */}
+              <div className="text-left mb-6 space-y-2">
+                <div className="flex items-center text-sm">
+                  <span className="text-green-500 mr-2">✅</span>
+                  <span>25% Early Bird Discount</span>
+                </div>
+                <div className="flex items-center text-sm">
+                  <span className="text-green-500 mr-2">✅</span>
+                  <span>Free Laptop + Course Materials</span>
+                </div>
+                <div className="flex items-center text-sm">
+                  <span className="text-green-500 mr-2">✅</span>
+                  <span>100% Job Placement Guarantee</span>
+                </div>
+                <div className="flex items-center text-sm">
+                  <span className="text-green-500 mr-2">✅</span>
+                  <span>Live 1-on-1 Mentorship</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="space-y-3">
+                <Link
+                  to="/enroll"
+                  onClick={() => setShowPopup(false)}
+                  className="block w-full bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg animate-pulse"
+                >
+                  🎯 SECURE MY SEAT NOW!
+                </Link>
+
+                <button
+                  onClick={() => setShowPopup(false)}
+                  className="block w-full text-gray-500 hover:text-gray-700 py-2 text-sm transition-colors"
+                >
+                  Maybe Later (Risk Losing Seat)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
