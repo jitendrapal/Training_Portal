@@ -99,7 +99,7 @@ const EnrollmentForm = () => {
     return (
       <section
         id="enroll"
-        className="py-20 bg-gradient-to-r from-green-600 to-green-700"
+        className="py-16 bg-gradient-to-r from-green-600 to-green-700"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl p-12 shadow-xl">
@@ -131,7 +131,7 @@ const EnrollmentForm = () => {
   return (
     <section
       id="enroll"
-      className="py-20 bg-gradient-to-r from-primary-600 to-primary-800"
+      className="py-16 bg-gradient-to-r from-primary-600 to-primary-800"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

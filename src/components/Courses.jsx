@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Courses = () => {
   const courses = [
     {
       id: 1,
       title: "Java Full Stack Developer",
-      description: "Learn Java, Spring Boot, React, REST APIs, and databases. Build enterprise-level applications from scratch.",
+      description:
+        "Learn Java, Spring Boot, React, REST APIs, and databases. Build enterprise-level applications from scratch.",
       duration: "6 Months",
       schedule: "2 Hours/Day",
       technologies: ["Java", "Spring Boot", "React", "MySQL", "REST APIs"],
@@ -16,15 +17,16 @@ const Courses = () => {
         "Real-world Projects",
         "Industry Mentorship",
         "Job Placement Support",
-        "Certificate of Completion"
+        "Certificate of Completion",
       ],
       popular: true,
-      icon: "☕"
+      icon: "☕",
     },
     {
       id: 2,
       title: "React + Node Full Stack Developer",
-      description: "Master modern web development with React, Node.js, Express, MongoDB, and deployment strategies.",
+      description:
+        "Master modern web development with React, Node.js, Express, MongoDB, and deployment strategies.",
       duration: "3 Months",
       schedule: "3 Hours/Day",
       technologies: ["React", "Node.js", "Express", "MongoDB", "AWS"],
@@ -35,15 +37,16 @@ const Courses = () => {
         "Cloud Deployment",
         "API Development",
         "Database Design",
-        "Portfolio Projects"
+        "Portfolio Projects",
       ],
       popular: false,
-      icon: "⚛️"
+      icon: "⚛️",
     },
     {
       id: 3,
       title: "Python Full Stack Developer",
-      description: "Learn Django, React, APIs, and data handling. Perfect for beginners and career switchers.",
+      description:
+        "Learn Django, React, APIs, and data handling. Perfect for beginners and career switchers.",
       duration: "4 Months",
       schedule: "2.5 Hours/Day",
       technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
@@ -54,31 +57,32 @@ const Courses = () => {
         "Data Science Integration",
         "Web Scraping",
         "API Development",
-        "Career Guidance"
+        "Career Guidance",
       ],
       popular: false,
-      icon: "🐍"
-    }
-  ]
+      icon: "🐍",
+    },
+  ];
 
   const scrollToEnroll = () => {
-    const element = document.getElementById('enroll')
+    const element = document.getElementById("enroll");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <section id="courses" className="py-20 bg-gray-50">
+    <section id="courses" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Featured Courses
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose from our industry-focused programs designed to make you job-ready. 
-            All courses include hands-on projects, mentorship, and placement support.
+            Choose from our industry-focused programs designed to make you
+            job-ready. All courses include hands-on projects, mentorship, and
+            placement support.
           </p>
         </div>
 
@@ -88,7 +92,7 @@ const Courses = () => {
             <div
               key={course.id}
               className={`relative bg-white rounded-2xl shadow-lg overflow-hidden card-hover ${
-                course.popular ? 'ring-2 ring-primary-500' : ''
+                course.popular ? "ring-2 ring-primary-500" : ""
               }`}
             >
               {/* Popular Badge */}
@@ -103,7 +107,9 @@ const Courses = () => {
                 <div className="flex items-center mb-4">
                   <div className="text-4xl mr-3">{course.icon}</div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">{course.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {course.title}
+                    </h3>
                     <div className="flex items-center text-sm text-gray-600 mt-1">
                       <span className="mr-4">📅 {course.duration}</span>
                       <span>⏰ {course.schedule}</span>
@@ -115,7 +121,9 @@ const Courses = () => {
 
                 {/* Technologies */}
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Technologies:</h4>
+                  <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    Technologies:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {course.technologies.map((tech, index) => (
                       <span
@@ -130,12 +138,25 @@ const Courses = () => {
 
                 {/* Features */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">What's Included:</h4>
+                  <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    What's Included:
+                  </h4>
                   <ul className="space-y-1">
                     {course.features.map((feature, index) => (
-                      <li key={index} className="flex items-center text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <li
+                        key={index}
+                        className="flex items-center text-sm text-gray-600"
+                      >
+                        <svg
+                          className="w-4 h-4 text-green-500 mr-2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                         {feature}
                       </li>
@@ -149,11 +170,21 @@ const Courses = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <div className="flex items-center">
-                      <span className="text-2xl font-bold text-gray-900">{course.price}</span>
-                      <span className="text-lg text-gray-500 line-through ml-2">{course.originalPrice}</span>
+                      <span className="text-2xl font-bold text-gray-900">
+                        {course.price}
+                      </span>
+                      <span className="text-lg text-gray-500 line-through ml-2">
+                        {course.originalPrice}
+                      </span>
                     </div>
                     <div className="text-sm text-green-600 font-medium">
-                      Save ₹{parseInt(course.originalPrice.replace('₹', '').replace(',', '')) - parseInt(course.price.replace('₹', '').replace(',', ''))}
+                      Save ₹
+                      {parseInt(
+                        course.originalPrice.replace("₹", "").replace(",", "")
+                      ) -
+                        parseInt(
+                          course.price.replace("₹", "").replace(",", "")
+                        )}
                     </div>
                   </div>
                 </div>
@@ -163,8 +194,8 @@ const Courses = () => {
                     onClick={scrollToEnroll}
                     className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
                       course.popular
-                        ? 'bg-primary-600 hover:bg-primary-700 text-white'
-                        : 'bg-gray-900 hover:bg-gray-800 text-white'
+                        ? "bg-primary-600 hover:bg-primary-700 text-white"
+                        : "bg-gray-900 hover:bg-gray-800 text-white"
                     }`}
                   >
                     Enroll Now
@@ -187,25 +218,33 @@ const Courses = () => {
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-3xl mb-2">👨‍💻</div>
-                <h4 className="font-semibold text-gray-900">Industry Experts</h4>
-                <p className="text-gray-600 text-sm">Learn from professionals with 10+ years experience</p>
+                <h4 className="font-semibold text-gray-900">
+                  Industry Experts
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Learn from professionals with 10+ years experience
+                </p>
               </div>
               <div>
                 <div className="text-3xl mb-2">🚀</div>
                 <h4 className="font-semibold text-gray-900">Job Guarantee</h4>
-                <p className="text-gray-600 text-sm">100% placement support or money back</p>
+                <p className="text-gray-600 text-sm">
+                  100% placement support or money back
+                </p>
               </div>
               <div>
                 <div className="text-3xl mb-2">💼</div>
                 <h4 className="font-semibold text-gray-900">Real Projects</h4>
-                <p className="text-gray-600 text-sm">Build portfolio with live industry projects</p>
+                <p className="text-gray-600 text-sm">
+                  Build portfolio with live industry projects
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Courses
+export default Courses;
