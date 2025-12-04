@@ -25,12 +25,16 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center">
-                <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">IT</span>
+                <div className="w-12 h-12 flex items-center justify-center">
+                  <img
+                    src="/neuro-edge-logo.svg"
+                    alt="Neuro Edge Technologies Logo"
+                    className="w-10 h-10"
+                  />
                 </div>
                 <div className="ml-3">
                   <h1 className="text-xl font-bold text-gray-900">
-                    TechAcademy
+                    Neuro Edge Technologies
                   </h1>
                   <p className="text-xs text-gray-600">Training Institute</p>
                 </div>
