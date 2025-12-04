@@ -161,21 +161,16 @@ const Courses = () => {
 
               {/* Course Footer */}
               <div className="px-6 pb-6">
-                <div className="space-y-2">
-                  <button
-                    onClick={scrollToEnroll}
-                    className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
-                      course.popular
-                        ? "bg-primary-600 hover:bg-primary-700 text-white"
-                        : "bg-gray-900 hover:bg-gray-800 text-white"
-                    }`}
-                  >
-                    Enroll Now
-                  </button>
-                  <button className="w-full py-2 px-4 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
-                    View Details
-                  </button>
-                </div>
+                <button
+                  onClick={scrollToEnroll}
+                  className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
+                    course.popular
+                      ? "bg-primary-600 hover:bg-primary-700 text-white"
+                      : "bg-gray-900 hover:bg-gray-800 text-white"
+                  }`}
+                >
+                  Enroll Now
+                </button>
               </div>
             </div>
           ))}
