@@ -10,8 +10,6 @@ const Courses = () => {
       duration: "6 Months",
       schedule: "2 Hours/Day",
       technologies: ["Java", "Spring Boot", "React", "MySQL", "REST APIs"],
-      price: "₹45,000",
-      originalPrice: "₹60,000",
       features: [
         "Live Interactive Classes",
         "Real-world Projects",
@@ -30,8 +28,6 @@ const Courses = () => {
       duration: "3 Months",
       schedule: "3 Hours/Day",
       technologies: ["React", "Node.js", "Express", "MongoDB", "AWS"],
-      price: "₹35,000",
-      originalPrice: "₹45,000",
       features: [
         "MERN Stack Mastery",
         "Cloud Deployment",
@@ -50,8 +46,6 @@ const Courses = () => {
       duration: "4 Months",
       schedule: "2.5 Hours/Day",
       technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
-      price: "₹40,000",
-      originalPrice: "₹55,000",
       features: [
         "Beginner Friendly",
         "Data Science Integration",
@@ -167,28 +161,6 @@ const Courses = () => {
 
               {/* Course Footer */}
               <div className="px-6 pb-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <div className="flex items-center">
-                      <span className="text-2xl font-bold text-gray-900">
-                        {course.price}
-                      </span>
-                      <span className="text-lg text-gray-500 line-through ml-2">
-                        {course.originalPrice}
-                      </span>
-                    </div>
-                    <div className="text-sm text-green-600 font-medium">
-                      Save ₹
-                      {parseInt(
-                        course.originalPrice.replace("₹", "").replace(",", "")
-                      ) -
-                        parseInt(
-                          course.price.replace("₹", "").replace(",", "")
-                        )}
-                    </div>
-                  </div>
-                </div>
-
                 <div className="space-y-2">
                   <button
                     onClick={scrollToEnroll}

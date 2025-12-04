@@ -9,6 +9,7 @@ Visit the website: [TechAcademy Training Portal](https://your-domain.com)
 ## 📋 Features
 
 ### 🎯 Core Sections
+
 - **Header**: Responsive navigation with logo and menu
 - **Hero Section**: Compelling headline with animated code snippet
 - **Courses**: Three featured full-stack development courses
@@ -18,6 +19,7 @@ Visit the website: [TechAcademy Training Portal](https://your-domain.com)
 - **Footer**: Comprehensive contact and company information
 
 ### 🎨 Design Features
+
 - Modern, tech-inspired design
 - Blue gradient color scheme
 - Responsive mobile-first design
@@ -27,6 +29,7 @@ Visit the website: [TechAcademy Training Portal](https://your-domain.com)
 - Form validation and submission handling
 
 ### 📱 Responsive Design
+
 - Desktop computers
 - Tablets
 - Mobile phones
@@ -43,17 +46,20 @@ Visit the website: [TechAcademy Training Portal](https://your-domain.com)
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/jitendrapal/Training_Portal.git
    cd Training_Portal
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -101,23 +107,25 @@ Training_Portal/
 ## 🎓 Courses Offered
 
 1. **Java Full Stack Developer** (6 months)
+
    - Spring Boot, React, MySQL
-   - ₹45,000 (Most Popular)
+   - Most Popular
 
 2. **React + Node Full Stack Developer** (3 months)
+
    - React, Node.js, MongoDB
-   - ₹35,000
 
 3. **Python Full Stack Developer** (4 months)
    - Django, React, PostgreSQL
-   - ₹40,000
 
 ## 🔧 Configuration
 
 ### Tailwind CSS
+
 Custom color scheme with primary (blue) and secondary (grey) palettes defined in `tailwind.config.js`.
 
 ### Vite Configuration
+
 Optimized for React development with hot reload in `vite.config.js`.
 
 ## 📞 Contact Information
