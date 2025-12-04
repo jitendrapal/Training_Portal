@@ -27,7 +27,7 @@ const Header = () => {
               <Link to="/" className="flex items-center">
                 <div className="w-12 h-12 flex items-center justify-center">
                   <img
-                    src="/neuro-edge-logo.svg"
+                    src="/neuro-edge-logo.png"
                     alt="Neuro Edge Technologies Logo"
                     className="w-10 h-10"
                   />
