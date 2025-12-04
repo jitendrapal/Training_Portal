@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose TechAcademy?
+            Why Choose Neuro Edge Technologies?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We don't just teach coding - we transform careers. Here's what makes

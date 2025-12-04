@@ -1,10 +1,10 @@
-# TechAcademy - IT Training Institute Website
+# Neuro Edge Technologies - IT Training Institute Website
 
 A modern, professional website for an IT Training Institute focused on Full Stack Development and Programming Courses. Built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Live Demo
 
-Visit the website: [TechAcademy Training Portal](https://your-domain.com)
+Visit the website: [Neuro Edge Technologies Training Portal](https://your-domain.com)
 
 ## 📋 Features
 
@@ -131,9 +131,9 @@ Optimized for React development with hot reload in `vite.config.js`.
 ## 📞 Contact Information
 
 - **Address**: 123 Tech Street, Baner, Pune, Maharashtra 411045
-- **Phone**: +91-9876543210
-- **Email**: info@techacademy.com
-- **Website**: www.techacademy.com
+- **Phone**: +91-8055006652
+- **Email**: info@Neuro Edge Technologies.com
+- **Website**: www.Neuro Edge Technologies.com
 
 ## 🤝 Contributing
 

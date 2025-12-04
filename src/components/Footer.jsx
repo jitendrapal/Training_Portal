@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer id="contact" className="bg-gray-900 text-white">
@@ -23,27 +23,43 @@ const Footer = () => {
                   <span className="text-white font-bold text-xl">IT</span>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-xl font-bold">TechAcademy</h3>
+                  <h3 className="text-xl font-bold">Neuro Edge Technologies</h3>
                   <p className="text-gray-400 text-sm">Training Institute</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-6">
-                Transforming careers through industry-focused IT training. Join 500+ successful graduates working at top companies.
+                Transforming careers through industry-focused IT training. Join
+                500+ successful graduates working at top companies.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                >
                   <span className="text-xl">📘</span>
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                >
                   <span className="text-xl">📸</span>
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                >
                   <span className="text-xl">🐦</span>
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                >
                   <span className="text-xl">💼</span>
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                >
                   <span className="text-xl">📺</span>
                 </a>
               </div>
@@ -55,7 +71,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => scrollToSection('home')}
+                    onClick={() => scrollToSection("home")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Home
@@ -63,7 +79,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('courses')}
+                    onClick={() => scrollToSection("courses")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Courses
@@ -71,7 +87,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('testimonials')}
+                    onClick={() => scrollToSection("testimonials")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Success Stories
@@ -79,19 +95,25 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('enroll')}
+                    onClick={() => scrollToSection("enroll")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Enroll Now
                   </button>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     Blog
                   </a>
                 </li>
@@ -103,32 +125,50 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-6">Our Courses</h4>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     Java Full Stack Developer
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     React + Node Full Stack
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     Python Full Stack Developer
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     Data Science with Python
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     DevOps Engineering
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
                     Mobile App Development
                   </a>
                 </li>
@@ -143,35 +183,40 @@ const Footer = () => {
                   <span className="text-primary-400 mr-3 mt-1">📍</span>
                   <div>
                     <p className="text-gray-400">
-                      TechAcademy Training Institute<br />
-                      3rd Floor, Tech Hub Building<br />
-                      Baner, Pune - 411045<br />
-                      Maharashtra, India
+                      Neuro Edge Technologies
+                      <br />
+                      4th Floor, Office No 401
+                      <br />
+                      Vishwaraj Pride,Opposite Zudio, Wagholi, Pune
+                      <br />
+                      Maharashtra Pune 412207
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <span className="text-primary-400 mr-3">📞</span>
                   <div>
-                    <p className="text-gray-400">+91-9876543210</p>
-                    <p className="text-gray-400">+91-8765432109</p>
+                    <p className="text-gray-400">+91-8055006652</p>
+                    <p className="text-gray-400">+31-683078160</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <span className="text-primary-400 mr-3">✉️</span>
                   <div>
-                    <p className="text-gray-400">info@techacademy.com</p>
-                    <p className="text-gray-400">admissions@techacademy.com</p>
+                    <p className="text-gray-400">
+                      info@neuroedgetechnologies.com
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
                   <span className="text-primary-400 mr-3">🕒</span>
                   <div>
-                    <p className="text-gray-400">Mon - Sat: 9:00 AM - 8:00 PM</p>
-                    <p className="text-gray-400">Sunday: 10:00 AM - 6:00 PM</p>
+                    <p className="text-gray-400">
+                      Mon - Sat: 9:00 AM - 8:00 PM
+                    </p>
                   </div>
                 </div>
               </div>
@@ -185,7 +230,8 @@ const Footer = () => {
             <div>
               <h4 className="text-xl font-semibold mb-2">Stay Updated</h4>
               <p className="text-gray-400">
-                Get the latest updates on new courses, industry trends, and career opportunities.
+                Get the latest updates on new courses, industry trends, and
+                career opportunities.
               </p>
             </div>
             <div className="flex">
@@ -205,13 +251,22 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-8">
           <div className="grid md:grid-cols-2 gap-4 items-center">
             <div className="text-gray-400 text-sm">
-              © {currentYear} TechAcademy Training Institute. All rights reserved.
+              © {currentYear} Neuro Edge Technologies Training Institute. All
+              rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400 md:justify-end">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Refund Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Refund Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Sitemap
+              </a>
             </div>
           </div>
         </div>
@@ -219,7 +274,9 @@ const Footer = () => {
         {/* Certifications & Partnerships */}
         <div className="border-t border-gray-800 py-8">
           <div className="text-center">
-            <h4 className="text-lg font-semibold mb-6">Certifications & Partnerships</h4>
+            <h4 className="text-lg font-semibold mb-6">
+              Certifications & Partnerships
+            </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-60">
               <div className="bg-gray-800 rounded-lg p-4 text-center">
                 <div className="text-2xl mb-2">🏆</div>
@@ -242,7 +299,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

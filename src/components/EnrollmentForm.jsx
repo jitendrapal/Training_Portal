@@ -61,7 +61,7 @@ const EnrollmentForm = () => {
         formDataToSend.append("course", formData.course);
         formDataToSend.append("message", formData.message);
         formDataToSend.append("timestamp", new Date().toLocaleString());
-        formDataToSend.append("source", "TechAcademy Website");
+        formDataToSend.append("source", "Neuro Edge Technologies Website");
 
         const scriptUrl =
           "https://script.google.com/macros/s/AKfycbwxep43XiPvMEc2Ihz7dMRhbgsCWLaZnGXShv_cvmLMEN2W1pfZtvhxrCqEtwt4bjJO/exec";
@@ -113,7 +113,7 @@ const EnrollmentForm = () => {
             </p>
             <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
               <p className="text-green-800 font-medium">
-                📞 Expect a call from +91-9876543210
+                📞 Expect a call from +91-8055006652
               </p>
               <p className="text-green-700 text-sm mt-1">
                 Meanwhile, check your email for course details and next steps.

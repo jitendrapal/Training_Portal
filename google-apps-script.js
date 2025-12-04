@@ -1,5 +1,5 @@
 /**
- * Google Apps Script for TechAcademy Enrollment Form
+ * Google Apps Script for Neuro Edge Technologies Enrollment Form
  * This script receives form submissions and saves them to Google Sheets
  *
  * Setup Instructions:
@@ -118,7 +118,7 @@ function doGet(e) {
     // Check if we have data
     if (!data.name && !data.email) {
       return ContentService.createTextOutput(
-        "TechAcademy Enrollment Form Handler is working! No data to save."
+        "Neuro Edge Technologies Enrollment Form Handler is working! No data to save."
       );
     }
 
@@ -168,7 +168,7 @@ function doGet(e) {
 function sendEmailNotification(data) {
   try {
     // Configure email settings
-    const emailAddress = "info@techacademy.com"; // Replace with your email
+    const emailAddress = "info@Neuro Edge Technologies.com"; // Replace with your email
     const subject = `New Enrollment: ${data.name} - ${data.course}`;
 
     const emailBody = `
@@ -185,7 +185,7 @@ Student Details:
 Please follow up within 24 hours.
 
 Best regards,
-TechAcademy Enrollment System
+Neuro Edge Technologies Enrollment System
     `;
 
     // Send email (uncomment the line below to enable email notifications)
@@ -200,7 +200,7 @@ function testFunction() {
   const testData = {
     name: "Test Student",
     email: "test@example.com",
-    phone: "+91-9876543210",
+    phone: "+91-8055006652",
     course: "Java Full Stack Developer",
     message: "This is a test submission",
     timestamp: new Date().toLocaleString(),

@@ -27,7 +27,7 @@ const Header = () => {
               <Link to="/" className="flex items-center">
                 <div className="w-12 h-12 flex items-center justify-center">
                   <img
-                    src="/neuro-edge-logo.png"
+                    src="/logo.png"
                     alt="Neuro Edge Technologies Logo"
                     className="w-10 h-10"
                   />
@@ -36,7 +36,9 @@ const Header = () => {
                   <h1 className="text-xl font-bold text-gray-900">
                     Neuro Edge Technologies
                   </h1>
-                  <p className="text-xs text-gray-600">Training Institute</p>
+                  <p className="text-xs text-gray-600">
+                    Technology Training Institute
+                  </p>
                 </div>
               </Link>
             </div>

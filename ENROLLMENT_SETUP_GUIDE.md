@@ -35,7 +35,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
 3. **Rename Your Spreadsheet**
 
    - Click on **"Untitled spreadsheet"** at the top
-   - Change it to **"TechAcademy Enrollments"**
+   - Change it to **"Neuro Edge Technologies Enrollments"**
    - Press Enter to save
 
 4. **Don't Add Headers Yet**
@@ -65,7 +65,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
    - **Delete it** (press Delete key)
    - Now you have a blank editor
 
-3. **Add the TechAcademy Code**
+3. **Add the Neuro Edge Technologies Code**
 
    - Open the `google-apps-script.js` file from your project
    - **Copy all the code** (Ctrl+A, then Ctrl+C)
@@ -73,7 +73,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
 
 4. **Save Your Project**
    - Click the **Save** button (💾 icon) or press Ctrl+S
-   - When prompted, name your project: **"TechAcademy Form Handler"**
+   - When prompted, name your project: **"Neuro Edge Technologies Form Handler"**
    - Click **Save**
 
 ### **Step 3: Deploy as Web App (3 minutes)**
@@ -99,7 +99,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
 
 3. **Set Deployment Details**
 
-   - **Description**: Type "TechAcademy Enrollment Form Handler"
+   - **Description**: Type "Neuro Edge Technologies Enrollment Form Handler"
    - **Execute as**: Select **"Me (your-email@gmail.com)"**
    - **Who has access**: Select **"Anyone"** (this allows your website to send data)
 
@@ -177,7 +177,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
    - Fill out the enrollment form with test data:
      - Name: "Test Student"
      - Email: "test@example.com"
-     - Phone: "+91-9876543210"
+     - Phone: "+91-8055006652"
      - Course: "Java Full Stack Developer"
      - Message: "This is a test submission"
    - Click "Get Free Counseling Session"
@@ -195,7 +195,7 @@ Student fills form → Website sends data → Google Apps Script → Google Shee
    ```
    | Timestamp | Name | Email | Phone | Course | Message | Source | Status |
    |-----------|------|-------|-------|--------|---------|--------|--------|
-   | 12/14/2024 3:30:00 PM | Test Student | test@example.com | +91-9876543210 | Java Full Stack Developer | This is a test submission | TechAcademy Website | New |
+   | 12/14/2024 3:30:00 PM | Test Student | test@example.com | +91-8055006652 | Java Full Stack Developer | This is a test submission | Neuro Edge Technologies Website | New |
    ```
 
 ## 🎉 **Congratulations! Your System is Live!**
@@ -211,23 +211,23 @@ Every time someone fills out your enrollment form:
 
 Your Google Sheet will automatically capture:
 
-| Column        | Description                          |
-| ------------- | ------------------------------------ |
-| **Timestamp** | When the form was submitted          |
-| **Name**      | Student's full name                  |
-| **Email**     | Student's email address              |
-| **Phone**     | Student's phone number               |
-| **Course**    | Selected course                      |
-| **Message**   | Student's message/background         |
-| **Source**    | Always "TechAcademy Website"         |
-| **Status**    | "New" (you can update this manually) |
+| Column        | Description                              |
+| ------------- | ---------------------------------------- |
+| **Timestamp** | When the form was submitted              |
+| **Name**      | Student's full name                      |
+| **Email**     | Student's email address                  |
+| **Phone**     | Student's phone number                   |
+| **Course**    | Selected course                          |
+| **Message**   | Student's message/background             |
+| **Source**    | Always "Neuro Edge Technologies Website" |
+| **Status**    | "New" (you can update this manually)     |
 
 ## 📧 Optional: Email Notifications
 
 To receive email notifications when someone enrolls:
 
 1. In the Google Apps Script, find the `sendEmailNotification` function
-2. Replace `info@techacademy.com` with your actual email
+2. Replace `info@Neuro Edge Technologies.com` with your actual email
 3. Uncomment the line: `// MailApp.sendEmail(emailAddress, subject, emailBody);`
 4. Save and redeploy
 
