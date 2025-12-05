@@ -24,9 +24,9 @@ const Hero = () => {
       <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse delay-500"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-center lg:text-left">
+        <div className="flex items-center justify-center min-h-[70vh]">
+          {/* Main Content - Full Width */}
+          <div className="text-center max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Become a{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
@@ -43,7 +43,7 @@ const Hero = () => {
               companies want and launch your career in just 6 months.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/courses"
                 className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
@@ -59,7 +59,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="mt-12 grid grid-cols-3 gap-8 text-center lg:text-left">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-white">500+</div>
                 <div className="text-gray-300 text-sm">Students Placed</div>
