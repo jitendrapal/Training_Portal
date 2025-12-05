@@ -69,17 +69,6 @@ const Courses = () => {
     <section id="courses" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Featured Courses
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose from our industry-focused programs designed to make you
-            job-ready. All courses include hands-on projects, mentorship, and
-            placement support.
-          </p>
-        </div>
-
         {/* Course Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course) => (
