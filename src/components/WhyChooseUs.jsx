@@ -59,22 +59,15 @@ const WhyChooseUs = () => {
     },
     {
       icon: "🤝",
-      title: "Community Support",
+      title: "Technical Community Support",
       description:
-        "Join a network of 1000+ alumni working in top companies. Get continuous support even after graduation.",
+        "Join a network of professionals working in top companies. Get continuous support even after your course completion.",
       highlights: [
-        "Alumni network",
+        "Professional network",
         "Peer learning",
         "Lifetime access to community",
       ],
     },
-  ];
-
-  const stats = [
-    { number: "500+", label: "Students Placed", icon: "🎓" },
-    { number: "95%", label: "Success Rate", icon: "📈" },
-    { number: "50+", label: "Partner Companies", icon: "🏢" },
-    { number: "4.8/5", label: "Student Rating", icon: "⭐" },
   ];
 
   return (
@@ -89,19 +82,6 @@ const WhyChooseUs = () => {
             We don't just teach coding - we transform careers. Here's what makes
             us the #1 choice for aspiring developers.
           </p>
-        </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl mb-2">{stat.icon}</div>
-              <div className="text-3xl font-bold text-primary-600 mb-1">
-                {stat.number}
-              </div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
-            </div>
-          ))}
         </div>
 
         {/* Features Grid */}
@@ -143,7 +123,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Success Stories Preview */}
-        <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-white">
+        {/* <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-white">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">
@@ -183,7 +163,6 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="relative">
-              {/* Company logos mockup */}
               <div className="grid grid-cols-3 gap-4">
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold">TCS</div>
@@ -210,7 +189,7 @@ const WhyChooseUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

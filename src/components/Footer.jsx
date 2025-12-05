@@ -16,55 +16,6 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-            {/* Company Info */}
-            <div className="lg:col-span-1">
-              <div className="flex items-center mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">IT</span>
-                </div>
-                <div className="ml-3">
-                  <h3 className="text-xl font-bold">Neuro Edge Technologies</h3>
-                  <p className="text-gray-400 text-sm">Training Institute</p>
-                </div>
-              </div>
-              <p className="text-gray-400 mb-6">
-                Transforming careers through industry-focused IT training. Join
-                500+ successful graduates working at top companies.
-              </p>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  <span className="text-xl">📘</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  <span className="text-xl">📸</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  <span className="text-xl">🐦</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  <span className="text-xl">💼</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  <span className="text-xl">📺</span>
-                </a>
-              </div>
-            </div>
-
             {/* Quick Links */}
             <div>
               <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
@@ -85,14 +36,7 @@ const Footer = () => {
                     Courses
                   </button>
                 </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("testimonials")}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    Success Stories
-                  </button>
-                </li>
+
                 <li>
                   <button
                     onClick={() => scrollToSection("enroll")}
@@ -107,14 +51,6 @@ const Footer = () => {
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    Blog
                   </a>
                 </li>
               </ul>
@@ -224,29 +160,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="border-t border-gray-800 py-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h4 className="text-xl font-semibold mb-2">Stay Updated</h4>
-              <p className="text-gray-400">
-                Get the latest updates on new courses, industry trends, and
-                career opportunities.
-              </p>
-            </div>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary-500 text-white"
-              />
-              <button className="bg-primary-600 hover:bg-primary-700 px-6 py-3 rounded-r-lg font-semibold transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 py-8">
           <div className="grid md:grid-cols-2 gap-4 items-center">
@@ -267,33 +180,6 @@ const Footer = () => {
               <a href="#" className="hover:text-white transition-colors">
                 Sitemap
               </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Certifications & Partnerships */}
-        <div className="border-t border-gray-800 py-8">
-          <div className="text-center">
-            <h4 className="text-lg font-semibold mb-6">
-              Certifications & Partnerships
-            </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-60">
-              <div className="bg-gray-800 rounded-lg p-4 text-center">
-                <div className="text-2xl mb-2">🏆</div>
-                <div className="text-sm">ISO 9001:2015</div>
-              </div>
-              <div className="bg-gray-800 rounded-lg p-4 text-center">
-                <div className="text-2xl mb-2">🎓</div>
-                <div className="text-sm">NASSCOM Partner</div>
-              </div>
-              <div className="bg-gray-800 rounded-lg p-4 text-center">
-                <div className="text-2xl mb-2">💼</div>
-                <div className="text-sm">Industry Certified</div>
-              </div>
-              <div className="bg-gray-800 rounded-lg p-4 text-center">
-                <div className="text-2xl mb-2">🌟</div>
-                <div className="text-sm">5-Star Rated</div>
-              </div>
             </div>
           </div>
         </div>

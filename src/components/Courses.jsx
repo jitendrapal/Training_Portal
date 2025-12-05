@@ -26,7 +26,7 @@ const Courses = () => {
       description:
         "Master modern web development with React, Node.js, Express, MongoDB, and deployment strategies.",
       duration: "3 Months",
-      schedule: "3 Hours/Day",
+      schedule: "2 Hours/Day",
       technologies: ["React", "Node.js", "Express", "MongoDB", "AWS"],
       features: [
         "MERN Stack Mastery",
@@ -44,7 +44,7 @@ const Courses = () => {
       description:
         "Learn Django, React, APIs, and data handling. Perfect for beginners and career switchers.",
       duration: "4 Months",
-      schedule: "2.5 Hours/Day",
+      schedule: "2 Hours/Day",
       technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
       features: [
         "Beginner Friendly",
@@ -194,14 +194,12 @@ const Courses = () => {
               </div>
               <div>
                 <div className="text-3xl mb-2">🚀</div>
-                <h4 className="font-semibold text-gray-900">Job Guarantee</h4>
-                <p className="text-gray-600 text-sm">
-                  100% placement support or money back
-                </p>
+                <h4 className="font-semibold text-gray-900">Job Support</h4>
+                <p className="text-gray-600 text-sm">Free placement support</p>
               </div>
               <div>
                 <div className="text-3xl mb-2">💼</div>
-                <h4 className="font-semibold text-gray-900">Real Projects</h4>
+                <h4 className="font-semibold text-gray-900">Live Projects</h4>
                 <p className="text-gray-600 text-sm">
                   Build portfolio with live industry projects
                 </p>
