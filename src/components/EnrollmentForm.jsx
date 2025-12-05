@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const EnrollmentForm = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,10 +35,20 @@ const EnrollmentForm = () => {
     navigate("/");
   }, [navigate]);
 
-  // Show form with fast animation
+  // Show form with fast animation and handle scroll
   useEffect(() => {
     setIsVisible(true);
-  }, []);
+
+    // Check if we need to scroll to form (from course buttons)
+    if (location.state?.scrollToForm) {
+      setTimeout(() => {
+        const element = document.getElementById("enroll");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300); // Wait for animation to start
+    }
+  }, [location.state]);
 
   const handleSubmit = useCallback(
     async (e) => {

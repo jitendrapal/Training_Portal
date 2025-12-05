@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
+  const navigate = useNavigate();
+
   const courses = [
     {
       id: 1,
@@ -58,11 +61,8 @@ const Courses = () => {
     },
   ];
 
-  const scrollToEnroll = () => {
-    const element = document.getElementById("enroll");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleEnrollClick = () => {
+    navigate("/enroll", { state: { scrollToForm: true } });
   };
 
   return (
@@ -162,7 +162,7 @@ const Courses = () => {
               {/* Course Footer */}
               <div className="px-6 pb-6">
                 <button
-                  onClick={scrollToEnroll}
+                  onClick={handleEnrollClick}
                   className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
                     course.popular
                       ? "bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 text-white"

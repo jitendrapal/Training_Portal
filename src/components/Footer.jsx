@@ -141,7 +141,6 @@ const Footer = () => {
                   <span className="text-primary-400 mr-3">📞</span>
                   <div>
                     <p className="text-gray-400">+91-8055006652</p>
-                    <p className="text-gray-400">+31-683078160</p>
                   </div>
                 </div>
 
