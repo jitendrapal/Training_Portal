@@ -57,22 +57,6 @@ const Hero = () => {
                 Book Your Spot
               </Link>
             </div>
-
-            {/* Stats */}
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-white">500+</div>
-                <div className="text-gray-300 text-sm">Students Placed</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white">95%</div>
-                <div className="text-gray-300 text-sm">Success Rate</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-gray-300 text-sm">Partner Companies</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
