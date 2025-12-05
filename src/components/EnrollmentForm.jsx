@@ -205,8 +205,9 @@ const EnrollmentForm = () => {
             <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-lg">
               <h4 className="font-semibold mb-2">🔥 Limited Time Offer</h4>
               <p className="text-primary-100 text-sm">
-                Enroll this month and get <strong>20% off</strong> on all
-                courses + Free placement support worth ₹10,000
+                Enroll this month and get <strong>10% off</strong> on all
+                courses + Free personality development + Free placement support
+                + Free resume building
               </p>
             </div>
           </div>

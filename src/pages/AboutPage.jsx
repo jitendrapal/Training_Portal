@@ -29,9 +29,14 @@ const AboutPage = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                To bridge the gap between traditional education and industry
-                requirements by providing practical, hands-on training in the
-                latest technologies.
+                Neuro Edge Technologies — Empowering Tomorrow’s Tech
+                Professionals, our mission is to bridge the gap between
+                traditional education and real industry demands by delivering
+                practical, hands-on training in the latest and most in-demand
+                technologies. We believe in learning by doing, which is why
+                every program we offer is built around real-world projects,
+                industry best practices, and problem-solving that mirrors actual
+                workplace challenges.
               </p>
               <p className="text-lg text-gray-600">
                 We believe in learning by doing, which is why our courses are
@@ -53,7 +58,7 @@ const AboutPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-gray-50">
+      {/* <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -86,7 +91,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <WhyChooseUs />

@@ -1,11 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleEnrollClick = () => {
+    navigate("/enroll");
   };
 
   const currentYear = new Date().getFullYear();
@@ -39,7 +46,7 @@ const Footer = () => {
 
                 <li>
                   <button
-                    onClick={() => scrollToSection("enroll")}
+                    onClick={handleEnrollClick}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Enroll Now
