@@ -60,6 +60,14 @@ const Footer = () => {
                     About Us
                   </a>
                 </li>
+                <li>
+                  <button
+                    onClick={() => navigate("/contact")}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Contact Us
+                  </button>
+                </li>
               </ul>
             </div>
 

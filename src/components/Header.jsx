@@ -58,6 +58,16 @@ const Header = () => {
                 Home
               </Link>
               <Link
+                to="/about"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  isActive("/about")
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                About Us
+              </Link>
+              <Link
                 to="/courses"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/courses")
@@ -67,25 +77,16 @@ const Header = () => {
               >
                 Courses
               </Link>
+
               <Link
-                to="/about"
+                to="/contact"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/about")
+                  isActive("/contact")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
                 }`}
               >
-                About
-              </Link>
-              <Link
-                to="/enroll"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/enroll")
-                    ? "text-primary-600 border-b-2 border-primary-600"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Enroll
+                Contact Us
               </Link>
             </div>
           </nav>
@@ -168,6 +169,17 @@ const Header = () => {
                 }`}
               >
                 About
+              </Link>
+              <Link
+                to="/contact"
+                onClick={closeMenu}
+                className={`block px-3 py-2 text-base font-medium ${
+                  isActive("/contact")
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Contact
               </Link>
               <Link
                 to="/enroll"
