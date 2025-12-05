@@ -86,12 +86,12 @@ const Courses = () => {
             <div
               key={course.id}
               className={`relative bg-white rounded-2xl shadow-lg overflow-hidden card-hover ${
-                course.popular ? "ring-2 ring-primary-500" : ""
+                course.popular ? "ring-2 ring-secondary-500" : ""
               }`}
             >
               {/* Popular Badge */}
               {course.popular && (
-                <div className="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-secondary-500 to-secondary-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
                   Most Popular
                 </div>
               )}
@@ -165,8 +165,8 @@ const Courses = () => {
                   onClick={scrollToEnroll}
                   className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
                     course.popular
-                      ? "bg-primary-600 hover:bg-primary-700 text-white"
-                      : "bg-gray-900 hover:bg-gray-800 text-white"
+                      ? "bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 text-white"
+                      : "bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white"
                   }`}
                 >
                   Enroll Now

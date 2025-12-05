@@ -15,7 +15,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background with gradient and pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-accent-900 via-primary-800 to-secondary-700"></div>
       <div className="absolute inset-0 tech-pattern opacity-20"></div>
 
       {/* Floating elements for visual appeal */}
@@ -46,13 +46,13 @@ const Hero = () => {
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/courses"
-                className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
               >
                 View Courses
               </Link>
               <Link
                 to="/enroll"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 transform hover:scale-105 text-center"
+                className="bg-transparent border-2 border-secondary-400 text-secondary-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-secondary-400 hover:text-white transition-all duration-300 transform hover:scale-105 text-center"
               >
                 Book Your Spot
               </Link>

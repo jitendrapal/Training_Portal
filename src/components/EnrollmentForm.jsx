@@ -131,7 +131,7 @@ const EnrollmentForm = () => {
   return (
     <section
       id="enroll"
-      className="py-16 bg-gradient-to-r from-primary-600 to-primary-800"
+      className="py-16 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -332,7 +332,7 @@ const EnrollmentForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center shadow-lg hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 disabled:from-secondary-400 disabled:to-secondary-500 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? (
                   <>

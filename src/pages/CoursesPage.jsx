@@ -5,7 +5,7 @@ const CoursesPage = () => {
   return (
     <div className="pt-24">
       {/* Page Header */}
-      <section className="py-12 bg-gradient-to-r from-primary-600 to-primary-800">
+      <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Courses
