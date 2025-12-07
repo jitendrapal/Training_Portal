@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { submitToGoogleSheets, FORM_CONFIG } from "../config/googleSheets";
 
 const EnrollmentForm = () => {
   const navigate = useNavigate();
@@ -65,26 +66,7 @@ const EnrollmentForm = () => {
 
       try {
         // Submit to Google Sheets in background (non-blocking)
-        const formDataToSend = new FormData();
-        formDataToSend.append("name", formData.name);
-        formDataToSend.append("email", formData.email);
-        formDataToSend.append("phone", formData.phone);
-        formDataToSend.append("course", formData.course);
-        formDataToSend.append("message", formData.message);
-        formDataToSend.append("timestamp", new Date().toLocaleString());
-        formDataToSend.append("source", "Neuro Edge Technologies Website");
-
-        const scriptUrl =
-          "https://script.google.com/macros/s/AKfycbwxep43XiPvMEc2Ihz7dMRhbgsCWLaZnGXShv_cvmLMEN2W1pfZtvhxrCqEtwt4bjJO/exec";
-
-        // Submit in background without blocking UI
-        fetch(scriptUrl, {
-          method: "POST",
-          mode: "no-cors",
-          body: formDataToSend,
-        }).catch((error) => {
-          console.log("Background submission error:", error);
-        });
+        submitToGoogleSheets(formData, FORM_CONFIG.FORM_TYPES.ENROLLMENT);
 
         // Auto-redirect after 3 seconds for better UX
         setTimeout(() => {
@@ -97,7 +79,7 @@ const EnrollmentForm = () => {
             message: "",
           });
           navigateToHome();
-        }, 3000);
+        }, FORM_CONFIG.SUCCESS_REDIRECT_DELAY);
       } catch (error) {
         console.error("Error submitting form:", error);
         // Still show success for better UX

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { submitToGoogleSheets, FORM_CONFIG } from "../config/googleSheets";
 
 const ContactForm = () => {
   const navigate = useNavigate();
@@ -49,22 +50,34 @@ const ContactForm = () => {
       e.preventDefault();
       setIsSubmitting(true);
 
+      // Show success immediately for better UX
+      setIsSubmitted(true);
+
       try {
-        // Simulate form submission (replace with actual API call)
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        // Submit to Google Sheets in background (non-blocking)
+        console.log("Contact form data being submitted:", formData);
+        console.log("Form type:", FORM_CONFIG.FORM_TYPES.CONTACT);
 
-        // Here you would typically send the data to your backend
-        console.log("Contact form submitted:", formData);
+        submitToGoogleSheets(formData, FORM_CONFIG.FORM_TYPES.CONTACT);
 
-        setIsSubmitted(true);
+        // Auto-redirect after 3 seconds for better UX
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+          navigateToHome();
+        }, FORM_CONFIG.SUCCESS_REDIRECT_DELAY);
       } catch (error) {
         console.error("Error submitting contact form:", error);
-        alert("There was an error sending your message. Please try again.");
-      } finally {
-        setIsSubmitting(false);
+        // Still show success for better UX
       }
     },
-    [formData]
+    [formData, navigateToHome]
   );
 
   if (isSubmitted) {

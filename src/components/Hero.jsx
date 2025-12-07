@@ -32,15 +32,16 @@ const Hero = () => {
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 Job-Ready
               </span>{" "}
-              with Neuro Edge Technologies
+              with
+              <p>Neuro Edge Technologies</p>
             </h1>
 
             <p className="mt-6 text-xl text-gray-200">
               At Neuro Edge Technologies, our vision is to empower the next
               generation of tech professionals with real-world, industry-ready
-              skills. Learn industry-relevant skills like Java, React,
-              Node.js,and Python from expert trainers. Master the skills that
-              tech companies want and launch your career in just 6 months.
+              skills. Learn industry-relevant skills like Java, React, Node.js
+              and Python from expert trainers. Master the skills that tech
+              companies want and launch your career in just 6 months.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
