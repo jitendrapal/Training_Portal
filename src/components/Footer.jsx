@@ -4,17 +4,6 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleEnrollClick = () => {
-    navigate("/enroll");
-  };
-
   const currentYear = new Date().getFullYear();
 
   return (
@@ -29,7 +18,10 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => scrollToSection("home")}
+                    onClick={() => {
+                      navigate("/");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Home
@@ -37,35 +29,46 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("courses")}
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Courses
                   </button>
                 </li>
-
                 <li>
                   <button
-                    onClick={handleEnrollClick}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    Enroll Now
-                  </button>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                    onClick={() => {
+                      navigate("/about");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     About Us
-                  </a>
+                  </button>
                 </li>
                 <li>
                   <button
-                    onClick={() => navigate("/contact")}
+                    onClick={() => {
+                      navigate("/contact");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Contact Us
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      navigate("/enroll");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Enroll Now
                   </button>
                 </li>
               </ul>

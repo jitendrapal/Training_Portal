@@ -15,13 +15,128 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [errors, setErrors] = useState({});
 
-  // Optimized form change handler
+  // Validation functions
+  const validateEmail = (email) => {
+    // More strict email validation - must have proper email format
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email.trim());
+  };
+
+  const validatePhone = (phone) => {
+    // Remove all non-digit characters for validation
+    const cleanPhone = phone.replace(/\D/g, "");
+    // Check if it's exactly 10 digits and starts with 6, 7, 8, or 9 (Indian mobile format)
+    return cleanPhone.length === 10 && /^[6-9][0-9]{9}$/.test(cleanPhone);
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Name validation
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = "Name must be at least 2 characters";
+    }
+
+    // Email validation
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email =
+        "Please enter a valid email format (e.g., user@example.com)";
+    }
+
+    // Phone validation
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Mobile number is required";
+    } else if (!validatePhone(formData.phone)) {
+      newErrors.phone =
+        "Please enter exactly 10 digits starting with 6, 7, 8, or 9";
+    }
+
+    // Subject validation
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+    }
+
+    // Message validation (optional field)
+    if (formData.message.trim() && formData.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // Format phone number to only allow digits
+  const formatPhoneNumber = (value) => {
+    // Remove all non-digit characters
+    const cleaned = value.replace(/\D/g, "");
+    // Limit to 10 digits
+    return cleaned.slice(0, 10);
+  };
+
+  // Real-time field validation
+  const validateField = (name, value) => {
+    switch (name) {
+      case "name":
+        if (!value.trim()) return "Name is required";
+        if (value.trim().length < 2)
+          return "Name must be at least 2 characters";
+        return "";
+
+      case "email":
+        if (!value.trim()) return "Email is required";
+        if (!validateEmail(value))
+          return "Please enter a valid email format (e.g., user@example.com)";
+        return "";
+
+      case "phone":
+        if (!value.trim()) return "Mobile number is required";
+        if (!validatePhone(value))
+          return "Please enter exactly 10 digits starting with 6, 7, 8, or 9";
+        return "";
+
+      case "subject":
+        if (!value.trim()) return "Subject is required";
+        return "";
+
+      case "message":
+        // Message is optional, but if provided, must be at least 10 characters
+        if (value.trim() && value.trim().length < 10)
+          return "Message must be at least 10 characters";
+        return "";
+
+      default:
+        return "";
+    }
+  };
+
+  // Optimized form change handler with real-time validation
   const handleChange = useCallback((e) => {
     const { name, value } = e.target;
+
+    let processedValue = value;
+
+    // Special handling for phone number
+    if (name === "phone") {
+      processedValue = formatPhoneNumber(value);
+    }
+
+    // Update form data
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: processedValue,
+    }));
+
+    // Real-time validation - show error immediately as user types
+    const fieldError = validateField(name, processedValue);
+    setErrors((prev) => ({
+      ...prev,
+      [name]: fieldError,
     }));
   }, []);
 
@@ -48,6 +163,13 @@ const ContactForm = () => {
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
+
+      // Validate form before submission
+      if (!validateForm()) {
+        // Validation errors are already shown in real-time
+        return;
+      }
+
       setIsSubmitting(true);
 
       // Show success immediately for better UX
@@ -234,9 +356,18 @@ const ContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors ${
+                    errors.name
+                      ? "border-red-500 bg-red-50"
+                      : formData.name && !errors.name
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your full name"
                 />
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                )}
               </div>
 
               <div>
@@ -253,9 +384,18 @@ const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors"
-                  placeholder="Enter your email address"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors ${
+                    errors.email
+                      ? "border-red-500 bg-red-50"
+                      : formData.email && !errors.email
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
+                  placeholder="Enter your email address (e.g., john@example.com)"
                 />
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                )}
               </div>
 
               <div>
@@ -263,7 +403,7 @@ const ContactForm = () => {
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Phone Number
+                  Mobile Number *
                 </label>
                 <input
                   type="tel"
@@ -271,9 +411,21 @@ const ContactForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors"
-                  placeholder="Enter your phone number"
+                  required
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors ${
+                    errors.phone
+                      ? "border-red-500 bg-red-50"
+                      : formData.phone && !errors.phone
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
+                  placeholder="Enter your 10-digit mobile number (e.g., 9876543210)"
+                  maxLength="10"
+                  pattern="[6-9][0-9]{9}"
                 />
+                {errors.phone && (
+                  <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+                )}
               </div>
 
               <div>
@@ -289,7 +441,13 @@ const ContactForm = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors ${
+                    errors.subject
+                      ? "border-red-500 bg-red-50"
+                      : formData.subject && !errors.subject
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
                 >
                   <option value="">Select a subject</option>
                   <option value="Course Inquiry">Course Inquiry</option>
@@ -299,6 +457,9 @@ const ContactForm = () => {
                   <option value="Technical Support">Technical Support</option>
                   <option value="Other">Other</option>
                 </select>
+                {errors.subject && (
+                  <p className="mt-1 text-sm text-red-600">{errors.subject}</p>
+                )}
               </div>
 
               <div>
@@ -306,18 +467,26 @@ const ContactForm = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Message *
+                  Message (Optional)
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  required
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Tell us about your inquiry or questions..."
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-colors resize-none ${
+                    errors.message
+                      ? "border-red-500 bg-red-50"
+                      : formData.message && !errors.message
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
+                  placeholder="Tell us about your inquiry or questions... (optional)"
                 />
+                {errors.message && (
+                  <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+                )}
               </div>
 
               <button

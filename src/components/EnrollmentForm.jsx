@@ -15,6 +15,7 @@ const EnrollmentForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const courses = [
     "Java Full Stack Developer",
@@ -22,14 +23,129 @@ const EnrollmentForm = () => {
     "Python Full Stack Developer",
   ];
 
-  // Optimized form change handler
+  // Validation functions
+  const validateEmail = (email) => {
+    // More strict email validation - must have proper email format
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email.trim());
+  };
+
+  const validatePhone = (phone) => {
+    // Remove all non-digit characters for validation
+    const cleanPhone = phone.replace(/\D/g, "");
+    // Check if it's exactly 10 digits and starts with 6, 7, 8, or 9 (Indian mobile format)
+    return cleanPhone.length === 10 && /^[6-9][0-9]{9}$/.test(cleanPhone);
+  };
+
+  // Phone number formatting function
+  const formatPhoneNumber = (value) => {
+    // Remove all non-digit characters
+    const cleaned = value.replace(/\D/g, "");
+    // Limit to 10 digits
+    return cleaned.slice(0, 10);
+  };
+
+  // Real-time field validation
+  const validateField = (name, value) => {
+    switch (name) {
+      case "name":
+        if (!value.trim()) return "Name is required";
+        if (value.trim().length < 2)
+          return "Name must be at least 2 characters";
+        return "";
+
+      case "email":
+        if (!value.trim()) return "Email is required";
+        if (!validateEmail(value))
+          return "Please enter a valid email format (e.g., user@example.com)";
+        return "";
+
+      case "phone":
+        if (!value.trim()) return "Mobile number is required";
+        if (!validatePhone(value))
+          return "Please enter exactly 10 digits starting with 6, 7, 8, or 9";
+        return "";
+
+      case "course":
+        if (!value.trim()) return "Course selection is required";
+        return "";
+
+      case "message":
+        // Message is optional, but if provided, must be at least 10 characters
+        if (value.trim() && value.trim().length < 10)
+          return "Message must be at least 10 characters";
+        return "";
+
+      default:
+        return "";
+    }
+  };
+
+  // Optimized form change handler with real-time validation
   const handleChange = useCallback((e) => {
     const { name, value } = e.target;
+
+    let processedValue = value;
+
+    // Special handling for phone number
+    if (name === "phone") {
+      processedValue = formatPhoneNumber(value);
+    }
+
+    // Update form data
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: processedValue,
+    }));
+
+    // Real-time validation - show error immediately as user types
+    const fieldError = validateField(name, processedValue);
+    setErrors((prev) => ({
+      ...prev,
+      [name]: fieldError,
     }));
   }, []);
+
+  // Form validation function
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Name validation
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = "Name must be at least 2 characters";
+    }
+
+    // Email validation
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email =
+        "Please enter a valid email format (e.g., user@example.com)";
+    }
+
+    // Phone validation
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Mobile number is required";
+    } else if (!validatePhone(formData.phone)) {
+      newErrors.phone =
+        "Please enter exactly 10 digits starting with 6, 7, 8, or 9";
+    }
+
+    // Course validation
+    if (!formData.course.trim()) {
+      newErrors.course = "Course selection is required";
+    }
+
+    // Message validation (optional field)
+    if (formData.message.trim() && formData.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   // Navigate to home page after submission
   const navigateToHome = useCallback(() => {
@@ -54,6 +170,12 @@ const EnrollmentForm = () => {
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
+
+      // Validate form before submission
+      if (!validateForm()) {
+        // Validation errors are already shown in real-time
+        return;
+      }
 
       // Immediate UI feedback for better UX
       setIsSubmitting(true);
@@ -237,9 +359,18 @@ const EnrollmentForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
+                    errors.name
+                      ? "border-red-500 bg-red-50"
+                      : formData.name && !errors.name
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your full name"
                 />
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                )}
               </div>
 
               <div>
@@ -256,9 +387,18 @@ const EnrollmentForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
+                    errors.email
+                      ? "border-red-500 bg-red-50"
+                      : formData.email && !errors.email
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your email address"
                 />
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                )}
               </div>
 
               <div>
@@ -275,9 +415,18 @@ const EnrollmentForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  placeholder="Enter your phone number"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
+                    errors.phone
+                      ? "border-red-500 bg-red-50"
+                      : formData.phone && !errors.phone
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
+                  placeholder="Enter your 10-digit mobile number"
                 />
+                {errors.phone && (
+                  <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+                )}
               </div>
 
               <div>
@@ -293,7 +442,13 @@ const EnrollmentForm = () => {
                   value={formData.course}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
+                    errors.course
+                      ? "border-red-500 bg-red-50"
+                      : formData.course && !errors.course
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
                 >
                   <option value="">Choose a course</option>
                   {courses.map((course, index) => (
@@ -302,6 +457,9 @@ const EnrollmentForm = () => {
                     </option>
                   ))}
                 </select>
+                {errors.course && (
+                  <p className="mt-1 text-sm text-red-600">{errors.course}</p>
+                )}
               </div>
 
               <div>
@@ -317,9 +475,18 @@ const EnrollmentForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300 resize-none"
-                  placeholder="Tell us about your background and goals..."
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none ${
+                    errors.message
+                      ? "border-red-500 bg-red-50"
+                      : formData.message && !errors.message
+                      ? "border-green-500 bg-green-50"
+                      : "border-gray-300"
+                  }`}
+                  placeholder="Tell us about your background and goals (optional)..."
                 />
+                {errors.message && (
+                  <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+                )}
               </div>
 
               <button
