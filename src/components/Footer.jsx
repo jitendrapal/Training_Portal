@@ -79,52 +79,103 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-6">Our Courses</h4>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Java Full Stack Developer
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     React + Node Full Stack
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Python Full Stack Developer
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Data Science with Python
-                  </a>
+                    .NET Development
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    DevOps Engineering
-                  </a>
+                    C & C++ Programming
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Mobile App Development
-                  </a>
+                    PHP Development
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    AI & Machine Learning
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    HTML, CSS & jQuery
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      navigate("/courses");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Android / iOS Development
+                  </button>
                 </li>
               </ul>
             </div>

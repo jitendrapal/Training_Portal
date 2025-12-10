@@ -21,6 +21,12 @@ const EnrollmentForm = () => {
     "Java Full Stack Developer",
     "React + Node Full Stack Developer",
     "Python Full Stack Developer",
+    ".NET Development",
+    "C & C++ Programming",
+    "PHP Development",
+    "AI & Machine Learning",
+    "HTML, CSS & jQuery",
+    "Android / iOS Development",
   ];
 
   // Validation functions
