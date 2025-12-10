@@ -202,8 +202,8 @@ const Header = () => {
                 onClick={closeMenu}
                 className={`block px-3 py-2 text-base font-medium ${
                   isActive("/")
-                    ? "text-secondary-400 bg-white/10"
-                    : "text-white hover:text-secondary-400"
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
                 }`}
               >
                 Home
@@ -251,17 +251,6 @@ const Header = () => {
                 }`}
               >
                 Contact
-              </Link>
-              <Link
-                to="/enroll"
-                onClick={closeMenu}
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/enroll")
-                    ? "text-primary-600 bg-primary-50"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Enroll
               </Link>
               <Link
                 to="/enroll"
