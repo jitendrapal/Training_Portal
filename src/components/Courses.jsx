@@ -206,6 +206,7 @@ const Courses = () => {
           {courses.map((course) => (
             <div
               key={course.id}
+              id={`course-${course.id}`}
               className={`relative bg-white rounded-2xl shadow-lg overflow-hidden card-hover ${
                 course.popular ? "ring-2 ring-secondary-500" : ""
               }`}

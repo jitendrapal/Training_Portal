@@ -4,6 +4,21 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
+  // Helper function to navigate to specific course
+  const navigateToCourse = (courseId) => {
+    navigate("/courses");
+    // Wait for navigation to complete, then scroll to specific course
+    setTimeout(() => {
+      const courseElement = document.getElementById(`course-${courseId}`);
+      if (courseElement) {
+        courseElement.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }, 100);
+  };
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -91,10 +106,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(1)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Java Full Stack Developer
@@ -102,10 +114,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(2)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     React + Node Full Stack
@@ -113,10 +122,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(3)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Python Full Stack Developer
@@ -124,10 +130,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(4)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     .NET Development
@@ -135,10 +138,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(5)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     C & C++ Programming
@@ -146,10 +146,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(6)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     PHP Development
@@ -157,10 +154,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(7)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     AI & Machine Learning
@@ -168,10 +162,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(8)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     HTML, CSS & jQuery
@@ -179,10 +170,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => navigateToCourse(9)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Android / iOS Development
