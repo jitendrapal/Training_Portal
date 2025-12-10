@@ -106,7 +106,7 @@ const Header = () => {
             {/* Social Media Icons */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://facebook.com/neuroedgetechnologies"
+                href="https://www.facebook.com/61584675037354"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors p-1"
