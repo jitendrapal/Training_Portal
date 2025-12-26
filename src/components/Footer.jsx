@@ -56,6 +56,17 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => {
+                      navigate("/services");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
                       navigate("/internship");
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
