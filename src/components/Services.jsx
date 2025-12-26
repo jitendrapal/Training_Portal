@@ -189,7 +189,9 @@ const Services = () => {
                 {/* CTA Button */}
                 <button
                   onClick={() => {
-                    navigate("/contact");
+                    navigate("/service-enroll", {
+                      state: { scrollToForm: true, selectedService: service.title },
+                    });
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors"
@@ -212,12 +214,12 @@ const Services = () => {
           </p>
           <button
             onClick={() => {
-              navigate("/contact");
+              navigate("/service-enroll", { state: { scrollToForm: true } });
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
           >
-            Contact Us Now
+            Request a Service
           </button>
         </div>
       </div>

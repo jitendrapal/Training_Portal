@@ -25,6 +25,7 @@ export const FORM_CONFIG = {
   FORM_TYPES: {
     ENROLLMENT: "enrollment",
     CONTACT: "contact",
+    SERVICE: "service",
   },
 };
 
@@ -99,6 +100,8 @@ export const validateFormData = (formData, formType) => {
     requiredFields.push("course");
   } else if (formType === FORM_CONFIG.FORM_TYPES.CONTACT) {
     requiredFields.push("subject", "message");
+  } else if (formType === FORM_CONFIG.FORM_TYPES.SERVICE) {
+    requiredFields.push("service");
   }
 
   // Check if all required fields are present and not empty

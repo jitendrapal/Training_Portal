@@ -9,6 +9,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import EnrollPage from "./pages/EnrollPage";
+import ServiceEnrollPage from "./pages/ServiceEnrollPage";
 import InternshipPage from "./pages/InternshipPage";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/enroll" element={<EnrollPage />} />
+            <Route path="/service-enroll" element={<ServiceEnrollPage />} />
             <Route path="/internship" element={<InternshipPage />} />
           </Routes>
         </main>
