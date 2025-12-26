@@ -29,6 +29,22 @@ const EnrollmentForm = () => {
     "Android / iOS Development",
   ];
 
+  const services = [
+    "Website Development",
+    "Desktop Development",
+    "Software Development",
+    "Software Testing",
+    "Mobile Application Development",
+    "Workflow Automation",
+    "Digital Marketing",
+    "UI/UX Design",
+    "Cloud & DevOps Services",
+    "IT Support & IT Outsourcing",
+  ];
+
+  // Combine courses and services for the dropdown
+  const allOptions = [...courses, ...services];
+
   // Validation functions
   const validateEmail = (email) => {
     // More strict email validation - must have proper email format
@@ -73,7 +89,7 @@ const EnrollmentForm = () => {
         return "";
 
       case "course":
-        if (!value.trim()) return "Course selection is required";
+        if (!value.trim()) return "Course/Service selection is required";
         return "";
 
       case "message":
@@ -139,9 +155,9 @@ const EnrollmentForm = () => {
         "Please enter exactly 10 digits starting with 6, 7, 8, or 9";
     }
 
-    // Course validation
+    // Course/Service validation
     if (!formData.course.trim()) {
-      newErrors.course = "Course selection is required";
+      newErrors.course = "Course/Service selection is required";
     }
 
     // Message validation (optional field)
@@ -162,7 +178,20 @@ const EnrollmentForm = () => {
   useEffect(() => {
     setIsVisible(true);
 
-    // Check if we need to scroll to form (from course buttons)
+    // Pre-select course or service if passed from navigation
+    if (location.state?.selectedCourse) {
+      setFormData((prev) => ({
+        ...prev,
+        course: location.state.selectedCourse,
+      }));
+    } else if (location.state?.selectedService) {
+      setFormData((prev) => ({
+        ...prev,
+        course: location.state.selectedService,
+      }));
+    }
+
+    // Check if we need to scroll to form (from course/service buttons)
     if (location.state?.scrollToForm) {
       setTimeout(() => {
         const element = document.getElementById("enroll");
@@ -440,7 +469,7 @@ const EnrollmentForm = () => {
                   htmlFor="course"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Select Course *
+                  Select Course or Service *
                 </label>
                 <select
                   id="course"
@@ -456,12 +485,21 @@ const EnrollmentForm = () => {
                       : "border-gray-300"
                   }`}
                 >
-                  <option value="">Choose a course</option>
-                  {courses.map((course, index) => (
-                    <option key={index} value={course}>
-                      {course}
-                    </option>
-                  ))}
+                  <option value="">Choose a course or service</option>
+                  <optgroup label="📚 Training Courses">
+                    {courses.map((course, index) => (
+                      <option key={`course-${index}`} value={course}>
+                        {course}
+                      </option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="💼 IT Services">
+                    {services.map((service, index) => (
+                      <option key={`service-${index}`} value={service}>
+                        {service}
+                      </option>
+                    ))}
+                  </optgroup>
                 </select>
                 {errors.course && (
                   <p className="mt-1 text-sm text-red-600">{errors.course}</p>

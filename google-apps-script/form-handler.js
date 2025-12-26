@@ -9,7 +9,6 @@ const SHEET_ID = "1dLwMdDf8Is7lKbbcYVDftUJwyzI-saPB9vU2_A0ps7A";
 // Sheet names for different forms
 const ENROLLMENT_SHEET = "Enrollments";
 const CONTACT_SHEET = "Contact_Forms";
-const SERVICE_SHEET = "Service_Requests";
 
 /**
  * Main function to handle POST requests from website forms
@@ -36,8 +35,6 @@ function doPost(e) {
       return handleEnrollmentForm(formData);
     } else if (formType === "contact") {
       return handleContactForm(formData);
-    } else if (formType === "service") {
-      return handleServiceForm(formData);
     } else {
       throw new Error("Unknown form type: " + formType);
     }
@@ -183,77 +180,6 @@ function handleContactForm(formData) {
     ).setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     console.error("Error handling contact form:", error);
-    throw error;
-  }
-}
-
-/**
- * Handle service form submissions
- */
-function handleServiceForm(formData) {
-  try {
-    console.log("Handling service form with data:", formData);
-
-    // Open the spreadsheet and get the service sheet
-    const spreadsheet = SpreadsheetApp.openById(SHEET_ID);
-    let sheet = spreadsheet.getSheetByName(SERVICE_SHEET);
-
-    console.log("Service sheet found:", sheet ? "Yes" : "No");
-
-    // Create sheet if it doesn't exist
-    if (!sheet) {
-      sheet = spreadsheet.insertSheet(SERVICE_SHEET);
-      // Add headers
-      sheet
-        .getRange(1, 1, 1, 8)
-        .setValues([
-          [
-            "Timestamp",
-            "Name",
-            "Email",
-            "Phone",
-            "Service",
-            "Message",
-            "Source",
-            "Status",
-          ],
-        ]);
-      sheet.getRange(1, 1, 1, 8).setFontWeight("bold");
-    }
-
-    // Prepare data row
-    const timestamp = new Date();
-    const rowData = [
-      timestamp,
-      formData.name || "",
-      formData.email || "",
-      formData.phone || "",
-      formData.service || "",
-      formData.message || "",
-      formData.source || "Website",
-      "New",
-    ];
-
-    console.log("Service form row data:", rowData);
-
-    // Add data to sheet
-    sheet.appendRow(rowData);
-
-    console.log("Service form data added to sheet successfully");
-
-    // Auto-resize columns for better readability
-    sheet.autoResizeColumns(1, 8);
-
-    console.log("Service form data saved successfully");
-
-    return ContentService.createTextOutput(
-      JSON.stringify({
-        success: true,
-        message: "Service form submitted successfully",
-      })
-    ).setMimeType(ContentService.MimeType.JSON);
-  } catch (error) {
-    console.error("Error handling service form:", error);
     throw error;
   }
 }

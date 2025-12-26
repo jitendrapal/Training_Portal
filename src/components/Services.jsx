@@ -189,7 +189,7 @@ const Services = () => {
                 {/* CTA Button */}
                 <button
                   onClick={() => {
-                    navigate("/service-enroll", {
+                    navigate("/enroll", {
                       state: { scrollToForm: true, selectedService: service.title },
                     });
                     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -214,7 +214,7 @@ const Services = () => {
           </p>
           <button
             onClick={() => {
-              navigate("/service-enroll", { state: { scrollToForm: true } });
+              navigate("/enroll", { state: { scrollToForm: true } });
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
