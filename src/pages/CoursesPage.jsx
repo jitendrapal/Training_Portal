@@ -1,18 +1,29 @@
 import React from "react";
+import SEO from "../components/SEO";
 import Courses from "../components/Courses";
+import { coursesSchema } from "../utils/structuredData";
 
 const CoursesPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Full Stack Developer Courses | Java, Python, MERN Stack Training"
+        description="Master Full Stack Development with our comprehensive courses in Java, Python, MERN Stack. Expert trainers, hands-on projects, 95% placement rate. Enroll now for best IT training in Pune, India."
+        keywords="Java Full Stack Course, Python Full Stack Training, MERN Stack Bootcamp, React Node.js Course, Full Stack Developer Certification, Web Development Course Pune, Programming Training India, Software Development Bootcamp"
+        canonical="/courses"
+        structuredData={coursesSchema}
+      />
+
       {/* Page Header */}
       <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our Courses
+            Full Stack Developer Courses
           </h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Choose from our comprehensive range of full-stack development
-            courses designed to make you job-ready in the tech industry.
+            Master modern web development with our comprehensive full-stack
+            courses. Learn Java, Python, MERN Stack with hands-on projects and
+            guaranteed placement support.
           </p>
         </div>
       </section>

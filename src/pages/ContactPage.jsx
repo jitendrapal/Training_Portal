@@ -1,9 +1,28 @@
 import React from "react";
+import SEO from "../components/SEO";
 import ContactForm from "../components/ContactForm";
+import { organizationSchema } from "../utils/structuredData";
 
 const ContactPage = () => {
+  const contactStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    mainEntity: {
+      ...organizationSchema,
+      "@type": "EducationalOrganization",
+    },
+  };
+
   return (
     <div className="pt-24">
+      <SEO
+        title="Contact Us | Get in Touch with IT Training Experts"
+        description="Contact Neuro Edge Technologies for IT training inquiries. Located in Pune, Maharashtra. Call +91-8055006652 or email info@neuroedgetechnologies.com for course information and enrollment."
+        keywords="Contact Neuro Edge Technologies, IT Training Institute Pune Contact, Full Stack Course Inquiry, Programming Training Contact, Software Development Course Pune"
+        canonical="/contact"
+        structuredData={contactStructuredData}
+      />
+
       {/* Contact Form Section */}
       <ContactForm />
 

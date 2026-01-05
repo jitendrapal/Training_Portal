@@ -1,0 +1,71 @@
+{
+  "name": "Neuro Edge Technologies - IT Training Institute",
+  "short_name": "Neuro Edge Tech",
+  "description": "Best IT Training Institute for Full Stack Development Courses with 95% placement rate",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["education", "technology", "training"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Courses",
+      "short_name": "Courses",
+      "description": "View all available courses",
+      "url": "/courses",
+      "icons": [
+        {
+          "src": "/icons/courses-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Internship",
+      "short_name": "Internship",
+      "description": "Apply for internship program",
+      "url": "/internship",
+      "icons": [
+        {
+          "src": "/icons/internship-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Enroll Now",
+      "short_name": "Enroll",
+      "description": "Enroll in courses",
+      "url": "/enroll",
+      "icons": [
+        {
+          "src": "/icons/enroll-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

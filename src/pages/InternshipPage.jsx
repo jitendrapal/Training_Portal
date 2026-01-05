@@ -1,18 +1,30 @@
 import React from "react";
+import SEO from "../components/SEO";
 import Internship from "../components/Internship";
+import { internshipSchema } from "../utils/structuredData";
 
 const InternshipPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="IT Internship Program | Paid Internship with Placement Support"
+        description="Join our comprehensive IT internship program with performance-based stipend. 8 technology domains, real industry projects, job placement support. Apply now for limited seats in Pune, India."
+        keywords="IT Internship Program India, Paid Software Development Internship, Java Full Stack Internship, React Development Internship, Python Internship, AI ML Internship, Mobile App Development Internship, Web Development Internship Pune"
+        canonical="/internship"
+        structuredData={internshipSchema}
+      />
+
       {/* Page Header */}
       <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Internship Program
+            IT Internship Program
           </h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Join our exclusive internship program designed for final year students. 
-            Get hands-on industry experience and accelerate your career growth.
+            Join our comprehensive paid internship program designed for final
+            year students. Get hands-on industry experience, performance-based
+            stipend, and accelerate your career growth with guaranteed placement
+            support.
           </p>
         </div>
       </section>
@@ -38,8 +50,8 @@ const InternshipPage = () => {
                 Industry Exposure
               </h3>
               <p className="text-gray-600">
-                Work directly with industry professionals and understand real-world 
-                business requirements and project workflows.
+                Work directly with industry professionals and understand
+                real-world business requirements and project workflows.
               </p>
             </div>
 
@@ -51,8 +63,8 @@ const InternshipPage = () => {
                 Skill Development
               </h3>
               <p className="text-gray-600">
-                Enhance your technical and soft skills through practical projects, 
-                code reviews, and professional development sessions.
+                Enhance your technical and soft skills through practical
+                projects, code reviews, and professional development sessions.
               </p>
             </div>
 
@@ -64,7 +76,7 @@ const InternshipPage = () => {
                 Networking Opportunities
               </h3>
               <p className="text-gray-600">
-                Build valuable connections with industry professionals, mentors, 
+                Build valuable connections with industry professionals, mentors,
                 and fellow interns that can benefit your future career.
               </p>
             </div>
@@ -77,7 +89,9 @@ const InternshipPage = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Academic Requirements:</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                  Academic Requirements:
+                </h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
@@ -98,7 +112,9 @@ const InternshipPage = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Technical Requirements:</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                  Technical Requirements:
+                </h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3"></span>
@@ -132,28 +148,36 @@ const InternshipPage = () => {
                   <span className="text-xl font-bold">1</span>
                 </div>
                 <h4 className="font-semibold mb-2">Apply Online</h4>
-                <p className="text-primary-100 text-sm">Fill the application form with your details</p>
+                <p className="text-primary-100 text-sm">
+                  Fill the application form with your details
+                </p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold">2</span>
                 </div>
                 <h4 className="font-semibold mb-2">Technical Test</h4>
-                <p className="text-primary-100 text-sm">Complete online technical assessment</p>
+                <p className="text-primary-100 text-sm">
+                  Complete online technical assessment
+                </p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold">3</span>
                 </div>
                 <h4 className="font-semibold mb-2">Interview</h4>
-                <p className="text-primary-100 text-sm">Technical and HR interview rounds</p>
+                <p className="text-primary-100 text-sm">
+                  Technical and HR interview rounds
+                </p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold">4</span>
                 </div>
                 <h4 className="font-semibold mb-2">Start Internship</h4>
-                <p className="text-primary-100 text-sm">Begin your journey with us</p>
+                <p className="text-primary-100 text-sm">
+                  Begin your journey with us
+                </p>
               </div>
             </div>
           </div>

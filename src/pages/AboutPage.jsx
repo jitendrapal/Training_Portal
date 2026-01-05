@@ -1,10 +1,28 @@
 import React from "react";
+import SEO from "../components/SEO";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
+import { organizationSchema } from "../utils/structuredData";
 
 const AboutPage = () => {
+  const aboutStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    mainEntity: organizationSchema,
+    description:
+      "Learn about Neuro Edge Technologies - Leading IT Training Institute in Pune with 95% placement rate, expert trainers, and comprehensive Full Stack Development courses.",
+  };
+
   return (
     <div className="pt-24">
+      <SEO
+        title="About Us | Leading IT Training Institute in Pune"
+        description="Neuro Edge Technologies is a premier IT training institute in Pune with 95% placement rate. Expert trainers, modern curriculum, hands-on projects. Empowering 500+ developers since 2020."
+        keywords="About Neuro Edge Technologies, Best IT Training Institute Pune, Software Training Company India, Full Stack Development Institute, Programming Education Pune, IT Career Training"
+        canonical="/about"
+        structuredData={aboutStructuredData}
+      />
+
       {/* About Hero Section */}
       <section className="py-12 bg-gradient-to-r from-primary-600 to-primary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +32,7 @@ const AboutPage = () => {
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
               Empowering the next generation of developers with cutting-edge
-              technology education and industry-ready skills.
+              technology education and industry-ready skills since 2020.
             </p>
           </div>
         </div>

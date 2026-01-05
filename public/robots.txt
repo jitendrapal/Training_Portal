@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://neuroedgetechnologies.com/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow crawling of important pages
+Allow: /courses
+Allow: /internship
+Allow: /about
+Allow: /contact
+Allow: /enroll
+
+# Crawl delay (optional)
+Crawl-delay: 1
