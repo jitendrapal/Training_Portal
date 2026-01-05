@@ -7,6 +7,7 @@ import WhatsAppWidget from "./components/WhatsAppWidget";
 import Analytics from "./components/Analytics";
 import Home from "./pages/Home";
 import CoursesPage from "./pages/CoursesPage";
+import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import EnrollPage from "./pages/EnrollPage";
@@ -14,26 +15,23 @@ import InternshipPage from "./pages/InternshipPage";
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <div className="min-h-screen bg-white">
-          <Analytics />
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/courses" element={<CoursesPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/enroll" element={<EnrollPage />} />
-              <Route path="/internship" element={<InternshipPage />} />
-            </Routes>
-          </main>
-          <Footer />
-          <WhatsAppWidget />
-        </div>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/enroll" element={<EnrollPage />} />
+            <Route path="/internship" element={<InternshipPage />} />
+          </Routes>
+        </main>
+        <Footer />
+        <WhatsAppWidget />
+      </div>
+    </Router>
   );
 }
 

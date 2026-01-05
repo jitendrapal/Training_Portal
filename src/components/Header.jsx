@@ -78,6 +78,16 @@ const Header = () => {
                 Courses
               </Link>
               <Link
+                to="/services"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  isActive("/services")
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Services
+              </Link>
+              <Link
                 to="/internship"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/internship")
@@ -219,6 +229,17 @@ const Header = () => {
                 }`}
               >
                 Courses
+              </Link>
+              <Link
+                to="/services"
+                onClick={closeMenu}
+                className={`block px-3 py-2 text-base font-medium ${
+                  isActive("/services")
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Services
               </Link>
               <Link
                 to="/internship"

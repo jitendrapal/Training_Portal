@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
+import Services from "../components/Services";
 import Internship from "../components/Internship";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
@@ -48,6 +49,7 @@ const Home = () => {
       />
       <Hero />
       <Courses />
+      <Services />
       <Internship />
       <WhyChooseUs />
       <Testimonials />

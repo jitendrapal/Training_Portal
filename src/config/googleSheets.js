@@ -36,6 +36,10 @@ export const FORM_CONFIG = {
  */
 export const submitToGoogleSheets = async (formData, formType) => {
   try {
+    console.log("=== GOOGLE SHEETS SUBMISSION START ===");
+    console.log("Form Type:", formType);
+    console.log("Form Data:", formData);
+
     // Validate inputs
     if (!formData || !formType) {
       throw new Error("Form data and form type are required");
@@ -48,12 +52,15 @@ export const submitToGoogleSheets = async (formData, formType) => {
       return;
     }
 
+    console.log("Google Apps Script URL:", GOOGLE_APPS_SCRIPT_URL);
+
     // Prepare form data for submission
     const formDataToSend = new FormData();
 
     // Add all form fields
     Object.keys(formData).forEach((key) => {
       if (formData[key]) {
+        console.log(`Adding field: ${key} = ${formData[key]}`);
         formDataToSend.append(key, formData[key]);
       }
     });
@@ -63,18 +70,24 @@ export const submitToGoogleSheets = async (formData, formType) => {
     formDataToSend.append("source", FORM_CONFIG.DEFAULT_SOURCE);
     formDataToSend.append("timestamp", new Date().toISOString());
 
+    console.log("Final form data to send:", Object.fromEntries(formDataToSend));
+
     // Submit to Google Sheets
+    console.log("Sending request to Google Apps Script...");
     const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
       method: "POST",
       mode: "no-cors", // Required for Google Apps Script
       body: formDataToSend,
     });
 
-    console.log(`${formType} form submitted to Google Sheets successfully`);
-    console.log("Form data sent:", Object.fromEntries(formDataToSend));
+    console.log(`✅ ${formType} form submitted to Google Sheets successfully`);
+    console.log("Response:", response);
+    console.log("=== GOOGLE SHEETS SUBMISSION END ===");
     return response;
   } catch (error) {
-    console.error("Error submitting to Google Sheets:", error);
+    console.error("❌ Error submitting to Google Sheets:", error);
+    console.error("Error details:", error.message);
+    console.error("=== GOOGLE SHEETS SUBMISSION FAILED ===");
     // Don't throw error to avoid breaking user experience
     return null;
   }
