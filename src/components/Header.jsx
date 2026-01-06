@@ -97,6 +97,16 @@ const Header = () => {
               >
                 Internship
               </Link>
+              <Link
+                to="/resources"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  isActive("/resources")
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Resources
+              </Link>
 
               <Link
                 to="/contact"
@@ -251,6 +261,17 @@ const Header = () => {
                 }`}
               >
                 Internship
+              </Link>
+              <Link
+                to="/resources"
+                onClick={closeMenu}
+                className={`block px-3 py-2 text-base font-medium ${
+                  isActive("/resources")
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Resources
               </Link>
               <Link
                 to="/about"
