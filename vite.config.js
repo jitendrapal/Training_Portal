@@ -7,14 +7,13 @@ export default defineConfig({
   // SEO and Performance Optimizations
   build: {
     // Enable minification
-    minify: "terser",
+    minify: "esbuild",
 
     // Optimize chunk splitting for better caching
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
-          helmet: ["react-helmet-async"],
         },
       },
     },

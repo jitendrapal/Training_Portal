@@ -1,5 +1,4 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from "react";
 
 const SEO = ({
   title,
@@ -7,15 +6,18 @@ const SEO = ({
   keywords,
   canonical,
   ogImage,
-  ogType = 'website',
-  twitterCard = 'summary_large_image',
+  ogType = "website",
+  twitterCard = "summary_large_image",
   structuredData,
   noindex = false,
 }) => {
-  const baseUrl = 'https://neuroedgetechnologies.com';
-  const defaultTitle = 'Neuro Edge Technologies - Best IT Training Institute | Full Stack Developer Courses';
-  const defaultDescription = 'Learn Full Stack Development with Java, React, Node.js, Python. 95% placement rate, expert trainers, hands-on projects. Join 500+ successful graduates at top companies.';
-  const defaultKeywords = 'Full Stack Developer Course India, Java Full Stack Bootcamp, React Node.js Training, Python Full Stack Course, IT Training Institute, Programming Courses, Web Development Training, Pune IT Training, Best Coding Bootcamp India';
+  const baseUrl = "https://neuroedgetechnologies.com";
+  const defaultTitle =
+    "Neuro Edge Technologies - Best IT Training Institute | Full Stack Developer Courses";
+  const defaultDescription =
+    "Learn Full Stack Development with Java, React, Node.js, Python. 95% placement rate, expert trainers, hands-on projects. Join 500+ successful graduates at top companies.";
+  const defaultKeywords =
+    "Full Stack Developer Course India, Java Full Stack Bootcamp, React Node.js Training, Python Full Stack Course, IT Training Institute, Programming Courses, Web Development Training, Pune IT Training, Best Coding Bootcamp India";
   const defaultImage = `${baseUrl}/og-image.jpg`;
 
   const seoTitle = title ? `${title} | Neuro Edge Technologies` : defaultTitle;
@@ -24,55 +26,99 @@ const SEO = ({
   const seoImage = ogImage || defaultImage;
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : baseUrl;
 
-  return (
-    <Helmet>
-      {/* Basic Meta Tags */}
-      <title>{seoTitle}</title>
-      <meta name="description" content={seoDescription} />
-      <meta name="keywords" content={seoKeywords} />
-      <meta name="author" content="Neuro Edge Technologies Training Institute" />
-      <link rel="canonical" href={canonicalUrl} />
+  useEffect(() => {
+    // Update document title
+    document.title = seoTitle;
 
-      {/* Robots */}
-      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
-      <meta name="googlebot" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+    // Function to update or create meta tags
+    const updateMetaTag = (name, content, property = false) => {
+      const selector = property
+        ? `meta[property="${name}"]`
+        : `meta[name="${name}"]`;
+      let meta = document.querySelector(selector);
 
-      {/* Open Graph */}
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={seoImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="Neuro Edge Technologies" />
-      <meta property="og:locale" content="en_IN" />
+      if (!meta) {
+        meta = document.createElement("meta");
+        if (property) {
+          meta.setAttribute("property", name);
+        } else {
+          meta.setAttribute("name", name);
+        }
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content={twitterCard} />
-      <meta name="twitter:title" content={seoTitle} />
-      <meta name="twitter:description" content={seoDescription} />
-      <meta name="twitter:image" content={seoImage} />
-      <meta name="twitter:site" content="@neuroedgetech" />
+    // Function to update or create link tags
+    const updateLinkTag = (rel, href) => {
+      let link = document.querySelector(`link[rel="${rel}"]`);
+      if (!link) {
+        link = document.createElement("link");
+        link.setAttribute("rel", rel);
+        document.head.appendChild(link);
+      }
+      link.setAttribute("href", href);
+    };
 
-      {/* Additional Meta Tags */}
-      <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
-      <meta name="distribution" content="global" />
-      <meta name="rating" content="general" />
-      <meta name="geo.region" content="IN-MH" />
-      <meta name="geo.placename" content="Pune, Maharashtra" />
-      <meta name="geo.position" content="18.5204;73.8567" />
-      <meta name="ICBM" content="18.5204, 73.8567" />
+    // Basic Meta Tags
+    updateMetaTag("description", seoDescription);
+    updateMetaTag("keywords", seoKeywords);
+    updateMetaTag("author", "Neuro Edge Technologies Training Institute");
+    updateLinkTag("canonical", canonicalUrl);
 
-      {/* Structured Data */}
-      {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      )}
-    </Helmet>
-  );
+    // Robots
+    updateMetaTag("robots", noindex ? "noindex, nofollow" : "index, follow");
+    updateMetaTag("googlebot", noindex ? "noindex, nofollow" : "index, follow");
+
+    // Open Graph
+    updateMetaTag("og:type", ogType, true);
+    updateMetaTag("og:title", seoTitle, true);
+    updateMetaTag("og:description", seoDescription, true);
+    updateMetaTag("og:image", seoImage, true);
+    updateMetaTag("og:url", canonicalUrl, true);
+    updateMetaTag("og:site_name", "Neuro Edge Technologies", true);
+    updateMetaTag("og:locale", "en_US", true);
+
+    // Twitter Card
+    updateMetaTag("twitter:card", twitterCard);
+    updateMetaTag("twitter:title", seoTitle);
+    updateMetaTag("twitter:description", seoDescription);
+    updateMetaTag("twitter:image", seoImage);
+    updateMetaTag("twitter:site", "@neuroedgetech");
+
+    // Additional Meta Tags
+    updateMetaTag("language", "English");
+    updateMetaTag("revisit-after", "7 days");
+    updateMetaTag("distribution", "global");
+    updateMetaTag("rating", "general");
+    updateMetaTag("geo.region", "IN-MH");
+    updateMetaTag("geo.placename", "Pune, Maharashtra");
+    updateMetaTag("geo.position", "18.5204;73.8567");
+    updateMetaTag("ICBM", "18.5204, 73.8567");
+
+    // Structured Data
+    if (structuredData) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement("script");
+        script.setAttribute("type", "application/ld+json");
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(structuredData);
+    }
+  }, [
+    seoTitle,
+    seoDescription,
+    seoKeywords,
+    canonicalUrl,
+    seoImage,
+    ogType,
+    twitterCard,
+    structuredData,
+    noindex,
+  ]);
+
+  return null; // This component doesn't render anything visible
 };
 
 export default SEO;
