@@ -41,9 +41,21 @@ const EnrollmentForm = () => {
     "Cloud & DevOps Services",
     "IT Support & IT Outsourcing",
   ];
+  const jobs = [
+    "Receptionist",
+    "Java/Python FullStack Trainer",
+    ".Net FullStack Trainer",
+    "AI/ML Trainer",
+    "Lab Assistant",
+    "Andriod/iOS Trainer",
+    "Marketing  Executive",
+    "BackOffice Executive",
+    "Graphics Designer",
+    "Digital Marketing Expert",
+  ];
 
   // Combine courses and services for the dropdown
-  const allOptions = [...courses, ...services];
+  const allOptions = [...courses, ...services, ...jobs];
 
   // Validation functions
   const validateEmail = (email) => {
@@ -497,6 +509,13 @@ const EnrollmentForm = () => {
                     {services.map((service, index) => (
                       <option key={`service-${index}`} value={service}>
                         {service}
+                      </option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="💼 career">
+                    {jobs.map((job, index) => (
+                      <option key={`service-${index}`} value={job}>
+                        {job}
                       </option>
                     ))}
                   </optgroup>

@@ -291,7 +291,7 @@ const Courses = () => {
                       : "bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white"
                   }`}
                 >
-                  Enroll Now
+                  Enquiry Now
                 </button>
               </div>
             </div>

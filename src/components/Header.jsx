@@ -160,7 +160,7 @@ const Header = () => {
               to="/enroll"
               className="bg-secondary-600 hover:bg-secondary-700 text-white px-8 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
             >
-              Enroll Now
+              Enquiry Now
             </Link>
           </div>
 
@@ -282,7 +282,7 @@ const Header = () => {
                 onClick={closeMenu}
                 className="bg-primary-600 hover:bg-primary-700 text-white block px-3 py-2 text-base font-medium rounded-lg mt-4"
               >
-                Enroll Now
+                Enquiry Now
               </Link>
             </div>
           </div>
