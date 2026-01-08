@@ -450,7 +450,7 @@ const ContactForm = () => {
                   }`}
                 >
                   <option value="">Select a subject</option>
-                  <option value="Other">For Job</option>
+                  <option value="Other">Career with Us</option>
                   <option value="Course Inquiry">Course Inquiry</option>
                   <option value="Admission Process">Admission Process</option>
                   <option value="Fee Structure">Fee Structure</option>

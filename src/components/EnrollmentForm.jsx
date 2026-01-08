@@ -512,7 +512,7 @@ const EnrollmentForm = () => {
                       </option>
                     ))}
                   </optgroup>
-                  <optgroup label="💼 career">
+                  <optgroup label="💼 Career with Us">
                     {jobs.map((job, index) => (
                       <option key={`service-${index}`} value={job}>
                         {job}

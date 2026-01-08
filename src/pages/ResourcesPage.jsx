@@ -6,42 +6,44 @@ const ResourcesPage = () => {
   const resourcesStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Free Programming Resources & Tutorials",
-    "description": "Access free programming tutorials, guides, and resources for Java, Python, React, Node.js, and more. Learn coding with comprehensive tutorials and examples.",
-    "url": "https://neuroedgetechnologies.com/resources",
-    "mainEntity": {
+    name: "Free Programming Resources & Tutorials",
+    description:
+      "Access free programming tutorials, guides, and resources for Java, Python, React, Node.js, and more. Learn coding with comprehensive tutorials and examples.",
+    url: "https://neuroedgetechnologies.com/resources",
+    mainEntity: {
       "@type": "ItemList",
-      "name": "Programming Tutorials",
-      "itemListElement": [
+      name: "Programming Tutorials",
+      itemListElement: [
         {
           "@type": "Course",
-          "name": "Java Tutorial",
-          "description": "Complete Java programming tutorial with examples",
-          "provider": {
+          name: "Java Tutorial",
+          description: "Complete Java programming tutorial with examples",
+          provider: {
             "@type": "EducationalOrganization",
-            "name": "Neuro Edge Technologies"
-          }
+            name: "Neuro Edge Technologies",
+          },
         },
         {
           "@type": "Course",
-          "name": "Python Tutorial",
-          "description": "Learn Python programming from basics to advanced",
-          "provider": {
+          name: "Python Tutorial",
+          description:
+            "Complete Python programming tutorial with examples and data science",
+          provider: {
             "@type": "EducationalOrganization",
-            "name": "Neuro Edge Technologies"
-          }
+            name: "Neuro Edge Technologies",
+          },
         },
         {
           "@type": "Course",
-          "name": "React Tutorial",
-          "description": "Master React.js with hands-on examples and projects",
-          "provider": {
+          name: "React Tutorial",
+          description: "Master React.js with hands-on examples and projects",
+          provider: {
             "@type": "EducationalOrganization",
-            "name": "Neuro Edge Technologies"
-          }
-        }
-      ]
-    }
+            name: "Neuro Edge Technologies",
+          },
+        },
+      ],
+    },
   };
 
   return (
@@ -53,7 +55,7 @@ const ResourcesPage = () => {
         canonical="/resources"
         structuredData={resourcesStructuredData}
       />
-      
+
       {/* Page Header */}
       <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -61,8 +63,9 @@ const ResourcesPage = () => {
             Free Programming Resources
           </h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Master programming with our comprehensive collection of free tutorials, guides, and resources. 
-            Learn Java, Python, React, Node.js, and more with hands-on examples and practical projects.
+            Master programming with our comprehensive collection of free
+            tutorials, guides, and resources. Learn Java, Python, React,
+            Node.js, and more with hands-on examples and practical projects.
           </p>
         </div>
       </section>
