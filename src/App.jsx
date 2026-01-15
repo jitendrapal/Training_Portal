@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import EnrollPage from "./pages/EnrollPage";
 import InternshipPage from "./pages/InternshipPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import ServicesPage from "./pages/ServicesPage";
 import JavaTutorialPage from "./pages/JavaTutorialPage";
 import PythonTutorialPage from "./pages/PythonTutorialPage";
 import AngularTutorialPage from "./pages/AngularTutorialPage";
@@ -32,6 +33,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/enroll" element={<EnrollPage />} />
             <Route path="/internship" element={<InternshipPage />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/resources/java" element={<JavaTutorialPage />} />
             <Route path="/resources/python" element={<PythonTutorialPage />} />
