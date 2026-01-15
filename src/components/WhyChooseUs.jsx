@@ -140,8 +140,8 @@ const WhyChooseUs = () => {
                   <div className="text-xl font-bold">₹8.5 LPA</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                  <div className="text-sm text-primary-100">Placement Rate</div>
-                  <div className="text-xl font-bold">95%</div>
+                  <div className="text-sm text-primary-100">Placement Assistance</div>
+                  <div className="text-xl font-bold">100%</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
                   <div className="text-sm text-primary-100">Time to Job</div>

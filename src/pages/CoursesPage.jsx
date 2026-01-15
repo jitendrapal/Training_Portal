@@ -8,7 +8,7 @@ const CoursesPage = () => {
     <div className="pt-24">
       <SEO
         title="Full Stack Developer Courses | Java, Python, MERN Stack Training"
-        description="Master Full Stack Development with our comprehensive courses in Java, Python, MERN Stack. Expert trainers, hands-on projects, 95% placement rate. Enroll now for best IT training in Pune, India."
+        description="Master Full Stack Development with our comprehensive courses in Java, Python, MERN Stack. Expert trainers, hands-on projects, 100% Placement assistance. Enroll now for Best IT Training and Devlopment center in Pune, India."
         keywords="Java Full Stack Course, Python Full Stack Training, MERN Stack Bootcamp, React Node.js Course, Full Stack Developer Certification, Web Development Course Pune, Programming Training India, Software Development Bootcamp"
         canonical="/courses"
         structuredData={coursesSchema}

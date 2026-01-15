@@ -18,8 +18,7 @@ const Home = () => {
         "@id": "https://neuroedgetechnologies.com/#website",
         url: "https://neuroedgetechnologies.com/",
         name: "Neuro Edge Technologies",
-        description:
-          "Best IT Training Institute for Full Stack Development Courses",
+        description: "Best IT Training and Devlopment center",
         publisher: {
           "@id": "https://neuroedgetechnologies.com/#organization",
         },
@@ -41,9 +40,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Best IT Training Institute | Full Stack Developer Courses"
-        description="Learn Full Stack Development with Java, React, Node.js, Python at Neuro Edge Technologies. 95% placement rate, expert trainers, hands-on projects. Join 500+ successful graduates at top companies in Pune, India."
-        keywords="Full Stack Developer Course India, Java Full Stack Bootcamp Pune, React Node.js Training, Python Full Stack Course, Best IT Training Institute Pune, Programming Courses India, Web Development Training, Coding Bootcamp India, Software Development Course, MERN Stack Training"
+        title="Best IT Devlopment and Training center | Full Stack Developer Courses"
+        description="Learn Full Stack Development with Java, React, Node.js, Python at Neuro Edge Technologies. 100% Placement assistance, expert trainers, hands-on projects. Join 500+ successful graduates at top companies in Pune, India."
+        keywords="Full Stack Developer Course India, Java Full Stack Bootcamp Pune, React Node.js Training, Python Full Stack Course, Best IT Training and Devlopment center in Pune, Programming Courses India, Web Development Training, Coding Bootcamp India, Software Development Course, MERN Stack Training"
         canonical="/"
         structuredData={homeStructuredData}
       />

@@ -16,7 +16,7 @@ const EnrollPage = () => {
     <div className="pt-24">
       <SEO
         title="Enroll Now | Join Full Stack Development Courses"
-        description="Enroll now for Full Stack Development courses at Neuro Edge Technologies. Limited seats available. Java, Python, MERN Stack training with 95% placement rate. Start your IT career today!"
+        description="Enroll now for Full Stack Development courses at Neuro Edge Technologies. Limited seats available. Java, Python, MERN Stack training with 100% Placement assistance. Start your IT career today!"
         keywords="Enroll Full Stack Course, Join IT Training Program, Software Development Course Enrollment, Programming Course Registration, IT Career Training Pune"
         canonical="/enroll"
         structuredData={enrollStructuredData}

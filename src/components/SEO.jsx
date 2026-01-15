@@ -13,9 +13,9 @@ const SEO = ({
 }) => {
   const baseUrl = "https://neuroedgetechnologies.com";
   const defaultTitle =
-    "Neuro Edge Technologies - Best IT Training Institute | Full Stack Developer Courses";
+    "Neuro Edge Technologies - Best IT Training and Devlopment center | Full Stack Developer Courses";
   const defaultDescription =
-    "Learn Full Stack Development with Java, React, Node.js, Python. 95% placement rate, expert trainers, hands-on projects. Join 500+ successful graduates at top companies.";
+    "Learn Full Stack Development with Java, React, Node.js, Python. 100% Placement assistance, expert trainers, hands-on projects. Join 500+ successful graduates at top companies.";
   const defaultKeywords =
     "Full Stack Developer Course India, Java Full Stack Bootcamp, React Node.js Training, Python Full Stack Course, IT Training Institute, Programming Courses, Web Development Training, Pune IT Training, Best Coding Bootcamp India";
   const defaultImage = `${baseUrl}/og-image.jpg`;

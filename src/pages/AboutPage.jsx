@@ -10,15 +10,15 @@ const AboutPage = () => {
     "@type": "AboutPage",
     mainEntity: organizationSchema,
     description:
-      "Learn about Neuro Edge Technologies - Leading IT Training Institute in Pune with 95% placement rate, expert trainers, and comprehensive Full Stack Development courses.",
+      "Learn about Neuro Edge Technologies - Leading IT Training Institute in Pune with 100% Placement assistance, expert trainers, and comprehensive Full Stack Development courses.",
   };
 
   return (
     <div className="pt-24">
       <SEO
-        title="About Us | Leading IT Training Institute in Pune"
-        description="Neuro Edge Technologies is a premier IT training institute in Pune with 95% placement rate. Expert trainers, modern curriculum, hands-on projects. Empowering 500+ developers since 2020."
-        keywords="About Neuro Edge Technologies, Best IT Training Institute Pune, Software Training Company India, Full Stack Development Institute, Programming Education Pune, IT Career Training"
+        title="About Us | Leading IT Training and Devlopment center in Pune"
+        description="Neuro Edge Technologies is a premier IT training institute in Pune with 100% Placement assistance. Expert trainers, modern curriculum, hands-on projects. Empowering 500+ developers since 2020."
+        keywords="About Neuro Edge Technologies, Best IT Training and Devlopment center in Pune, Software Training Company India, Full Stack Development Institute, Programming Education Pune, IT Career Training"
         canonical="/about"
         structuredData={aboutStructuredData}
       />
@@ -93,9 +93,9 @@ const AboutPage = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">
-                95%
+                100%
               </div>
-              <div className="text-gray-600">Placement Rate</div>
+              <div className="text-gray-600">Placement Assistance</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">
