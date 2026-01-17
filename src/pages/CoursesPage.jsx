@@ -1,17 +1,17 @@
 import React from "react";
 import SEO from "../components/SEO";
 import Courses from "../components/Courses";
-import { coursesSchema } from "../utils/structuredData";
+import { servicesSchema } from "../utils/structuredData";
 
 const CoursesPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Full Stack Developer Courses | Java, Python, MERN Stack Training"
-        description="Master Full Stack Development with our comprehensive courses in Java, Python, MERN Stack. Expert trainers, hands-on projects, 100% Placement assistance. Enroll now for Best IT Training and Devlopment center in Pune, India."
-        keywords="Java Full Stack Course, Python Full Stack Training, MERN Stack Bootcamp, React Node.js Course, Full Stack Developer Certification, Web Development Course Pune, Programming Training India, Software Development Bootcamp"
+        title="Software Development Services | Custom Web & Mobile Solutions"
+        description="Professional software development services including custom web applications, mobile apps, enterprise solutions. Expert developers delivering scalable, innovative digital solutions for businesses in Pune, India."
+        keywords="Software Development Services, Custom Web Development, Mobile App Development, Enterprise Software Solutions, React Development, Java Development Services, Software Consulting Pune, Web Application Development, Digital Solutions"
         canonical="/courses"
-        structuredData={coursesSchema}
+        structuredData={servicesSchema}
       />
 
       {/* Page Header */}

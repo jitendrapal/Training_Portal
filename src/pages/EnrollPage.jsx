@@ -15,9 +15,9 @@ const EnrollPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Enroll Now | Join Full Stack Development Courses"
-        description="Enroll now for Full Stack Development courses at Neuro Edge Technologies. Limited seats available. Java, Python, MERN Stack training with 100% Placement assistance. Start your IT career today!"
-        keywords="Enroll Full Stack Course, Join IT Training Program, Software Development Course Enrollment, Programming Course Registration, IT Career Training Pune"
+        title="Get Started | Professional Software Development Services"
+        description="Partner with Neuro Edge Technologies for professional software development services. Custom web applications, mobile apps, enterprise solutions. Contact us for your next digital project!"
+        keywords="Software Development Services, Custom Web Development, Mobile App Development, Enterprise Software, Software Consulting, Digital Solutions, Web Application Development Pune"
         canonical="/enroll"
         structuredData={enrollStructuredData}
       />

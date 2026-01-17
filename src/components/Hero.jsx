@@ -28,28 +28,30 @@ const Hero = () => {
           {/* Main Content - Full Width */}
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Become a{" "}
+              Powering Businesses{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                Job-Ready
+                Through-Innovation
               </span>{" "}
               with
               <p>Neuro Edge Technologies</p>
             </h1>
 
             <p className="mt-6 text-xl text-gray-200">
-              At Neuro Edge Technologies, our vision is to empower the next
-              generation of tech professionals with real-world, industry-ready
-              skills. Learn industry-relevant skills like Java, React, Node.js
-              and Python from expert trainers. Master the skills that tech
-              companies want and launch your career in just 6 months.
+              We at Neuro Edge Technologies are a startup software development
+              company focused on delivering innovative, scalable, and
+              cost-effective digital solutions. Our team specializes in building
+              custom applications, web platforms, and enterprise software
+              tailored to client needs. Along with development services, we
+              provide live project internship opportunities in modern software
+              technologies to bridge the gap between industry and talent.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/courses"
+                to="/services"
                 className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
               >
-                View Courses
+                View Services
               </Link>
               <Link
                 to="/enroll"

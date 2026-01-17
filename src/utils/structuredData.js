@@ -2,13 +2,14 @@
 
 export const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
+  "@type": "Organization",
+  "@id": "https://neuroedgetechnologies.com/#organization",
   name: "Neuro Edge Technologies",
-  alternateName: "Neuro Edge Technologies Training Institute",
+  alternateName: "Neuro Edge Technologies Software Development Company",
   url: "https://neuroedgetechnologies.com",
   logo: "https://neuroedgetechnologies.com/logo.png",
   description:
-    "Leading IT Training Institute specializing in Full Stack Development, Java, React, Python, and AI/ML courses with 100% Placement assistance.",
+    "Leading software development company specializing in custom web applications, mobile apps, enterprise solutions, and digital transformation services.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "123 Tech Street, Baner",
@@ -32,17 +33,27 @@ export const organizationSchema = {
   ],
   foundingDate: "2020",
   numberOfEmployees: "50-100",
+  slogan: "Powering Businesses Through Innovation",
+  industry: "Software Development",
+  knowsAbout: [
+    "Web Development",
+    "Mobile App Development",
+    "Enterprise Software",
+    "Cloud Solutions",
+    "Digital Transformation",
+  ],
   areaServed: {
     "@type": "Country",
     name: "India",
   },
 };
 
-export const coursesSchema = {
+export const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "IT Training Courses",
-  description: "Comprehensive Full Stack Development and Programming Courses",
+  name: "Software Development Services",
+  description:
+    "Professional software development and digital solution services",
   itemListElement: [
     {
       "@type": "Course",
@@ -93,12 +104,12 @@ export const coursesSchema = {
 
 export const internshipSchema = {
   "@context": "https://schema.org",
-  "@type": "EducationalOccupationalProgram",
-  name: "IT Internship Program",
+  "@type": "WorkBasedProgram",
+  name: "Software Development Internship Program",
   description:
-    "Comprehensive internship program with real industry projects and placement support",
+    "Professional internship program with real-world software development projects and industry mentorship",
   provider: {
-    "@type": "EducationalOrganization",
+    "@type": "Organization",
     name: "Neuro Edge Technologies",
   },
   programType: "Internship",

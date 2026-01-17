@@ -1,7 +1,6 @@
 import React from "react";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
-import Courses from "../components/Courses";
 import Services from "../components/Services";
 import Internship from "../components/Internship";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -18,7 +17,8 @@ const Home = () => {
         "@id": "https://neuroedgetechnologies.com/#website",
         url: "https://neuroedgetechnologies.com/",
         name: "Neuro Edge Technologies",
-        description: "Best IT Training and Devlopment center",
+        description:
+          "Leading Software Development Company specializing in custom web applications, mobile apps, and enterprise solutions",
         publisher: {
           "@id": "https://neuroedgetechnologies.com/#organization",
         },
@@ -40,14 +40,13 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Best IT Devlopment and Training center | Full Stack Developer Courses"
-        description="Learn Full Stack Development with Java, React, Node.js, Python at Neuro Edge Technologies. 100% Placement assistance, expert trainers, hands-on projects. Join 500+ successful graduates at top companies in Pune, India."
-        keywords="Full Stack Developer Course India, Java Full Stack Bootcamp Pune, React Node.js Training, Python Full Stack Course, Best IT Training and Devlopment center in Pune, Programming Courses India, Web Development Training, Coding Bootcamp India, Software Development Course, MERN Stack Training"
+        title="Leading Software Development Company | Custom Web & Mobile Solutions"
+        description="Professional software development company in Pune specializing in custom web applications, mobile apps, enterprise solutions. Expert developers delivering scalable, innovative digital solutions for businesses worldwide."
+        keywords="Software Development Company Pune, Custom Web Development India, Mobile App Development, Enterprise Software Solutions, React Development Services, Java Development Company, Software Consulting, Web Application Development, Digital Solutions Provider, Custom Software Development"
         canonical="/"
         structuredData={homeStructuredData}
       />
       <Hero />
-      <Courses />
       <Services />
       <Internship />
       <WhyChooseUs />

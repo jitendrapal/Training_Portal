@@ -10,15 +10,15 @@ const AboutPage = () => {
     "@type": "AboutPage",
     mainEntity: organizationSchema,
     description:
-      "Learn about Neuro Edge Technologies - Leading IT Training Institute in Pune with 100% Placement assistance, expert trainers, and comprehensive Full Stack Development courses.",
+      "Learn about Neuro Edge Technologies - Leading software development company in Pune specializing in custom web applications, mobile apps, and enterprise solutions with expert development team.",
   };
 
   return (
     <div className="pt-24">
       <SEO
         title="About Us | Leading IT Training and Devlopment center in Pune"
-        description="Neuro Edge Technologies is a premier IT training institute in Pune with 100% Placement assistance. Expert trainers, modern curriculum, hands-on projects. Empowering 500+ developers since 2020."
-        keywords="About Neuro Edge Technologies, Best IT Training and Devlopment center in Pune, Software Training Company India, Full Stack Development Institute, Programming Education Pune, IT Career Training"
+        description="Neuro Edge Technologies is a premier software development company in Pune delivering custom web applications, mobile apps, and enterprise solutions. Expert developers, innovative technologies, scalable solutions. Empowering 500+ businesses since 2020."
+        keywords="About Neuro Edge Technologies, Software Development Company Pune, Custom Software Solutions India, Web Development Company, Mobile App Development, Enterprise Software, Digital Solutions Provider, Software Consulting Pune"
         canonical="/about"
         structuredData={aboutStructuredData}
       />
