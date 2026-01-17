@@ -16,9 +16,9 @@ const ContactPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Contact Us | Get in Touch with IT Training Experts"
-        description="Contact Neuro Edge Technologies for IT training inquiries. Located in Pune, Maharashtra. Call +91-8055006652 or email info@neuroedgetechnologies.com for course information and enrollment."
-        keywords="Contact Neuro Edge Technologies, IT Training Institute Pune Contact, Full Stack Course Inquiry, Programming Training Contact, Software Development Course Pune"
+        title="Contact Us | Get in Touch with IT Experts"
+        description="Contact Neuro Edge Technologies for IT service inquiries. Located in Pune, Maharashtra. Call +91-8055006652 or email info@neuroedgetechnologies.com for more information."
+        keywords="Contact Neuro Edge Technologies, IT Devlopment Company Pune Contact, IT Service Inquiry, IT Service Provider Pune, Software Development Company Pune"
         canonical="/contact"
         structuredData={contactStructuredData}
       />

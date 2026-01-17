@@ -73,7 +73,7 @@
 
 ### **📍 Pune-Specific Content**
 
-1. **"Best IT Training and Devlopment center in Pune 2026"**
+1. **"Software Devlopment center in Pune 2026"**
 
    - Include your institute prominently
    - Compare features, placement rates

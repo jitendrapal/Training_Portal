@@ -3,14 +3,14 @@ import React from "react";
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: "👨‍🏫",
-      title: "Industry Expert Trainers",
+      icon: "👨‍💻",
+      title: "Expert Development Team",
       description:
-        "Learn from professionals with 10+ years of experience in top tech companies like Google, Microsoft, and Amazon.",
+        "Work with experienced developers who have built solutions for various industries using cutting-edge technologies.",
       highlights: [
         "Real-world experience",
-        "Current industry practices",
-        "Personalized mentorship",
+        "Modern tech stack",
+        "Quality code practices",
       ],
     },
     {
@@ -22,39 +22,6 @@ const WhyChooseUs = () => {
         "Live project experience",
         "GitHub portfolio",
         "Industry-standard code",
-      ],
-    },
-    {
-      icon: "⏰",
-      title: "Flexible Timings",
-      description:
-        "Choose from morning, evening, or weekend batches. Perfect for working professionals and students.",
-      highlights: [
-        "Multiple batch options",
-        "Recorded sessions",
-        "Makeup classes available",
-      ],
-    },
-    {
-      icon: "🎯",
-      title: "Career Assistance",
-      description:
-        "From resume building to interview preparation, we support you until you land your dream job.",
-      highlights: [
-        "Resume optimization",
-        "Mock interviews",
-        "Job placement support",
-      ],
-    },
-    {
-      icon: "💻",
-      title: "Modern Curriculum",
-      description:
-        "Stay ahead with the latest technologies and frameworks that companies are actively hiring for.",
-      highlights: [
-        "Updated every 6 months",
-        "Industry-relevant skills",
-        "Future-proof technologies",
       ],
     },
     {
@@ -79,8 +46,8 @@ const WhyChooseUs = () => {
             Why Choose Neuro Edge Technologies?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We don't just teach coding - we transform careers. Here's what makes
-            us the #1 choice for aspiring developers.
+            We deliver innovative software solutions and provide hands-on
+            internship opportunities. Here's what sets us apart.
           </p>
         </div>
 

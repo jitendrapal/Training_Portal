@@ -214,8 +214,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-8">
           <div className="grid md:grid-cols-2 gap-4 items-center">
             <div className="text-gray-400 text-sm">
-              © {currentYear} Neuro Edge Technologies Training Institute. All
-              rights reserved.
+              © {currentYear} Neuro Edge Technologies. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400 md:justify-end">
               <a href="#" className="hover:text-white transition-colors">

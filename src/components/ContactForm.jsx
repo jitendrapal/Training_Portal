@@ -247,9 +247,8 @@ const ContactForm = () => {
           >
             <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
             <p className="text-xl text-primary-100 mb-8">
-              Have questions about our courses? Need guidance on your career
-              path? We're here to help you start your journey to becoming a
-              skilled developer.
+              Have questions about our services or want to discuss a project?
+              We're here to help! Fill out the form or contact us directly.
             </p>
 
             <div className="space-y-6">
@@ -260,8 +259,7 @@ const ContactForm = () => {
                 <div>
                   <h3 className="font-semibold">Free Consultation</h3>
                   <p className="text-primary-100 text-sm">
-                    Get personalized advice on course selection and career
-                    planning
+                    to know more about our services
                   </p>
                 </div>
               </div>
@@ -317,9 +315,8 @@ const ContactForm = () => {
             <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-lg">
               <h4 className="font-semibold mb-2">💡 Why Contact Us?</h4>
               <p className="text-primary-100 text-sm">
-                Get expert guidance on course selection, career planning, and
-                admission process. Our counselors are here to help you make the
-                right choice for your tech career.
+                Get expert guidance on your project needs, budget planning, and
+                more.
               </p>
             </div>
           </div>

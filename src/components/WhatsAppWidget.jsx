@@ -7,24 +7,18 @@ const WhatsAppWidget = () => {
 
   const quickMessages = [
     {
-      text: "🎓 I want to know about Full Stack courses",
+      text: "🎓 I want to know about internship programs?",
       message:
-        "Hi! I'm interested in learning about your Full Stack Development courses. Can you provide more details about the curriculum, duration, and fees?",
+        "Hi! I'm interested in learning about your internship programs. Can you provide more details about the program, duration, and stipend?",
     },
     {
-      text: "💰 What are the course fees and payment options?",
-      message:
-        "Hello! I'd like to know about the course fees, payment plans, and any available discounts or scholarships.",
+      text: "💰 What are the services and pricing?",
+      message: "Hello! I'd like to know about the services and pricing?",
     },
     {
-      text: "📅 When does the next batch start?",
+      text: "📅 When does the next internship start?",
       message:
-        "Hi! When does the next batch start? I'm ready to enroll and want to secure my seat.",
-    },
-    {
-      text: "🏢 Tell me about job placement assistance",
-      message:
-        "Hello! I want to know more about your job placement assistance, success rate, and partner companies.",
+        "Hi! When does the next internship batch start? I'm ready to enroll and want to secure my seat.",
     },
     {
       text: "📞 I want to speak with a counselor",
