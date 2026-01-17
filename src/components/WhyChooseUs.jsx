@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
       icon: "🤝",
       title: "Technical Community Support",
       description:
-        "Join a network of professionals working in top companies. Get continuous support even after your course completion.",
+        "Join a network of professionals working in top companies. Get continuous support even after your internship completion.",
       highlights: [
         "Professional network",
         "Peer learning",

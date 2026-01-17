@@ -17,16 +17,14 @@ const EnrollmentForm = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const courses = [
-    "Java Full Stack Developer",
-    "React + Node Full Stack Developer",
-    "Python Full Stack Developer",
-    ".NET Development",
-    "C & C++ Programming",
-    "PHP Development",
-    "AI & Machine Learning",
-    "HTML, CSS & jQuery",
-    "Android / iOS Development",
+  const internships = [
+    "Java Full Stack Development Internship",
+    "MERN Stack Development Internship",
+    "Python Full Stack Development Internship",
+    ".NET Development Internship",
+    "AI & Machine Learning Internship",
+    "Frontend Development Internship",
+    "Mobile App Development Internship",
   ];
 
   const services = [
@@ -54,8 +52,8 @@ const EnrollmentForm = () => {
     "Digital Marketing Expert",
   ];
 
-  // Combine courses and services for the dropdown
-  const allOptions = [...courses, ...services, ...jobs];
+  // Combine internships and services for the dropdown
+  const allOptions = [...internships, ...services, ...jobs];
 
   // Validation functions
   const validateEmail = (email) => {
@@ -332,9 +330,9 @@ const EnrollmentForm = () => {
                   <span className="text-2xl">🎯</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Course Recommendation</h3>
+                  <h3 className="font-semibold">Internship Recommendation</h3>
                   <p className="text-primary-100 text-sm">
-                    Find the perfect course based on your goals
+                    Find the perfect internship based on your goals
                   </p>
                 </div>
               </div>
@@ -481,7 +479,7 @@ const EnrollmentForm = () => {
                   htmlFor="course"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Select Course or Service *
+                  Select Internship or Service *
                 </label>
                 <select
                   id="course"
@@ -497,11 +495,11 @@ const EnrollmentForm = () => {
                       : "border-gray-300"
                   }`}
                 >
-                  <option value="">Choose a course or service</option>
-                  <optgroup label="📚 Training Courses">
-                    {courses.map((course, index) => (
-                      <option key={`course-${index}`} value={course}>
-                        {course}
+                  <option value="">Choose an internship or service</option>
+                  <optgroup label="🎓 Internship Programs">
+                    {internships.map((internship, index) => (
+                      <option key={`internship-${index}`} value={internship}>
+                        {internship}
                       </option>
                     ))}
                   </optgroup>

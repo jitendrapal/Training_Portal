@@ -56,48 +56,55 @@ export const servicesSchema = {
     "Professional software development and digital solution services",
   itemListElement: [
     {
-      "@type": "Course",
-      name: "Java Full Stack Developer",
+      "@type": "Service",
+      name: "Custom Web Application Development",
       description:
-        "Complete Java Full Stack Development with Spring Boot, React, and MySQL",
+        "Professional web application development using modern technologies like React, Node.js, and cloud platforms",
       provider: {
-        "@type": "EducationalOrganization",
+        "@type": "Organization",
         name: "Neuro Edge Technologies",
       },
-      courseMode: "blended",
-      timeRequired: "P6M",
-      educationalLevel: "Intermediate",
+      serviceType: "Software Development",
+      areaServed: "Worldwide",
       offers: {
         "@type": "Offer",
-        category: "Paid",
+        category: "Professional Service",
         priceCurrency: "INR",
       },
     },
     {
-      "@type": "Course",
-      name: "Python Full Stack Developer",
+      "@type": "Service",
+      name: "Mobile App Development",
       description:
-        "Python Full Stack Development with Django, React, and PostgreSQL",
+        "Native and cross-platform mobile application development for iOS and Android",
       provider: {
-        "@type": "EducationalOrganization",
+        "@type": "Organization",
         name: "Neuro Edge Technologies",
       },
-      courseMode: "blended",
-      timeRequired: "P5M",
-      educationalLevel: "Intermediate",
+      serviceType: "Mobile Development",
+      areaServed: "Worldwide",
+      offers: {
+        "@type": "Offer",
+        category: "Professional Service",
+        priceCurrency: "INR",
+      },
     },
     {
-      "@type": "Course",
-      name: "MERN Stack Developer",
+      "@type": "Service",
+      name: "Enterprise Software Solutions",
       description:
-        "Modern web development with MongoDB, Express, React, and Node.js",
+        "Scalable enterprise software solutions with modern architecture and cloud deployment",
       provider: {
-        "@type": "EducationalOrganization",
+        "@type": "Organization",
         name: "Neuro Edge Technologies",
       },
-      courseMode: "blended",
-      timeRequired: "P4M",
-      educationalLevel: "Intermediate",
+      serviceType: "Enterprise Software",
+      areaServed: "Worldwide",
+      offers: {
+        "@type": "Offer",
+        category: "Professional Service",
+        priceCurrency: "INR",
+      },
     },
   ],
 };

@@ -66,26 +66,6 @@ const Header = () => {
                 About Us
               </Link>
               <Link
-                to="/courses"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/courses")
-                    ? "text-primary-600 border-b-2 border-primary-600"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Courses
-              </Link>
-              <Link
-                to="/services"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/services")
-                    ? "text-primary-600 border-b-2 border-primary-600"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Services
-              </Link>
-              <Link
                 to="/internship"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/internship")
@@ -96,14 +76,14 @@ const Header = () => {
                 Internship
               </Link>
               <Link
-                to="/resources"
+                to="/services"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/resources")
+                  isActive("/services")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
                 }`}
               >
-                Resources
+                Services
               </Link>
 
               <Link
@@ -227,28 +207,6 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                to="/courses"
-                onClick={closeMenu}
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/courses")
-                    ? "text-primary-600 bg-primary-50"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Courses
-              </Link>
-              <Link
-                to="/services"
-                onClick={closeMenu}
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/services")
-                    ? "text-primary-600 bg-primary-50"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Services
-              </Link>
-              <Link
                 to="/internship"
                 onClick={closeMenu}
                 className={`block px-3 py-2 text-base font-medium ${
@@ -260,15 +218,15 @@ const Header = () => {
                 Internship
               </Link>
               <Link
-                to="/resources"
+                to="/services"
                 onClick={closeMenu}
                 className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/resources")
+                  isActive("/services")
                     ? "text-primary-600 bg-primary-50"
                     : "text-gray-900 hover:text-primary-600"
                 }`}
               >
-                Resources
+                Services
               </Link>
               <Link
                 to="/about"

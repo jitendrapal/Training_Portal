@@ -33,18 +33,6 @@
   ],
   "shortcuts": [
     {
-      "name": "Courses",
-      "short_name": "Courses",
-      "description": "View all available courses",
-      "url": "/courses",
-      "icons": [
-        {
-          "src": "/icons/courses-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
       "name": "Internship",
       "short_name": "Internship",
       "description": "Apply for internship program",
@@ -57,9 +45,21 @@
       ]
     },
     {
-      "name": "Enroll Now",
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View our software development services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/icons/services-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Get Started",
       "short_name": "Enroll",
-      "description": "Enroll in courses",
+      "description": "Get started with our services",
       "url": "/enroll",
       "icons": [
         {

@@ -4,19 +4,10 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
-  // Helper function to navigate to specific course
-  const navigateToCourse = (courseId) => {
-    navigate("/courses");
-    // Wait for navigation to complete, then scroll to specific course
-    setTimeout(() => {
-      const courseElement = document.getElementById(`course-${courseId}`);
-      if (courseElement) {
-        courseElement.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      }
-    }, 100);
+  // Helper function to navigate to internships
+  const navigateToInternships = () => {
+    navigate("/internship");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const currentYear = new Date().getFullYear();
@@ -44,13 +35,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => {
-                      navigate("/courses");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Courses
+                    Internships
                   </button>
                 </li>
                 <li>
@@ -111,37 +99,37 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Courses */}
+            {/* Internships */}
             <div>
-              <h4 className="text-lg font-semibold mb-6">Our Courses</h4>
+              <h4 className="text-lg font-semibold mb-6">Our Internships</h4>
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => navigateToCourse(1)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Java Full Stack Developer
+                    Java Full Stack Development
                   </button>
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(2)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    React + Node Full Stack
+                    MERN Stack Development
                   </button>
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(3)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Python Full Stack Developer
+                    Python Full Stack Development
                   </button>
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(4)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     .NET Development
@@ -149,23 +137,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(5)}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    C & C++ Programming
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => navigateToCourse(6)}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    PHP Development
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => navigateToCourse(7)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     AI & Machine Learning
@@ -173,18 +145,18 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(8)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    HTML, CSS & jQuery
+                    Frontend Development
                   </button>
                 </li>
                 <li>
                   <button
-                    onClick={() => navigateToCourse(9)}
+                    onClick={navigateToInternships}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Android / iOS Development
+                    Mobile App Development
                   </button>
                 </li>
               </ul>
