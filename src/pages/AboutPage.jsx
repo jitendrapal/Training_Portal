@@ -16,7 +16,7 @@ const AboutPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="About Us | Leading IT Software Devlopment center in Pune"
+        title="About Us | Leading IT Software Development center in Pune"
         description="Neuro Edge Technologies is a premier software development company in Pune delivering custom web applications, mobile apps, and enterprise solutions. Expert developers, innovative technologies, scalable solutions. Empowering 500+ businesses since 2020."
         keywords="About Neuro Edge Technologies, Software Development Company Pune, Custom Software Solutions India, Web Development Company, Mobile App Development, Enterprise Software, Digital Solutions Provider, Software Consulting Pune"
         canonical="/about"

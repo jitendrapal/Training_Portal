@@ -38,7 +38,7 @@
 2. **"Java Full Stack Bootcamp Pune"** - 1,200 searches/month
 3. **"React Node.js Training"** - 1,800 searches/month
 4. **"Python Full Stack Course"** - 2,100 searches/month
-5. **"Software Devlopment center in Pune"** - 1,600 searches/month
+5. **"Software Development center in Pune"** - 1,600 searches/month
 
 ### **⚡ Secondary Keywords (Medium Priority)**
 
@@ -87,14 +87,12 @@
 ### **🔧 Setup Required (Do First)**
 
 1. **Replace Analytics IDs** in `src/components/Analytics.jsx`:
-
    - Google Analytics: `G-XXXXXXXXXX`
    - Google Tag Manager: `GTM-XXXXXXX`
    - Facebook Pixel: `YOUR_PIXEL_ID`
    - Microsoft Clarity: `YOUR_CLARITY_ID`
 
 2. **Update Domain URLs** throughout the codebase:
-
    - Replace `neuroedgetechnologies.com` with your actual domain
    - Update all canonical URLs
    - Update sitemap URLs

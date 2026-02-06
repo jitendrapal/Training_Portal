@@ -36,7 +36,7 @@ const Header = () => {
                   Neuro Edge Technologies
                 </h1>
                 <p className="text-xs text-gray-600 whitespace-nowrap">
-                  Software Devlopment Center
+                  Software Development Center
                 </p>
               </div>
             </Link>
