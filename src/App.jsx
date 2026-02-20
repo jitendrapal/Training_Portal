@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import EnrollPage from "./pages/EnrollPage";
+import WorkshopPage from "./pages/WorkshopPage";
 import InternshipPage from "./pages/InternshipPage";
 import ServicesPage from "./pages/ServicesPage";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/enroll" element={<EnrollPage />} />
+            <Route path="/workshop" element={<WorkshopPage />} />
             <Route path="/internship" element={<InternshipPage />} />
             <Route path="/services" element={<ServicesPage />} />
           </Routes>

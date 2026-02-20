@@ -150,13 +150,21 @@ const Header = () => {
               </a>
             </div>
 
-            {/* CTA Button */}
-            <Link
-              to="/enroll"
-              className="bg-secondary-600 hover:bg-secondary-700 text-white px-8 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
-            >
-              Enquiry Now
-            </Link>
+            {/* CTA Buttons */}
+            <div className="flex gap-3">
+              <Link
+                to="/workshop"
+                className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
+              >
+                Workshop Enquiry
+              </Link>
+              <Link
+                to="/enroll"
+                className="bg-secondary-600 hover:bg-secondary-700 text-white px-8 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
+              >
+                Enquiry Now
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -251,9 +259,16 @@ const Header = () => {
                 Contact
               </Link>
               <Link
+                to="/workshop"
+                onClick={closeMenu}
+                className="bg-secondary-600 hover:bg-secondary-700 text-white block px-3 py-2 text-base font-medium rounded-lg mt-4"
+              >
+                Workshop Enquiry
+              </Link>
+              <Link
                 to="/enroll"
                 onClick={closeMenu}
-                className="bg-primary-600 hover:bg-primary-700 text-white block px-3 py-2 text-base font-medium rounded-lg mt-4"
+                className="bg-primary-600 hover:bg-primary-700 text-white block px-3 py-2 text-base font-medium rounded-lg mt-2"
               >
                 Enquiry Now
               </Link>
