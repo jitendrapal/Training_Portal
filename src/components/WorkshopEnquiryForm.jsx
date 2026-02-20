@@ -192,13 +192,33 @@ const WorkshopEnquiryForm = () => {
               </h2>
             </div>
 
+            {/* Popular Course Highlight - Moved to Top */}
+            <div className="mb-6 p-4 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-300/30">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">
+                    🔥 Most Popular This Month
+                  </h4>
+                  <p className="text-primary-100 text-sm">
+                    Java Full Stack & Python Full Stack - High Demand!
+                  </p>
+                </div>
+                <div className="text-right">
+                  <div className="text-sm font-semibold text-indigo-200">
+                    Starting Salary
+                  </div>
+                  <div className="text-xl font-bold">₹35K+</div>
+                </div>
+              </div>
+            </div>
+
             {/* Our Courses */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold mb-4">
                 💼 Our Professional Courses:
               </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {/* Web Designing */}
                 <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg p-4 border border-blue-300/30">
                   <div className="flex items-center mb-2">
@@ -208,9 +228,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     HTML5, CSS3, JavaScript, Bootstrap, Responsive Design
                   </p>
-                  <div className="text-xs text-blue-200 mt-2">
-                    Duration: 30 Days
-                  </div>
                 </div>
 
                 {/* Java Full Stack */}
@@ -222,9 +239,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     Core Java, Spring Boot, React, MySQL, REST APIs
                   </p>
-                  <div className="text-xs text-orange-200 mt-2">
-                    Duration: 4 Months
-                  </div>
                 </div>
 
                 {/* Python Full Stack */}
@@ -236,9 +250,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     Python, Django, React, PostgreSQL, Data Science
                   </p>
-                  <div className="text-xs text-green-200 mt-2">
-                    Duration: 4 Months
-                  </div>
                 </div>
 
                 {/* AI & Machine Learning */}
@@ -250,9 +261,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     Machine Learning, Deep Learning, TensorFlow, PyTorch
                   </p>
-                  <div className="text-xs text-purple-200 mt-2">
-                    Duration: 3 Months
-                  </div>
                 </div>
 
                 {/* ChatGPT & AI Tools */}
@@ -266,9 +274,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     Prompt Engineering, AI Automation, Business Applications
                   </p>
-                  <div className="text-xs text-yellow-200 mt-2">
-                    Duration: 1 Month
-                  </div>
                 </div>
 
                 {/* MERN Stack */}
@@ -280,29 +285,6 @@ const WorkshopEnquiryForm = () => {
                   <p className="text-primary-100 text-sm">
                     MongoDB, Express.js, React, Node.js, Full Stack
                   </p>
-                  <div className="text-xs text-teal-200 mt-2">
-                    Duration: 4 Months
-                  </div>
-                </div>
-              </div>
-
-              {/* Popular Course Highlight */}
-              <div className="mt-6 p-4 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-300/30">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">
-                      🔥 Most Popular This Month
-                    </h4>
-                    <p className="text-primary-100 text-sm">
-                      Java Full Stack & Python Full Stack - High Demand!
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-sm font-semibold text-indigo-200">
-                      Starting Salary
-                    </div>
-                    <div className="text-xl font-bold">₹35K+</div>
-                  </div>
                 </div>
               </div>
             </div>
