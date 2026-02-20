@@ -177,55 +177,165 @@ const WorkshopEnquiryForm = () => {
   return (
     <section
       id="workshop-enquiry-form"
-      className="py-16 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700"
+      className="py-8 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left Side - Content */}
           <div className="text-white">
-            <h2 className="text-4xl font-bold mb-6">
-              Join Our Web Designing Workshop
-            </h2>
-            <p className="text-xl text-primary-100 mb-8">
-              Learn modern web design techniques and build stunning websites.
-              Get hands-on experience with the latest tools and technologies.
-            </p>
+            <div className="mb-6">
+              <span className="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                🚀 Professional Training and Development Center
+              </span>
+              <h2 className="text-4xl font-bold mb-4">
+                Master In-Demand Tech Skills
+              </h2>
+            </div>
 
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-2xl">🎨</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold">Modern Design Techniques</h3>
+            {/* Our Courses */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold mb-4">
+                💼 Our Professional Courses:
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Web Designing */}
+                <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg p-4 border border-blue-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">🎨</span>
+                    <h4 className="font-semibold text-lg">Web Designing</h4>
+                  </div>
                   <p className="text-primary-100 text-sm">
-                    Learn responsive design, UI/UX principles, and modern
-                    frameworks
+                    HTML5, CSS3, JavaScript, Bootstrap, Responsive Design
                   </p>
+                  <div className="text-xs text-blue-200 mt-2">
+                    Duration: 30 Days
+                  </div>
+                </div>
+
+                {/* Java Full Stack */}
+                <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg p-4 border border-orange-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">☕</span>
+                    <h4 className="font-semibold text-lg">Java Full Stack</h4>
+                  </div>
+                  <p className="text-primary-100 text-sm">
+                    Core Java, Spring Boot, React, MySQL, REST APIs
+                  </p>
+                  <div className="text-xs text-orange-200 mt-2">
+                    Duration: 4 Months
+                  </div>
+                </div>
+
+                {/* Python Full Stack */}
+                <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg p-4 border border-green-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">🐍</span>
+                    <h4 className="font-semibold text-lg">Python Full Stack</h4>
+                  </div>
+                  <p className="text-primary-100 text-sm">
+                    Python, Django, React, PostgreSQL, Data Science
+                  </p>
+                  <div className="text-xs text-green-200 mt-2">
+                    Duration: 4 Months
+                  </div>
+                </div>
+
+                {/* AI & Machine Learning */}
+                <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg p-4 border border-purple-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">🤖</span>
+                    <h4 className="font-semibold text-lg">AI & ML</h4>
+                  </div>
+                  <p className="text-primary-100 text-sm">
+                    Machine Learning, Deep Learning, TensorFlow, PyTorch
+                  </p>
+                  <div className="text-xs text-purple-200 mt-2">
+                    Duration: 3 Months
+                  </div>
+                </div>
+
+                {/* ChatGPT & AI Tools */}
+                <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 rounded-lg p-4 border border-yellow-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">💬</span>
+                    <h4 className="font-semibold text-lg">
+                      ChatGPT & AI Tools
+                    </h4>
+                  </div>
+                  <p className="text-primary-100 text-sm">
+                    Prompt Engineering, AI Automation, Business Applications
+                  </p>
+                  <div className="text-xs text-yellow-200 mt-2">
+                    Duration: 1 Month
+                  </div>
+                </div>
+
+                {/* MERN Stack */}
+                <div className="bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-lg p-4 border border-teal-300/30">
+                  <div className="flex items-center mb-2">
+                    <span className="text-2xl mr-3">⚛️</span>
+                    <h4 className="font-semibold text-lg">MERN Stack</h4>
+                  </div>
+                  <p className="text-primary-100 text-sm">
+                    MongoDB, Express.js, React, Node.js, Full Stack
+                  </p>
+                  <div className="text-xs text-teal-200 mt-2">
+                    Duration: 4 Months
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-2xl">💻</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold">Hands-on Projects</h3>
-                  <p className="text-primary-100 text-sm">
-                    Build real websites and create an impressive portfolio
-                  </p>
+              {/* Popular Course Highlight */}
+              <div className="mt-6 p-4 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-300/30">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-1">
+                      🔥 Most Popular This Month
+                    </h4>
+                    <p className="text-primary-100 text-sm">
+                      Java Full Stack & Python Full Stack - High Demand!
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm font-semibold text-indigo-200">
+                      Starting Salary
+                    </div>
+                    <div className="text-xl font-bold">₹35K+</div>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-2xl">🏆</span>
+            {/* Training Benefits */}
+            <div className="mt-8 p-6 bg-gradient-to-r from-white/10 to-white/5 rounded-xl backdrop-blur-sm border border-white/20">
+              <h3 className="text-lg font-semibold mb-4">
+                🎁 Exclusive Training Benefits:
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Industry Expert Trainers</span>
                 </div>
-                <div>
-                  <h3 className="font-semibold">Certificate & Support</h3>
-                  <p className="text-primary-100 text-sm">
-                    Get certified and receive ongoing career support
-                  </p>
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Live Project Experience</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Job Placement Assistance</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Industry Certification</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Lifetime Support</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-300 mr-2">•</span>
+                  <span>Flexible Batch Timings</span>
                 </div>
               </div>
             </div>
