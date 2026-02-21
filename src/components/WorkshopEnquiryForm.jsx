@@ -17,19 +17,6 @@ const WorkshopEnquiryForm = () => {
 
   const [errors, setErrors] = useState({});
 
-  const workshopTopics = ["Web Designing"];
-
-  const colleges = [
-    "Shree Ramchandra Education Society",
-    "Pune University",
-    "MIT College of Engineering",
-    "COEP Technological University",
-    "VIT Pune",
-    "Symbiosis Institute of Technology",
-    "PICT Pune",
-    "Other",
-  ];
-
   // Validation functions
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -334,7 +321,7 @@ const WorkshopEnquiryForm = () => {
           {/* Right Side - Form (Desktop) / First on Mobile */}
           <div className="bg-white rounded-2xl shadow-2xl p-8 order-1 lg:order-2">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Workshop Enquiry Form
+              Workshop Registration Form
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
@@ -425,17 +412,11 @@ const WorkshopEnquiryForm = () => {
                   name="course"
                   value={formData.course}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
-                    errors.course ? "border-red-500" : "border-gray-300"
-                  }`}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+                  disabled
                   required
                 >
-                  <option value="">Select workshop topic</option>
-                  {workshopTopics.map((topic) => (
-                    <option key={topic} value={topic}>
-                      {topic}
-                    </option>
-                  ))}
+                  <option value="Web Designing">Web Designing</option>
                 </select>
                 {errors.course && (
                   <p className="mt-1 text-sm text-red-600">{errors.course}</p>
@@ -486,16 +467,13 @@ const WorkshopEnquiryForm = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
-                    errors.message ? "border-red-500" : "border-gray-300"
-                  }`}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+                  disabled
                   required
                 >
-                  {colleges.map((college) => (
-                    <option key={college} value={college}>
-                      {college}
-                    </option>
-                  ))}
+                  <option value="Shree Ramchandra Education Society">
+                    Shree Ramchandra Education Society
+                  </option>
                 </select>
                 {errors.message && (
                   <p className="mt-1 text-sm text-red-600">{errors.message}</p>
