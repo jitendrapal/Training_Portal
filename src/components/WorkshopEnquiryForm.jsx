@@ -10,6 +10,7 @@ const WorkshopEnquiryForm = () => {
     phone: "",
     course: "Web Designing", // Default workshop topic
     message: "Shree Ramchandra Education Society", // Default college name
+    hasLaptop: "yes", // Default laptop availability
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -106,8 +107,14 @@ const WorkshopEnquiryForm = () => {
     }, 500);
 
     try {
+      // Prepare data with concatenated message including laptop info and workshop date
+      const submissionData = {
+        ...formData,
+        message: `${formData.message} | Workshop Date: 28-02-2026 | Has Laptop: ${formData.hasLaptop === "yes" ? "Yes" : "No"}`,
+      };
+
       // Submit to Google Sheets in background (non-blocking)
-      submitToGoogleSheets(formData, FORM_CONFIG.FORM_TYPES.ENROLLMENT);
+      submitToGoogleSheets(submissionData, FORM_CONFIG.FORM_TYPES.ENROLLMENT);
 
       // Auto-redirect after 3 seconds for better UX
       setTimeout(() => {
@@ -118,6 +125,7 @@ const WorkshopEnquiryForm = () => {
           phone: "",
           course: "Web Designing", // Default workshop topic
           message: "Shree Ramchandra Education Society",
+          hasLaptop: "yes", // Default laptop availability
         });
         setErrors({});
         navigate("/", { replace: true });
@@ -181,8 +189,8 @@ const WorkshopEnquiryForm = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-start">
-          {/* Left Side - Content */}
-          <div className="text-white">
+          {/* Left Side - Content (Desktop) / Second on Mobile */}
+          <div className="text-white order-2 lg:order-1">
             <div className="mb-6">
               <span className="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
                 🚀 Professional Training and Development Center
@@ -323,8 +331,8 @@ const WorkshopEnquiryForm = () => {
             </div>
           </div>
 
-          {/* Right Side - Form */}
-          <div className="bg-white rounded-2xl shadow-2xl p-8">
+          {/* Right Side - Form (Desktop) / First on Mobile */}
+          <div className="bg-white rounded-2xl shadow-2xl p-8 order-1 lg:order-2">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Workshop Enquiry Form
             </h3>
@@ -432,6 +440,37 @@ const WorkshopEnquiryForm = () => {
                 {errors.course && (
                   <p className="mt-1 text-sm text-red-600">{errors.course}</p>
                 )}
+              </div>
+
+              {/* Laptop Availability Field */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-3">
+                  Do you have Laptop? *
+                </label>
+                <div className="flex gap-6">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="hasLaptop"
+                      value="yes"
+                      checked={formData.hasLaptop === "yes"}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 focus:ring-2"
+                    />
+                    <span className="ml-2 text-sm text-gray-700">Yes</span>
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="hasLaptop"
+                      value="no"
+                      checked={formData.hasLaptop === "no"}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 focus:ring-2"
+                    />
+                    <span className="ml-2 text-sm text-gray-700">No</span>
+                  </label>
+                </div>
               </div>
 
               {/* College Name Field */}
