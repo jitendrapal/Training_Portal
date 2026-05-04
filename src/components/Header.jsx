@@ -119,7 +119,7 @@ const Header = () => {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/neuroedgetechnologies"
+                href="https://www.instagram.com/neuroedgetech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-600 hover:text-pink-800 transition-colors p-1"
@@ -278,7 +278,7 @@ const Header = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://instagram.com/neuroedgetechnologies"
+                  href="https://www.instagram.com/neuroedgetech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:text-pink-800 transition-colors p-2"
