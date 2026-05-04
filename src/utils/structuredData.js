@@ -29,7 +29,7 @@ export const organizationSchema = {
     "https://www.linkedin.com/company/neuroedgetechnologies",
     "https://www.facebook.com/neuroedgetechnologies",
     "https://twitter.com/neuroedgetech",
-    "https://www.instagram.com/neuroedgetechnologies",
+    "https://www.instagram.com/neuroedgetech",
   ],
   foundingDate: "2020",
   numberOfEmployees: "50-100",
