@@ -61,8 +61,13 @@ const AboutPage = () => {
                 to bridge the gap between industry needs and emerging talent.
               </p>
             </div>
-            <div className="bg-primary-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-primary-800 mb-4">
+            <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center">
+              <img
+                src="/images/neuro_director.png"
+                alt="Director - Neuro Edge Technologies"
+                className="w-40 h-40 rounded-full object-cover mb-4"
+              />
+              <h3 className="text-2xl font-bold text-primary-800 mb-2">
                 Our Vision
               </h3>
               <p className="text-primary-700">
@@ -71,6 +76,7 @@ const AboutPage = () => {
                 empowering businesses to succeed in the global digital
                 landscape.
               </p>
+              <p className="mt-4 text-sm text-primary-800">Director</p>
             </div>
           </div>
         </div>
