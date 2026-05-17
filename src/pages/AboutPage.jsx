@@ -84,8 +84,9 @@ const AboutPage = () => {
                 href="https://www.linkedin.com/in/saroj-damedhar-0282a53a2/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="mt-2 text-sm text-primary-700 hover:text-primary-900"
+                className="mt-2 inline-flex items-center text-sm text-primary-700 hover:text-primary-900"
               >
+                <span className="mr-2">🔗</span>
                 LinkedIn Profile
               </a>
               <p className="mt-2 text-sm text-primary-800">Director</p>
