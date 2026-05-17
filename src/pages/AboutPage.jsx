@@ -77,7 +77,18 @@ const AboutPage = () => {
                 empowering businesses to succeed in the global digital
                 landscape.
               </p>
-              <p className="mt-4 text-sm text-primary-800">Director</p>
+              <p className="mt-4 text-base font-semibold text-gray-900">
+                Saroj Damedhar
+              </p>
+              <a
+                href="https://www.linkedin.com/in/saroj-damedhar-0282a53a2/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-2 text-sm text-primary-700 hover:text-primary-900"
+              >
+                LinkedIn Profile
+              </a>
+              <p className="mt-2 text-sm text-primary-800">Director</p>
             </div>
           </div>
         </div>
