@@ -3,6 +3,7 @@ import SEO from "../components/SEO";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import { organizationSchema } from "../utils/structuredData";
+import directorImage from "../assets/neuro_director.png";
 
 const AboutPage = () => {
   const aboutStructuredData = {
@@ -63,7 +64,7 @@ const AboutPage = () => {
             </div>
             <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center">
               <img
-                src="/images/neuro_director.png"
+                src={directorImage}
                 alt="Director - Neuro Edge Technologies"
                 className="w-40 h-40 rounded-full object-cover mb-4"
               />
