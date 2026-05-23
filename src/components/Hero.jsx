@@ -57,51 +57,68 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/10 p-8 shadow-2xl backdrop-blur-xl">
+          <div className="relative rounded-3xl border border-white/10 bg-white/10 p-8 shadow-2xl backdrop-blur-xl overflow-hidden">
+            <div className="absolute -right-14 -top-14 h-40 w-40 rounded-full bg-gradient-to-br from-fuchsia-500/30 to-cyan-400/20 blur-3xl"></div>
             <p className="text-sm font-semibold uppercase text-primary-200 tracking-[0.3em] mb-6">
-              Learning Benefits
+              Course Illustration
             </p>
-            <ul className="space-y-5">
-              <li className="flex gap-4">
-                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
-                  🎓
-                </span>
-                <div>
-                  <h3 className="font-semibold text-white">
-                    Live Project Learning
-                  </h3>
-                  <p className="text-gray-300 text-sm">
-                    Build real applications with guided mentorship and practical
-                    labs.
-                  </p>
+            <ul className="space-y-5 relative">
+              <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
+                <div className="flex items-center gap-4 mb-3">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 text-white text-xl">
+                    💻
+                  </span>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-primary-200">
+                      Course Module
+                    </p>
+                    <h3 className="font-semibold text-white">
+                      Full Stack Web Development
+                    </h3>
+                  </div>
                 </div>
+                <p className="text-gray-300 text-sm">
+                  Build apps using React, Node.js, and cloud tools with hands-on
+                  labs.
+                </p>
               </li>
-              <li className="flex gap-4">
-                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
-                  💼
-                </span>
-                <div>
-                  <h3 className="font-semibold text-white">
-                    Internship Placement
-                  </h3>
-                  <p className="text-gray-300 text-sm">
-                    Gain industry experience with internship opportunities after
-                    course completion.
-                  </p>
+              <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
+                <div className="flex items-center gap-4 mb-3">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white text-xl">
+                    🧑‍🏫
+                  </span>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-primary-200">
+                      Mentorship
+                    </p>
+                    <h3 className="font-semibold text-white">
+                      Live Expert Coaching
+                    </h3>
+                  </div>
                 </div>
+                <p className="text-gray-300 text-sm">
+                  Weekly sessions with industry professionals and guided code
+                  reviews.
+                </p>
               </li>
-              <li className="flex gap-4">
-                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
-                  🚀
-                </span>
-                <div>
-                  <h3 className="font-semibold text-white">
-                    Placement Support
-                  </h3>
-                  <p className="text-gray-300 text-sm">
-                    Get career guidance, resume help, and interview preparation.
-                  </p>
+              <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
+                <div className="flex items-center gap-4 mb-3">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-pink-500 text-white text-xl">
+                    🎯
+                  </span>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-primary-200">
+                      Outcome
+                    </p>
+                    <h3 className="font-semibold text-white">
+                      Internship + Placement
+                    </h3>
+                  </div>
                 </div>
+                <p className="text-gray-300 text-sm">
+                  Get internship support and job-ready preparation with every
+                  course.
+                </p>
               </li>
             </ul>
           </div>
