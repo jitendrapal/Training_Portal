@@ -18,7 +18,7 @@ const Home = () => {
         url: "https://neuroedgetechnologies.com/",
         name: "Neuro Edge Technologies",
         description:
-          "Leading Software Development Company specializing in custom web applications, mobile apps, and enterprise solutions",
+          "Professional software training institute offering career-ready courses, internship placements, and live project learning for aspiring developers",
         publisher: {
           "@id": "https://neuroedgetechnologies.com/#organization",
         },
@@ -40,9 +40,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Leading Software Development Company | Custom Web & Mobile Solutions"
-        description="Professional software development company in Pune specializing in custom web applications, mobile apps, enterprise solutions. Expert developers delivering scalable, innovative digital solutions for businesses worldwide."
-        keywords="Software Development Company Pune, Custom Web Development India, Mobile App Development, Enterprise Software Solutions, React Development Services, Java Development Company, Software Consulting, Web Application Development, Digital Solutions Provider, Custom Software Development"
+        title="Software Training Institute | Courses with Internship & Placement Support"
+        description="Professional software training institute in Pune offering practical courses, internship placements, live project learning, and placement support for students and working professionals."
+        keywords="Software Training Institute Pune, Courses with Internship, Software Training Courses, Internship Placement Program, IT Training Institute, Career-Focused Coding Courses, Live Project Training, Placement Support"
         canonical="/"
         structuredData={homeStructuredData}
       />
