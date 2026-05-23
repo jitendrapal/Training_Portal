@@ -47,6 +47,51 @@ const Home = () => {
         structuredData={homeStructuredData}
       />
       <Hero />
+      <section className="py-12 bg-gradient-to-r from-primary-900 via-slate-950 to-black text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
+              <span className="inline-flex rounded-full bg-primary-500/20 px-4 py-1 text-sm font-semibold text-primary-100 mb-4">
+                LIMITED SEATS AVAILABLE
+              </span>
+              <h2 className="text-3xl font-bold mb-4">
+                Next batch starts soon
+              </h2>
+              <p className="text-slate-300 mb-4">
+                Reserve your seat now for our job-oriented courses in Wagholi
+                Pune. Batch sizes are intentionally small to ensure hands-on
+                support, live project mentorship, and placement-ready training.
+              </p>
+              <p className="font-semibold text-primary-200">
+                Join before the next batch fills up and get a stronger edge in
+                your IT career.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
+              <span className="inline-flex rounded-full bg-secondary-500/20 px-4 py-1 text-sm font-semibold text-secondary-100 mb-4">
+                MINI PROJECT MILESTONE
+              </span>
+              <h2 className="text-3xl font-bold mb-4">
+                New intern project collaboration
+              </h2>
+              <ul className="space-y-3 text-slate-300">
+                <li>
+                  ✔ New interns are building small software projects from day
+                  one
+                </li>
+                <li>
+                  ✔ Hands-on experience with real use cases and coding best
+                  practices
+                </li>
+                <li>
+                  ✔ Guided mentorship to finish a practical demo project quickly
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <Courses />
       <Services />
       <WhyChooseUs />
