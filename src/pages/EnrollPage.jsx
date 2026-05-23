@@ -17,7 +17,7 @@ const EnrollPage = () => {
       <SEO
         title="Enroll Now | IT Training Institute Pune"
         description="Enroll now in job-ready IT training programs at Neuro Edge Technologies. Join hands-on courses with internship support, placement preparation, and training in Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, and AI."
-        keywords="Enroll IT Training, Best IT institute in Wagholi Pune, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Job-Ready Training Programs, Internship Support, Placement Preparation"
+        keywords="Enroll IT Training, Best IT institute in Wagholi Pune, Best institute in Wagholi, Job Oriented Course, job oriented course, Job Ready Course, job ready course, Job Placement Support, job placement support, Job Assistance, job assistance, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Job-Ready Training Programs, Internship Support, Placement Preparation"
         canonical="/enroll"
         structuredData={enrollStructuredData}
       />

@@ -17,7 +17,7 @@ const SEO = ({
   const defaultDescription =
     "Neuro Edge Technologies is a leading software training institute offering career-focused IT training, internship-supported courses, live projects, and placement-ready programs in Pune, India.";
   const defaultKeywords =
-    "Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Job-Ready Courses, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Live Project Learning";
+    "Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Best institute in Wagholi, Job-Ready Courses, job ready course, Job Oriented Course, job oriented course, Job Placement Support, job placement support, Job Assistance, job assistance, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Live Project Learning";
   const defaultImage = `${baseUrl}/og-image.jpg`;
 
   const seoTitle = title ? `${title} | Neuro Edge Technologies` : defaultTitle;

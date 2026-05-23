@@ -17,7 +17,7 @@ const WorkshopPage = () => {
       <SEO
         title="AI & Technology Workshop Enquiry | Job-Ready Training Programs"
         description="Get information about AI and technology workshops at Neuro Edge Technologies, including AI Workshop, Agentic AI, Java Full Stack, Python Full Stack, Azure, and career-focused IT training with internship support."
-        keywords="Workshop Enquiry, AI Workshop, Agentic AI, Job-Ready Training, Best IT institute in Wagholi Pune, Internship Support, Java Workshop, Python Workshop, Azure Training Workshop, AI Training, Software Training Pune, IT Training Institute"
+        keywords="Workshop Enquiry, AI Workshop, Agentic AI, Job-Ready Training, Job Ready Course, job ready course, Job Oriented Course, job oriented course, Job Placement Support, job placement support, Job Assistance, job assistance, Best IT institute in Wagholi Pune, Best institute in Wagholi, Internship Support, Java Workshop, Python Workshop, Azure Training Workshop, AI Training, Software Training Pune, IT Training Institute"
         canonical="/workshop"
         structuredData={workshopStructuredData}
       />

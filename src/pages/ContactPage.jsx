@@ -18,7 +18,7 @@ const ContactPage = () => {
       <SEO
         title="Contact Us | IT Training Institute Pune"
         description="Contact Neuro Edge Technologies for IT course enrollment, internship support, placement assistance, and training inquiries. We offer Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, and AI training."
-        keywords="Contact Neuro Edge Technologies, IT Training Institute Pune, Best IT institute in Wagholi Pune, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Internship Support, Placement Support"
+        keywords="Contact Neuro Edge Technologies, IT Training Institute Pune, Best IT institute in Wagholi Pune, Best institute in Wagholi, Job Oriented Course, job oriented course, Job Ready Course, job ready course, Job Placement Support, job placement support, Job Assistance, job assistance, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Internship Support, Placement Support"
         canonical="/contact"
         structuredData={contactStructuredData}
       />
