@@ -15,7 +15,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background with gradient and pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent-900 via-primary-800 to-secondary-700"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-950 via-indigo-900 to-violet-900"></div>
       <div className="absolute inset-0 tech-pattern opacity-20"></div>
 
       {/* Floating elements for visual appeal */}
@@ -24,9 +24,8 @@ const Hero = () => {
       <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse delay-500"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="flex items-center justify-center min-h-[70vh]">
-          {/* Main Content - Full Width */}
-          <div className="text-center max-w-5xl mx-auto">
+        <div className="grid gap-10 lg:grid-cols-[1.5fr_0.9fr] items-center min-h-[70vh]">
+          <div className="text-center lg:text-left max-w-3xl mx-auto lg:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Build Career-Ready Software Skills
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
@@ -42,7 +41,7 @@ const Hero = () => {
               and placement support to launch your software career.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 to="/courses"
                 className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
@@ -56,6 +55,55 @@ const Hero = () => {
                 Enroll Now
               </Link>
             </div>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/10 p-8 shadow-2xl backdrop-blur-xl">
+            <p className="text-sm font-semibold uppercase text-primary-200 tracking-[0.3em] mb-6">
+              Learning Benefits
+            </p>
+            <ul className="space-y-5">
+              <li className="flex gap-4">
+                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
+                  🎓
+                </span>
+                <div>
+                  <h3 className="font-semibold text-white">
+                    Live Project Learning
+                  </h3>
+                  <p className="text-gray-300 text-sm">
+                    Build real applications with guided mentorship and practical
+                    labs.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
+                  💼
+                </span>
+                <div>
+                  <h3 className="font-semibold text-white">
+                    Internship Placement
+                  </h3>
+                  <p className="text-gray-300 text-sm">
+                    Gain industry experience with internship opportunities after
+                    course completion.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white text-lg">
+                  🚀
+                </span>
+                <div>
+                  <h3 className="font-semibold text-white">
+                    Placement Support
+                  </h3>
+                  <p className="text-gray-300 text-sm">
+                    Get career guidance, resume help, and interview preparation.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
