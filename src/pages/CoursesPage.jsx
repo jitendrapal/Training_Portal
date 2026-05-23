@@ -7,9 +7,9 @@ const CoursesPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Career-Focused Training Programs | Courses with Internship Support"
-        description="Explore our career-focused training programs that include internship support, live project learning, and placement preparation. Apply now for limited seats in Pune, India."
-        keywords="Training Programs Pune, Career-Focused IT Training, Courses with Internship Support, Live Project Learning, Placement Preparation, Software Training Courses, Career-Ready Coding Programs"
+        title="Career-Focused IT Training Programs | Full Stack & Job-Ready Courses"
+        description="Explore our career-focused IT training programs with internship support, live project learning, placement preparation, and in-demand courses like Java Full Stack, .NET Full Stack, Python Full Stack, SQL Database, Azure, and AI."
+        keywords="IT Training Programs Pune, Career-Focused IT Training, Best IT institute in Wagholi Pune, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, AI Workshop, Agentic AI, Internship Support, Placement Preparation"
         canonical="/courses"
         structuredData={internshipSchema}
       />

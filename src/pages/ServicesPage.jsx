@@ -15,9 +15,9 @@ const ServicesPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Training Programs | Job-Ready Courses"
-        description="Explore career-focused training programs at Neuro Edge Technologies. Learn modern technologies, gain internship support, and become job-ready."
-        keywords="Training Programs, Job-Ready Courses, IT Training Pune, Internship Support, Career-Focused Learning, Software Training"
+        title="Training Programs | Job-Ready IT Courses & Internship Support"
+        description="Explore career-focused IT training programs at Neuro Edge Technologies. Learn Java Full Stack, .NET Full Stack, Python Full Stack, SQL Database, Azure, AI and more with internship support and placement preparation."
+        keywords="Training Programs, Job-Ready IT Courses, IT Training Pune, Best IT institute in Wagholi Pune, Internship Support, Career-Focused Learning, Software Training Institute, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Training, Agentic AI"
         canonical="/services"
         structuredData={servicesStructuredData}
       />

@@ -13,11 +13,11 @@ const SEO = ({
 }) => {
   const baseUrl = "https://neuroedgetechnologies.com";
   const defaultTitle =
-    "Neuro Edge Technologies - Leading Software Development Company | Custom Web & Mobile Solutions";
+    "Neuro Edge Technologies - Leading Software Training Institute | Job-Ready IT Courses";
   const defaultDescription =
-    "Professional software development company specializing in custom web applications, mobile apps, enterprise solutions. Expert developers delivering scalable, innovative digital solutions for businesses worldwide.";
+    "Neuro Edge Technologies is a leading software training institute offering career-focused IT training, internship-supported courses, live projects, and placement-ready programs in Pune, India.";
   const defaultKeywords =
-    "Software Development Company India, Custom Web Development, Mobile App Development, Enterprise Software Solutions, Full Stack Development Services, React Development Company, Java Development Services, Software Consulting Pune, Web Application Development, Digital Solutions Provider";
+    "Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Job-Ready Courses, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Live Project Learning";
   const defaultImage = `${baseUrl}/og-image.jpg`;
 
   const seoTitle = title ? `${title} | Neuro Edge Technologies` : defaultTitle;
@@ -65,7 +65,7 @@ const SEO = ({
     updateMetaTag("keywords", seoKeywords);
     updateMetaTag(
       "author",
-      "Neuro Edge Technologies Software Development Company"
+      "Neuro Edge Technologies Software Development Company",
     );
     updateLinkTag("canonical", canonicalUrl);
 

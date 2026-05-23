@@ -40,9 +40,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Software Training Institute | Courses with Internship & Placement Support"
-        description="Professional software training institute in Pune offering practical courses, internship placements, live project learning, and placement support for students and working professionals."
-        keywords="Software Training Institute Pune, Courses with Internship, Software Training Courses, Internship Placement Program, IT Training Institute, Career-Focused Coding Courses, Live Project Training, Placement Support"
+        title="Software Training Institute Pune | Job-Ready IT Courses & Internship Support"
+        description="Leading software training institute in Pune delivering job-ready IT courses, live project learning, internship support, and placement preparation in Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, AI, and more."
+        keywords="Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Job-Ready IT Courses, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Live Project Courses"
         canonical="/"
         structuredData={homeStructuredData}
       />

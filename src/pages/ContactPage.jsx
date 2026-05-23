@@ -16,9 +16,9 @@ const ContactPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Contact Us | Training & Job-Ready Courses"
-        description="Contact Neuro Edge Technologies for course enrollment, placement support, and training inquiries. Located in Pune, Maharashtra. Call +91-8055006652 or email info@neuroedgetechnologies.com."
-        keywords="Contact Neuro Edge Technologies, Training Courses Pune, Job-Ready Courses, Course Enrollment, Placement Support, Software Training Contact"
+        title="Contact Us | IT Training Institute Pune"
+        description="Contact Neuro Edge Technologies for IT course enrollment, internship support, placement assistance, and training inquiries. We offer Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, and AI training."
+        keywords="Contact Neuro Edge Technologies, IT Training Institute Pune, Best IT institute in Wagholi Pune, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Internship Support, Placement Support"
         canonical="/contact"
         structuredData={contactStructuredData}
       />

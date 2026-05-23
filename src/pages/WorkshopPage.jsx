@@ -15,9 +15,9 @@ const WorkshopPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Workshop Enquiry | Job-Ready Training Programs"
-        description="Get information about workshops, job-ready training programs, and internship support at Neuro Edge Technologies. Enquire about Java, Python, React, and career-focused technology workshops."
-        keywords="Workshop Enquiry, Job-Ready Training, Internship Support, Java Workshop, Python Workshop, React Workshop, Software Training Pune"
+        title="AI & Technology Workshop Enquiry | Job-Ready Training Programs"
+        description="Get information about AI and technology workshops at Neuro Edge Technologies, including AI Workshop, Agentic AI, Java Full Stack, Python Full Stack, Azure, and career-focused IT training with internship support."
+        keywords="Workshop Enquiry, AI Workshop, Agentic AI, Job-Ready Training, Best IT institute in Wagholi Pune, Internship Support, Java Workshop, Python Workshop, Azure Training Workshop, AI Training, Software Training Pune, IT Training Institute"
         canonical="/workshop"
         structuredData={workshopStructuredData}
       />
