@@ -40,9 +40,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Job-Ready Training Programs | Software Training Institute Pune"
-        description="Top job-ready training programs in Pune with internship support, live project learning, and placement preparation. Join our IT courses in Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, AI, and more."
-        keywords="Job-Ready Training Programs, Job Ready Training Program, job ready course, Job Oriented Course, job oriented course, Job Placement Support, job placement support, Job Assistance, job assistance, Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Best institute in Wagholi, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Live Project Courses"
+        title="Job-Oriented Courses | Best Institute in Wagholi Pune"
+        description="Job-oriented courses and the best institute in Wagholi Pune for IT training, internship support, placement preparation, and live project learning in Java, .NET, Python, SQL, Azure, and AI."
+        keywords="Job-Oriented Courses, Best Institute in Wagholi Pune, job ready course, Job Placement Support, Job Assistance, Job Oriented Course, Job Ready Training Programs, IT Training Institute, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support"
         canonical="/"
         structuredData={homeStructuredData}
       />
