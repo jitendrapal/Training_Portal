@@ -30,7 +30,7 @@ const Hero = () => {
               Build Job-Ready Software Skills
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 {" "}
-                with Neuro Edge Training
+                with Neuro Edge Technologies
               </span>
             </h1>
 
