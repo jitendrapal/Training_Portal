@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Courses = () => {
   const navigate = useNavigate();
 
-  const internships = [
+  const courses = [
     {
       id: 1,
       title: "Java Full Stack Development Course (with Internship)",
@@ -171,15 +171,15 @@ const Courses = () => {
 
         {/* Course Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {internships.map((internship) => (
+          {courses.map((course) => (
             <div
-              key={internship.id}
+              key={course.id}
               className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${
-                internship.popular ? "ring-2 ring-secondary-400" : ""
+                course.popular ? "ring-2 ring-secondary-400" : ""
               }`}
             >
               {/* Popular Badge */}
-              {internship.popular && (
+              {course.popular && (
                 <div className="bg-gradient-to-r from-secondary-500 to-secondary-600 text-white text-center py-2 px-4">
                   <span className="text-sm font-semibold">🔥 Most Popular</span>
                 </div>
@@ -188,29 +188,25 @@ const Courses = () => {
               {/* Card Header */}
               <div className="p-6 pb-4">
                 <div className="flex items-center mb-4">
-                  <span className="text-4xl mr-3">{internship.icon}</span>
+                  <span className="text-4xl mr-3">{course.icon}</span>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 leading-tight">
-                      {internship.title}
+                      {course.title}
                     </h3>
                   </div>
                 </div>
 
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  {internship.description}
+                  {course.description}
                 </p>
 
                 {/* Duration and Schedule */}
                 <div className="flex justify-between items-center mb-4 text-sm">
                   <div className="flex items-center text-primary-600">
-                    <span className="font-semibold">
-                      ⏱️ {internship.duration}
-                    </span>
+                    <span className="font-semibold">⏱️ {course.duration}</span>
                   </div>
                   <div className="flex items-center text-secondary-600">
-                    <span className="font-semibold">
-                      📅 {internship.schedule}
-                    </span>
+                    <span className="font-semibold">📅 {course.schedule}</span>
                   </div>
                 </div>
 
@@ -220,7 +216,7 @@ const Courses = () => {
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {internship.technologies.map((tech, index) => (
+                    {course.technologies.map((tech, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-xs font-medium"
@@ -237,7 +233,7 @@ const Courses = () => {
                     What You'll Get:
                   </h4>
                   <ul className="space-y-2">
-                    {internship.features.map((feature, index) => (
+                    {course.features.map((feature, index) => (
                       <li key={index} className="flex items-start text-sm">
                         <span className="w-1.5 h-1.5 bg-secondary-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span className="text-gray-600">{feature}</span>
@@ -252,12 +248,12 @@ const Courses = () => {
                 <button
                   onClick={handleApplyClick}
                   className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
-                    internship.popular
+                    course.popular
                       ? "bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 text-white"
                       : "bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white"
                   }`}
                 >
-                  Apply for Course & Internship
+                  Enroll in Course with Internship Support
                 </button>
               </div>
             </div>

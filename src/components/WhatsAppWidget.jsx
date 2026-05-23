@@ -7,18 +7,19 @@ const WhatsAppWidget = () => {
 
   const quickMessages = [
     {
-      text: "🎓 I want to know about internship programs?",
+      text: "🎓 I want to know about your courses and internship support",
       message:
-        "Hi! I'm interested in learning about your internship programs. Can you provide more details about the program, duration, and stipend?",
+        "Hi! I'm interested in your courses and internship support. Can you share details on course duration, batch timings, and placement support?",
     },
     {
-      text: "💰 What are the services and pricing?",
-      message: "Hello! I'd like to know about the services and pricing?",
+      text: "💰 What are the training programs and pricing?",
+      message:
+        "Hello! I'd like to know about your training programs and pricing.",
     },
     {
-      text: "📅 When does the next internship start?",
+      text: "📅 When does the next course batch start?",
       message:
-        "Hi! When does the next internship batch start? I'm ready to enroll and want to secure my seat.",
+        "Hi! When does the next course batch start? I'm ready to enroll and want to secure my seat.",
     },
     {
       text: "📞 I want to speak with a counselor",
@@ -87,7 +88,7 @@ const WhatsAppWidget = () => {
                 <button
                   onClick={() =>
                     sendWhatsAppMessage(
-                      "Hi! I have a question about your courses."
+                      "Hi! I have a question about your courses.",
                     )
                   }
                   className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"

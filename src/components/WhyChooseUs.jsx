@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
       icon: "🤝",
       title: "Technical Community Support",
       description:
-        "Join a network of professionals working in top companies. Get continuous support even after your internship completion.",
+        "Join a network of professionals working in top companies. Get continuous support even after your course completion.",
       highlights: [
         "Professional network",
         "Peer learning",
@@ -46,8 +46,8 @@ const WhyChooseUs = () => {
             Why Choose Neuro Edge Technologies?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We deliver innovative software solutions and provide hands-on
-            internship opportunities. Here's what sets us apart.
+            We deliver innovative training experiences and provide career-ready
+            internship support. Here's what sets us apart.
           </p>
         </div>
 

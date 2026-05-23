@@ -11,7 +11,7 @@ const AboutPage = () => {
     "@type": "AboutPage",
     mainEntity: organizationSchema,
     description:
-      "Learn about Neuro Edge Technologies - Leading software development company in Pune specializing in custom web applications, mobile apps, and enterprise solutions with expert development team.",
+      "Learn about Neuro Edge Technologies - A leading software training institute in Pune delivering career-focused courses, live projects, and internship-ready pathways for aspiring developers.",
   };
 
   return (
@@ -32,9 +32,9 @@ const AboutPage = () => {
               About Neuro Edge Technologies
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Startup software development company delivering innovative,
-              scalable, and cost-effective digital solutions to businesses
-              worldwide.
+              A career-focused software training institute delivering hands-on
+              courses, live projects, and internship-ready learning for aspiring
+              developers.
             </p>
           </div>
         </div>
@@ -58,8 +58,9 @@ const AboutPage = () => {
               </p>
               <p className="text-lg text-gray-600">
                 We believe in practical experience and hands-on development,
-                which is why we also offer live project internship opportunities
-                to bridge the gap between industry needs and emerging talent.
+                which is why we also offer live project training and
+                internship-support pathways to bridge the gap between industry
+                needs and emerging talent.
               </p>
             </div>
             <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center">
@@ -108,8 +109,8 @@ const AboutPage = () => {
               What We Do
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Specialized software development services and internship
-              opportunities for businesses and aspiring developers
+              Specialized training programs and career-ready internship support
+              for aspiring software professionals.
             </p>
           </div>
 
@@ -130,14 +131,12 @@ const AboutPage = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-secondary-500">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  🎯 Live Project Internships
+                  🎯 Live Project Training & Internship Support
                 </h3>
                 <p className="text-gray-600">
-                  We offer hands-on internship programs where participants work
-                  on real client projects. This approach bridges the gap between
-                  theoretical knowledge and practical industry experience,
-                  preparing interns for successful careers in software
-                  development.
+                  We deliver practical training where learners work on real
+                  client-style projects, while also providing internship-ready
+                  guidance that prepares candidates for career success.
                 </p>
               </div>
             </div>

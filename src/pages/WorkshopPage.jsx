@@ -8,16 +8,16 @@ const WorkshopPage = () => {
     "@type": "WebPage",
     name: "Workshop Enquiry - Neuro Edge Technologies",
     description:
-      "Enquire about workshops and training programs at Neuro Edge Technologies. Get information about our internship programs, software development services, and job opportunities.",
+      "Enquire about workshops and training programs at Neuro Edge Technologies. Get information about our career-focused courses, internship support, and skill-building workshops.",
     url: "https://neuroedgetechnologies.com/workshop",
   };
 
   return (
     <div className="pt-24">
       <SEO
-        title="Workshop Enquiry | Training Programs & Internships"
-        description="Get information about workshops, training programs, and internship opportunities at Neuro Edge Technologies. Enquire about Java, Python, React, and other technology workshops."
-        keywords="Workshop Enquiry, Training Programs, Internship Programs, Java Workshop, Python Workshop, React Workshop, Software Development Training, Technology Workshops Pune"
+        title="Workshop Enquiry | Training Programs & Career Courses"
+        description="Get information about workshops, training programs, and internship support at Neuro Edge Technologies. Enquire about Java, Python, React, and other technology workshops."
+        keywords="Workshop Enquiry, Training Courses, Internship Support, Java Workshop, Python Workshop, React Workshop, Software Training Pune"
         canonical="/workshop"
         structuredData={workshopStructuredData}
       />

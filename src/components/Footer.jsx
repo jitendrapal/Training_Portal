@@ -99,7 +99,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Internships */}
+            {/* Courses */}
             <div>
               <h4 className="text-lg font-semibold mb-6">Our Courses</h4>
               <ul className="space-y-3">

@@ -7,9 +7,9 @@ const CoursesPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Courses & Internship Programs | Paid Courses with Internship"
-        description="Explore our professional courses that include internship placement and performance-based stipends. Hands-on projects across multiple technology domains with placement support. Apply now for limited seats in Pune, India."
-        keywords="Courses with Internship, IT Courses India, Paid Software Development Courses, Java Full Stack Course, React Course, Python Course, AI ML Course, Mobile App Development Course"
+        title="Career-Focused Training Programs | Courses with Internship Support"
+        description="Explore our career-focused training programs that include internship support, live project learning, and placement preparation. Apply now for limited seats in Pune, India."
+        keywords="Training Programs Pune, Career-Focused IT Training, Courses with Internship Support, Live Project Learning, Placement Preparation, Software Training Courses, Career-Ready Coding Programs"
         canonical="/courses"
         structuredData={internshipSchema}
       />
@@ -18,13 +18,12 @@ const CoursesPage = () => {
       <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Courses & Internship Programs
+            Career-Ready Training Programs
           </h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Explore our professional courses that come with internship
-            placements to give you hands-on industry experience. Students
-            receive performance-based stipends and placement support to
-            accelerate career growth.
+            Explore our career-focused training programs with internship
+            support, industry-aligned projects, and placement preparation to
+            accelerate your career growth.
           </p>
         </div>
       </section>
@@ -37,7 +36,7 @@ const CoursesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              🎯 What Makes Our Courses Special?
+              🎯 What Makes Our Training Programs Special?
             </h2>
           </div>
 

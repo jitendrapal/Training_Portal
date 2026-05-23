@@ -17,7 +17,7 @@ const EnrollmentForm = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const internships = [
+  const courses = [
     "Java Full Stack Development Course (with Internship)",
     "MERN Stack Development Course (with Internship)",
     "Python Full Stack Development Course (with Internship)",
@@ -52,8 +52,8 @@ const EnrollmentForm = () => {
     "Digital Marketing Expert",
   ];
 
-  // Combine internships and services for the dropdown
-  const allOptions = [...internships, ...services, ...jobs];
+  // Combine courses and services for the dropdown
+  const allOptions = [...courses, ...services, ...jobs];
 
   // Validation functions
   const validateEmail = (email) => {
@@ -332,7 +332,8 @@ const EnrollmentForm = () => {
                 <div>
                   <h3 className="font-semibold">Course Recommendation</h3>
                   <p className="text-primary-100 text-sm">
-                    Find the perfect course and internship based on your goals
+                    Find the perfect course with internship support based on
+                    your goals
                   </p>
                 </div>
               </div>
@@ -496,10 +497,10 @@ const EnrollmentForm = () => {
                   }`}
                 >
                   <option value="">Choose a course or service</option>
-                  <optgroup label="🎓 Courses (with Internship)">
-                    {internships.map((internship, index) => (
-                      <option key={`internship-${index}`} value={internship}>
-                        {internship}
+                  <optgroup label="🎓 Courses with Internship Support">
+                    {courses.map((course, index) => (
+                      <option key={`course-${index}`} value={course}>
+                        {course}
                       </option>
                     ))}
                   </optgroup>
