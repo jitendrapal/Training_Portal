@@ -160,12 +160,13 @@ const Courses = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            🎓 Professional Courses with Internship
+            🎓 Job-Ready Training Programs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our comprehensive 6-month courses that include internship
+            Join our comprehensive 6-month job-ready programs with internship
             placements and performance-based stipends. Work on real client
-            projects and gain valuable industry experience.
+            projects, sharpen interview skills, and gain the employer-valued
+            experience needed to launch your career.
           </p>
         </div>
 

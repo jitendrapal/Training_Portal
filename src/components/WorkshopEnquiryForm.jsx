@@ -129,9 +129,9 @@ const WorkshopEnquiryForm = () => {
       <section className="py-16 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl shadow-2xl p-8">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg
-                className="w-8 h-8 text-green-600"
+                className="w-8 h-8 text-primary-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -151,11 +151,11 @@ const WorkshopEnquiryForm = () => {
               We've received your workshop enquiry. Our team will contact you
               within 24 hours with workshop details and schedule.
             </p>
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-              <p className="text-green-800 font-medium">
+            <div className="bg-primary-50 border border-primary-200 rounded-lg p-4 mb-6">
+              <p className="text-primary-800 font-medium">
                 📞 Expect a call from +91-8055006652
               </p>
-              <p className="text-green-700 text-sm mt-1">
+              <p className="text-primary-700 text-sm mt-1">
                 Meanwhile, check your email for workshop information and next
                 steps.
               </p>
@@ -237,7 +237,7 @@ const WorkshopEnquiryForm = () => {
                 </div>
 
                 {/* Python Full Stack */}
-                <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg p-4 border border-green-300/30">
+                <div className="bg-gradient-to-r from-sky-500/20 to-cyan-500/20 rounded-lg p-4 border border-blue-300/30">
                   <div className="flex items-center mb-2">
                     <span className="text-2xl mr-3">🐍</span>
                     <h4 className="font-semibold text-lg">Python Full Stack</h4>
@@ -291,27 +291,27 @@ const WorkshopEnquiryForm = () => {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Industry Expert Trainers</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Live Project Experience</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Job Placement Assistance</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Industry Certification</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Lifetime Support</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-green-300 mr-2">•</span>
+                  <span className="text-primary-300 mr-2">•</span>
                   <span>Flexible Batch Timings</span>
                 </div>
               </div>

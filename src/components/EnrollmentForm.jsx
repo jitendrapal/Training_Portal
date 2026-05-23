@@ -259,7 +259,7 @@ const EnrollmentForm = () => {
     return (
       <section
         id="enroll"
-        className="py-16 bg-gradient-to-r from-green-600 to-green-700"
+        className="py-16 bg-gradient-to-r from-primary-600 via-primary-700 to-secondary-700"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl p-12 shadow-xl">
@@ -271,11 +271,11 @@ const EnrollmentForm = () => {
               We've received your enrollment request. Our career counselor will
               contact you within 24 hours to discuss your learning journey.
             </p>
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-              <p className="text-green-800 font-medium">
+            <div className="bg-primary-50 border border-primary-200 rounded-lg p-4 mb-6">
+              <p className="text-primary-800 font-medium">
                 📞 Expect a call from +91-8055006652
               </p>
-              <p className="text-green-700 text-sm mt-1">
+              <p className="text-primary-700 text-sm mt-1">
                 Meanwhile, check your email for course details and next steps.
               </p>
             </div>
@@ -409,7 +409,7 @@ const EnrollmentForm = () => {
                     errors.name
                       ? "border-red-500 bg-red-50"
                       : formData.name && !errors.name
-                        ? "border-green-500 bg-green-50"
+                        ? "border-primary-500 bg-primary-50"
                         : "border-gray-300"
                   }`}
                   placeholder="Enter your full name"
@@ -437,7 +437,7 @@ const EnrollmentForm = () => {
                     errors.email
                       ? "border-red-500 bg-red-50"
                       : formData.email && !errors.email
-                        ? "border-green-500 bg-green-50"
+                        ? "border-primary-500 bg-primary-50"
                         : "border-gray-300"
                   }`}
                   placeholder="Enter your email address"
@@ -465,7 +465,7 @@ const EnrollmentForm = () => {
                     errors.phone
                       ? "border-red-500 bg-red-50"
                       : formData.phone && !errors.phone
-                        ? "border-green-500 bg-green-50"
+                        ? "border-primary-500 bg-primary-50"
                         : "border-gray-300"
                   }`}
                   placeholder="Enter your 10-digit mobile number"
@@ -492,7 +492,7 @@ const EnrollmentForm = () => {
                     errors.course
                       ? "border-red-500 bg-red-50"
                       : formData.course && !errors.course
-                        ? "border-green-500 bg-green-50"
+                        ? "border-primary-500 bg-primary-50"
                         : "border-gray-300"
                   }`}
                 >
@@ -541,7 +541,7 @@ const EnrollmentForm = () => {
                     errors.message
                       ? "border-red-500 bg-red-50"
                       : formData.message && !errors.message
-                        ? "border-green-500 bg-green-50"
+                        ? "border-primary-500 bg-primary-50"
                         : "border-gray-300"
                   }`}
                   placeholder="Tell us about your background and goals (optional)..."

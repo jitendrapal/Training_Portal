@@ -15,12 +15,24 @@ const EnrollPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Get Started | Professional Software Development Services"
-        description="Partner with Neuro Edge Technologies for professional software development services. Custom web applications, mobile apps, enterprise solutions. Contact us for your next digital project!"
-        keywords="Software Development Services, Custom Web Development, Mobile App Development, Enterprise Software, Software Consulting, Digital Solutions, Web Application Development Pune"
+        title="Enroll Now | Job-Ready Training Programs"
+        description="Enroll now in job-ready software training programs at Neuro Edge Technologies. Limited seats available for hands-on courses with internship support and placement preparation."
+        keywords="Job-Ready Courses, Software Training Enrollment, Internship Support, Placement Preparation, Career-Focused Training, IT Training Pune"
         canonical="/enroll"
         structuredData={enrollStructuredData}
       />
+      <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Enroll in Job-Ready Training Programs
+          </h1>
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+            Register for our immersive training programs with internship
+            support, practical projects, and placement preparation to accelerate
+            your technology career.
+          </p>
+        </div>
+      </section>
       <EnrollmentForm />
     </div>
   );

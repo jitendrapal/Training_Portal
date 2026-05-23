@@ -43,7 +43,7 @@ const WhatsAppWidget = () => {
         {isOpen && (
           <div className="absolute bottom-20 right-0 bg-white rounded-2xl shadow-2xl w-80 max-h-96 overflow-hidden animate-slide-up border border-gray-200">
             {/* Header */}
-            <div className="bg-green-500 text-white p-4 flex items-center justify-between">
+            <div className="bg-primary-600 text-white p-4 flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                   <span className="text-lg">💬</span>
@@ -52,14 +52,14 @@ const WhatsAppWidget = () => {
                   <h3 className="font-semibold">
                     Neuro Edge Technologies Support
                   </h3>
-                  <p className="text-xs text-green-100">
+                  <p className="text-xs text-primary-100">
                     Typically replies instantly
                   </p>
                 </div>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-white hover:text-green-100 text-xl"
+                className="text-white hover:text-primary-100 text-xl"
               >
                 ×
               </button>
@@ -76,7 +76,7 @@ const WhatsAppWidget = () => {
                   <button
                     key={index}
                     onClick={() => sendWhatsAppMessage(item.message)}
-                    className="w-full text-left p-3 bg-gray-50 hover:bg-green-50 rounded-lg text-sm transition-colors border border-gray-200 hover:border-green-200"
+                    className="w-full text-left p-3 bg-gray-50 hover:bg-primary-50 rounded-lg text-sm transition-colors border border-gray-200 hover:border-primary-200"
                   >
                     {item.text}
                   </button>
@@ -91,7 +91,7 @@ const WhatsAppWidget = () => {
                       "Hi! I have a question about your courses.",
                     )
                   }
-                  className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
                 >
                   <span>💬</span>
                   <span>Start Custom Chat</span>
@@ -104,7 +104,7 @@ const WhatsAppWidget = () => {
         {/* WhatsApp Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 relative"
+          className="bg-primary-600 hover:bg-primary-700 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 relative"
         >
           {/* Online Indicator */}
           <div className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">

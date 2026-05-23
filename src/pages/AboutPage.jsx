@@ -17,9 +17,9 @@ const AboutPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="About Us | Leading IT Software Development center in Pune"
-        description="Neuro Edge Technologies is a premier software development company in Pune delivering custom web applications, mobile apps, and enterprise solutions. Expert developers, innovative technologies, scalable solutions. Empowering 500+ businesses since 2020."
-        keywords="About Neuro Edge Technologies, Software Development Company Pune, Custom Software Solutions India, Web Development Company, Mobile App Development, Enterprise Software, Digital Solutions Provider, Software Consulting Pune"
+        title="About Us | Career-Focused Training Institute in Pune"
+        description="Neuro Edge Technologies is a career-focused software training institute in Pune offering live project courses, internship support, and job-ready career coaching. Empowering aspiring developers and professionals with practical skills."
+        keywords="About Neuro Edge Technologies, Software Training Institute Pune, Career-Focused IT Training, Internship Support, Job-Ready Coding Courses, Live Project Training, Career Coaching Pune"
         canonical="/about"
         structuredData={aboutStructuredData}
       />
@@ -49,12 +49,10 @@ const AboutPage = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                To deliver world-class software solutions by combining deep
-                engineering expertise, modern technologies, and a strong focus
-                on quality and scalability. We strive to help organizations
-                accelerate digital transformation, improve operational
-                efficiency, and create sustainable business value through
-                innovative, secure, and high-performance software systems.
+                To deliver world-class software training programs that prepare
+                learners for industry careers through practical projects, expert
+                mentorship, and a job-ready curriculum. We strive to bridge the
+                gap between education and employment for emerging talent.
               </p>
               <p className="text-lg text-gray-600">
                 We believe in practical experience and hands-on development,

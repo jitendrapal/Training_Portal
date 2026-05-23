@@ -35,6 +35,17 @@ const WhyChooseUs = () => {
         "Lifetime access to community",
       ],
     },
+    {
+      icon: "🎯",
+      title: "Job-Oriented Curriculum",
+      description:
+        "Learn with a curriculum designed for job readiness, covering interview skills, resume-building, and employer-valued technologies.",
+      highlights: [
+        "Interview-ready projects",
+        "Resume & profile coaching",
+        "Employer-focused skill mastery",
+      ],
+    },
   ];
 
   return (
@@ -52,11 +63,11 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100"
+              className="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100 min-h-[20rem]"
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">

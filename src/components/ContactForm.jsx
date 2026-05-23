@@ -199,14 +199,14 @@ const ContactForm = () => {
         // Still show success for better UX
       }
     },
-    [formData, navigateToHome]
+    [formData, navigateToHome],
   );
 
   if (isSubmitted) {
     return (
       <section
         id="contact"
-        className="py-16 bg-gradient-to-r from-green-600 to-green-700"
+        className="py-16 bg-gradient-to-r from-primary-600 via-primary-700 to-secondary-700"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl p-12 shadow-xl">
@@ -220,7 +220,7 @@ const ContactForm = () => {
             </p>
             <button
               onClick={navigateToHome}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               Back to Home
             </button>
@@ -357,8 +357,8 @@ const ContactForm = () => {
                     errors.name
                       ? "border-red-500 bg-red-50"
                       : formData.name && !errors.name
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-primary-500 bg-primary-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your full name"
                 />
@@ -385,8 +385,8 @@ const ContactForm = () => {
                     errors.email
                       ? "border-red-500 bg-red-50"
                       : formData.email && !errors.email
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-primary-500 bg-primary-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your email address (e.g., john@example.com)"
                 />
@@ -413,8 +413,8 @@ const ContactForm = () => {
                     errors.phone
                       ? "border-red-500 bg-red-50"
                       : formData.phone && !errors.phone
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-primary-500 bg-primary-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your 10-digit mobile number (e.g., 9876543210)"
                   maxLength="10"
@@ -442,8 +442,8 @@ const ContactForm = () => {
                     errors.subject
                       ? "border-red-500 bg-red-50"
                       : formData.subject && !errors.subject
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-primary-500 bg-primary-50"
+                        : "border-gray-300"
                   }`}
                 >
                   <option value="">Select a subject</option>
@@ -477,8 +477,8 @@ const ContactForm = () => {
                     errors.message
                       ? "border-red-500 bg-red-50"
                       : formData.message && !errors.message
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-primary-500 bg-primary-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Tell us about your inquiry or questions... (optional)"
                 />

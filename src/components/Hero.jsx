@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.9fr] items-center min-h-[70vh]">
           <div className="text-center lg:text-left max-w-3xl mx-auto lg:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Build Career-Ready Software Skills
+              Build Job-Ready Software Skills
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 {" "}
                 with Neuro Edge Training
@@ -35,10 +35,9 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 text-xl text-gray-200">
-              Join our instructor-led courses designed for beginners and working
-              professionals. Get hands-on experience building real projects,
-              receive internship placements, mentorship from industry experts,
-              and placement support to launch your software career.
+              Join our instructor-led courses designed to make you job-ready
+              with real project experience, interview preparation, internship
+              support, and placement guidance for a faster career launch.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -108,7 +107,7 @@ const Hero = () => {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-[0.3em] text-primary-200">
-                      Outcome
+                      Job Ready
                     </p>
                     <h3 className="font-semibold text-white">
                       Internship + Placement
