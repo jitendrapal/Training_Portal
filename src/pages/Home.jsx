@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import Internship from "../components/Internship";
+import Courses from "../components/Courses";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import { organizationSchema } from "../utils/structuredData";
@@ -48,7 +48,7 @@ const Home = () => {
       />
       <Hero />
       <Services />
-      <Internship />
+      <Courses />
       <WhyChooseUs />
       <Testimonials />
     </div>

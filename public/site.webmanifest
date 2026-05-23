@@ -33,10 +33,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Internship",
-      "short_name": "Internship",
-      "description": "Apply for internship program",
-      "url": "/internship",
+      "name": "Courses",
+      "short_name": "Courses",
+      "description": "Apply for courses with internship placements",
+      "url": "/courses",
       "icons": [
         {
           "src": "/icons/internship-96x96.png",

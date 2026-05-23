@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
-const Internship = () => {
+const Courses = () => {
   const navigate = useNavigate();
 
   const internships = [
     {
       id: 1,
-      title: "Java Full Stack Development Internship",
+      title: "Java Full Stack Development Course (with Internship)",
       description:
-        "Comprehensive internship program working with Java, Spring Boot, React, and microservices. Build enterprise-level applications with real clients.",
+        "Comprehensive course with internship experience working with Java, Spring Boot, React, and microservices. Build enterprise-level applications with real clients.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: ["Java", "Spring Boot", "React", "MySQL", "Microservices"],
@@ -24,9 +24,9 @@ const Internship = () => {
     },
     {
       id: 2,
-      title: "MERN Stack Development Internship",
+      title: "MERN Stack Development Course (with Internship)",
       description:
-        "Intensive internship program working with React, Node.js, Express, MongoDB, and cloud deployment. Contribute to real MERN stack applications.",
+        "Intensive course with internship experience working with React, Node.js, Express, MongoDB, and cloud deployment. Contribute to real MERN stack applications.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: ["React", "Node.js", "Express", "MongoDB", "AWS"],
@@ -42,9 +42,9 @@ const Internship = () => {
     },
     {
       id: 3,
-      title: "Python Full Stack Development Internship",
+      title: "Python Full Stack Development Course (with Internship)",
       description:
-        "Comprehensive internship working with Django, React, APIs, and data handling. Gain practical experience in Python web development.",
+        "Comprehensive course with internship experience working with Django, React, APIs, and data handling. Gain practical experience in Python web development.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
@@ -60,9 +60,9 @@ const Internship = () => {
     },
     {
       id: 4,
-      title: ".NET Development Internship",
+      title: ".NET Development Course (with Internship)",
       description:
-        "Professional internship program working with C#, ASP.NET Core, Entity Framework, and Azure. Build scalable enterprise applications in a real development environment.",
+        "Professional course with internship experience working with C#, ASP.NET Core, Entity Framework, and Azure. Build scalable enterprise applications in a real development environment.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: [
@@ -84,9 +84,9 @@ const Internship = () => {
     },
     {
       id: 5,
-      title: "AI & Machine Learning Internship",
+      title: "AI & Machine Learning Course (with Internship)",
       description:
-        "Advanced internship program in Artificial Intelligence and Machine Learning with Python. Work on real AI projects and build intelligent applications.",
+        "Advanced course with internship experience in Artificial Intelligence and Machine Learning with Python. Work on real AI projects and build intelligent applications.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
@@ -102,9 +102,9 @@ const Internship = () => {
     },
     {
       id: 6,
-      title: "Frontend Development Internship",
+      title: "Frontend Development Course (with Internship)",
       description:
-        "Practical internship program in front-end web development with HTML5, CSS3, and jQuery. Create responsive and interactive websites for real clients.",
+        "Practical course with internship experience in front-end web development with HTML5, CSS3, and jQuery. Create responsive and interactive websites for real clients.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: [
@@ -126,9 +126,9 @@ const Internship = () => {
     },
     {
       id: 7,
-      title: "Mobile App Development Internship",
+      title: "Mobile App Development Course (with Internship)",
       description:
-        "Comprehensive internship program building mobile applications for Android and iOS platforms. Work on native and cross-platform development projects.",
+        "Comprehensive course with internship experience building mobile applications for Android and iOS platforms. Work on native and cross-platform development projects.",
       duration: "6 Months",
       schedule: "Full-time | Hybrid/Online",
       technologies: [
@@ -160,16 +160,16 @@ const Internship = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            🎓 Professional Internship Programs
+            🎓 Professional Courses with Internship
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our comprehensive 6-month internship programs with
-            performance-based stipends. Work on real client projects and gain
-            valuable industry experience.
+            Join our comprehensive 6-month courses that include internship
+            placements and performance-based stipends. Work on real client
+            projects and gain valuable industry experience.
           </p>
         </div>
 
-        {/* Internship Cards */}
+        {/* Course Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {internships.map((internship) => (
             <div
@@ -257,7 +257,7 @@ const Internship = () => {
                       : "bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white"
                   }`}
                 >
-                  Apply for Internship
+                  Apply for Course & Internship
                 </button>
               </div>
             </div>
@@ -268,7 +268,7 @@ const Internship = () => {
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              🎯 Why Our Internship Programs Stand Out
+              🎯 Why Our Courses Stand Out
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
@@ -306,4 +306,4 @@ const Internship = () => {
   );
 };
 
-export default Internship;
+export default Courses;

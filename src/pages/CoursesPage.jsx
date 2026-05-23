@@ -1,16 +1,16 @@
 import React from "react";
 import SEO from "../components/SEO";
-import Internship from "../components/Internship";
+import Courses from "../components/Courses";
 import { internshipSchema } from "../utils/structuredData";
 
-const InternshipPage = () => {
+const CoursesPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="IT Internship Program | Paid Internship with Placement Support"
-        description="Join our comprehensive IT internship program with performance-based stipend. 8 technology domains, real industry projects, job placement support. Apply now for limited seats in Pune, India."
-        keywords="IT Internship Program India, Paid Software Development Internship, Java Full Stack Internship, React Development Internship, Python Internship, AI ML Internship, Mobile App Development Internship, Web Development Internship Pune"
-        canonical="/internship"
+        title="Courses & Internship Programs | Paid Courses with Internship"
+        description="Explore our professional courses that include internship placement and performance-based stipends. Hands-on projects across multiple technology domains with placement support. Apply now for limited seats in Pune, India."
+        keywords="Courses with Internship, IT Courses India, Paid Software Development Courses, Java Full Stack Course, React Course, Python Course, AI ML Course, Mobile App Development Course"
+        canonical="/courses"
         structuredData={internshipSchema}
       />
 
@@ -18,26 +18,26 @@ const InternshipPage = () => {
       <section className="py-12 bg-gradient-to-r from-accent-800 via-primary-700 to-secondary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            IT Internship Program
+            Courses & Internship Programs
           </h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Join our comprehensive paid internship program designed for final
-            year students. Get hands-on industry experience, performance-based
-            stipend, and accelerate your career growth with guaranteed placement
-            support.
+            Explore our professional courses that come with internship
+            placements to give you hands-on industry experience. Students
+            receive performance-based stipends and placement support to
+            accelerate career growth.
           </p>
         </div>
       </section>
 
-      {/* Internship Section */}
-      <Internship />
+      {/* Courses Section */}
+      <Courses />
 
       {/* Additional Information */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              🎯 What Makes Our Internship Special?
+              🎯 What Makes Our Courses Special?
             </h2>
           </div>
 
@@ -174,9 +174,12 @@ const InternshipPage = () => {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold">4</span>
                 </div>
-                <h4 className="font-semibold mb-2">Start Internship</h4>
+                <h4 className="font-semibold mb-2">
+                  Start Course & Internship
+                </h4>
                 <p className="text-primary-100 text-sm">
-                  Begin your journey with us
+                  Begin your learning journey with practical internship
+                  experience
                 </p>
               </div>
             </div>
@@ -187,4 +190,4 @@ const InternshipPage = () => {
   );
 };
 
-export default InternshipPage;
+export default CoursesPage;

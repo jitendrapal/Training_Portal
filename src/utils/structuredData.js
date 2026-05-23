@@ -111,15 +111,15 @@ export const servicesSchema = {
 
 export const internshipSchema = {
   "@context": "https://schema.org",
-  "@type": "WorkBasedProgram",
-  name: "Software Development Internship Program",
+  "@type": "Course",
+  name: "Courses with Internship",
   description:
-    "Professional internship program with real-world software development projects and industry mentorship",
+    "Professional courses that include internship placements and real-world software development projects with industry mentorship",
   provider: {
     "@type": "Organization",
     name: "Neuro Edge Technologies",
   },
-  programType: "Internship",
+  programType: "Course",
   timeToComplete: "P3M",
   occupationalCategory: "Software Development",
   offers: {

@@ -18,13 +18,13 @@ const EnrollmentForm = () => {
   const [errors, setErrors] = useState({});
 
   const internships = [
-    "Java Full Stack Development Internship",
-    "MERN Stack Development Internship",
-    "Python Full Stack Development Internship",
-    ".NET Development Internship",
-    "AI & Machine Learning Internship",
-    "Frontend Development Internship",
-    "Mobile App Development Internship",
+    "Java Full Stack Development Course (with Internship)",
+    "MERN Stack Development Course (with Internship)",
+    "Python Full Stack Development Course (with Internship)",
+    ".NET Development Course (with Internship)",
+    "AI & Machine Learning Course (with Internship)",
+    "Frontend Development Course (with Internship)",
+    "Mobile App Development Course (with Internship)",
   ];
 
   const services = [
@@ -252,7 +252,7 @@ const EnrollmentForm = () => {
         // Still show success for better UX
       }
     },
-    [formData, navigateToHome]
+    [formData, navigateToHome],
   );
 
   if (isSubmitted) {
@@ -330,9 +330,9 @@ const EnrollmentForm = () => {
                   <span className="text-2xl">🎯</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Internship Recommendation</h3>
+                  <h3 className="font-semibold">Course Recommendation</h3>
                   <p className="text-primary-100 text-sm">
-                    Find the perfect internship based on your goals
+                    Find the perfect course and internship based on your goals
                   </p>
                 </div>
               </div>
@@ -408,8 +408,8 @@ const EnrollmentForm = () => {
                     errors.name
                       ? "border-red-500 bg-red-50"
                       : formData.name && !errors.name
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your full name"
                 />
@@ -436,8 +436,8 @@ const EnrollmentForm = () => {
                     errors.email
                       ? "border-red-500 bg-red-50"
                       : formData.email && !errors.email
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your email address"
                 />
@@ -464,8 +464,8 @@ const EnrollmentForm = () => {
                     errors.phone
                       ? "border-red-500 bg-red-50"
                       : formData.phone && !errors.phone
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Enter your 10-digit mobile number"
                 />
@@ -479,7 +479,7 @@ const EnrollmentForm = () => {
                   htmlFor="course"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Select Internship or Service *
+                  Select Course or Service *
                 </label>
                 <select
                   id="course"
@@ -491,12 +491,12 @@ const EnrollmentForm = () => {
                     errors.course
                       ? "border-red-500 bg-red-50"
                       : formData.course && !errors.course
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-300"
                   }`}
                 >
-                  <option value="">Choose an internship or service</option>
-                  <optgroup label="🎓 Internship Programs">
+                  <option value="">Choose a course or service</option>
+                  <optgroup label="🎓 Courses (with Internship)">
                     {internships.map((internship, index) => (
                       <option key={`internship-${index}`} value={internship}>
                         {internship}
@@ -540,8 +540,8 @@ const EnrollmentForm = () => {
                     errors.message
                       ? "border-red-500 bg-red-50"
                       : formData.message && !errors.message
-                      ? "border-green-500 bg-green-50"
-                      : "border-gray-300"
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-300"
                   }`}
                   placeholder="Tell us about your background and goals (optional)..."
                 />

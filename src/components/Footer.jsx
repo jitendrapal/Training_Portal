@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
-  // Helper function to navigate to internships
-  const navigateToInternships = () => {
-    navigate("/internship");
+  // Helper function to navigate to courses
+  const navigateToCourses = () => {
+    navigate("/courses");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -35,10 +35,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Internships
+                    Courses
                   </button>
                 </li>
                 <li>
@@ -55,12 +55,12 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => {
-                      navigate("/internship");
+                      navigate("/courses");
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Internship
+                    Courses
                   </button>
                 </li>
                 <li>
@@ -101,11 +101,11 @@ const Footer = () => {
 
             {/* Internships */}
             <div>
-              <h4 className="text-lg font-semibold mb-6">Our Internships</h4>
+              <h4 className="text-lg font-semibold mb-6">Our Courses</h4>
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Java Full Stack Development
@@ -113,7 +113,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     MERN Stack Development
@@ -121,7 +121,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Python Full Stack Development
@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     .NET Development
@@ -137,7 +137,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     AI & Machine Learning
@@ -145,7 +145,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Frontend Development
@@ -153,7 +153,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToInternships}
+                    onClick={navigateToCourses}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Mobile App Development

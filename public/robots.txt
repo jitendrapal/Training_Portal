@@ -20,7 +20,7 @@ Disallow: /private/
 Disallow: /*.json$
 
 # Allow crawling of important pages
-Allow: /internship
+Allow: /courses
 Allow: /services
 Allow: /about
 Allow: /contact
