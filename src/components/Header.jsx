@@ -24,11 +24,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="w-12 h-12 flex items-center justify-center overflow-hidden rounded-full">
+              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl border border-gray-100 shadow-sm p-1.5">
                 <img
                   src="/logo.png"
                   alt="Neuro Edge Technologies Logo"
-                  className="w-10 h-10 rounded-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="ml-3">
