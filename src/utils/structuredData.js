@@ -48,6 +48,11 @@ export const organizationSchema = {
     "AI Workshop",
     "Internship Support",
     "Placement Support",
+    "IT Ausbildung",
+    "Ausbildung in Germany",
+    "Ausbildung for IT",
+    "Ausbildung Support",
+    "Vocational Training",
   ],
   areaServed: {
     "@type": "Country",

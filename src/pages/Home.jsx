@@ -41,8 +41,8 @@ const Home = () => {
     <div>
       <SEO
         title="Job-Oriented Courses | Best Institute in Wagholi Pune"
-        description="Job-oriented courses and the best institute in Wagholi Pune for IT training, internship support, placement preparation, and live project learning in Java, .NET, Python, SQL, Azure, and AI."
-        keywords="Job-Oriented Courses, Best Institute in Wagholi Pune, job ready course, Job Placement Support, Job Assistance, Job Oriented Course, Job Ready Training Programs, IT Training Institute, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support"
+        description="Job-oriented courses and the best institute in Wagholi Pune for IT training, internship support, placement preparation, Ausbildung for IT and other branches, and live project learning in Java, .NET, Python, SQL, Azure, and AI."
+        keywords="Job-Oriented Courses, Best Institute in Wagholi Pune, job ready course, Job Placement Support, Job Assistance, Job Oriented Course, Job Ready Training Programs, IT Training Institute, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Ausbildung, IT Ausbildung, Ausbildung in Germany"
         canonical="/"
         structuredData={homeStructuredData}
       />
@@ -70,15 +70,15 @@ const Home = () => {
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
               <span className="inline-flex rounded-full bg-secondary-500/20 px-4 py-1 text-sm font-semibold text-secondary-100 mb-4">
-                GERMANY PLACEMENT SUPPORT
+                GERMANY EDUCATION & PLACEMENT SUPPORT
               </span>
               <h2 className="text-3xl font-bold mb-4">
-                Dedicated Germany/Ausbildung placement support
+                Ausbildung & Higher Education in Germany
               </h2>
               <p className="text-slate-300 mb-4">
-                We help trainees prepare for vocational programs and placement
-                opportunities in Germany, with guidance tailored for Ausbildung
-                pathways and employer-ready skill development.
+                We provide full guidance and support for applying to Bachelor's
+                and Master's programs, as well as vocational Ausbildung pathways
+                and placement opportunities in Germany.
               </p>
               <p className="text-sm font-semibold text-secondary-100 mb-4">
                 Partnered with Europe Jobs Consultancy for stronger European
@@ -86,16 +86,14 @@ const Home = () => {
               </p>
               <ul className="space-y-3 text-slate-300">
                 <li>
+                  ✔ Full support for Bachelor's & Master's higher education
+                  programs
+                </li>
+                <li>
                   ✔ Support for Germany placement and Ausbildung vocational
                   training
                 </li>
-                <li>
-                  ✔ Project-based learning aligned to international work
-                  standards
-                </li>
-                <li>
-                  ✔ Career mentorship focused on German employer expectations
-                </li>
+                <li>✔ Career mentorship and university application guidance</li>
               </ul>
             </div>
           </div>

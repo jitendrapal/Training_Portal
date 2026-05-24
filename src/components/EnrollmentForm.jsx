@@ -38,6 +38,7 @@ const EnrollmentForm = () => {
     "UI/UX Design",
     "Cloud & DevOps Services",
     "IT Support & IT Outsourcing",
+    "Higher Education in Germany",
   ];
   const jobs = [
     "Receptionist",

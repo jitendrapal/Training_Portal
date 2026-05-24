@@ -135,6 +135,19 @@ const Services = () => {
         "Cost-Effective",
       ],
     },
+    {
+      id: 11,
+      title: "Higher Education in Germany",
+      description:
+        "Full guidance and support for applying to Bachelor's and Master's programs in Germany.",
+      icon: "🎓",
+      features: [
+        "University Selection",
+        "Application Support",
+        "Visa Guidance",
+        "Accommodation Help",
+      ],
+    },
   ];
 
   return (
@@ -190,7 +203,10 @@ const Services = () => {
                 <button
                   onClick={() => {
                     navigate("/enroll", {
-                      state: { scrollToForm: true, selectedService: service.title },
+                      state: {
+                        scrollToForm: true,
+                        selectedService: service.title,
+                      },
                     });
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
@@ -228,4 +244,3 @@ const Services = () => {
 };
 
 export default Services;
-
