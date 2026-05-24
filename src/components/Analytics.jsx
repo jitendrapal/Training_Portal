@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Analytics = () => {
   // Replace with your actual Google Analytics 4 Measurement ID
-  const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+  const GA_MEASUREMENT_ID = "G-ZH59M2F9F1";
 
   useEffect(() => {
     // Add Google Analytics script
