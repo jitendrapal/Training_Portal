@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
+import Analytics from "./components/Analytics";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -13,6 +14,7 @@ import ServicesPage from "./pages/ServicesPage";
 function App() {
   return (
     <Router>
+      <Analytics />
       <div className="min-h-screen bg-white">
         <Header />
         <main>
