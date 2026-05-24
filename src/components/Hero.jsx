@@ -61,6 +61,23 @@ const Hero = () => {
             <p className="text-sm font-semibold uppercase text-primary-200 tracking-[0.3em] mb-6">
               Course Illustration
             </p>
+            <div className="mb-4 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-700 p-4 text-white shadow-lg">
+              <p className="text-xs uppercase tracking-[0.3em] font-semibold mb-2">
+                Next batch starts soon
+              </p>
+              <p className="text-sm font-semibold">
+                Limited seats available for the upcoming IT training batch.
+              </p>
+            </div>
+            <div className="mb-6 rounded-2xl bg-white/10 border border-white/15 p-4 text-white shadow-lg">
+              <p className="text-xs uppercase tracking-[0.3em] font-semibold mb-2 text-primary-200">
+                Germany placement support
+              </p>
+              <p className="text-sm text-gray-200">
+                Dedicated support for Ausbildung vocational pathways and our
+                Europe Jobs Consultancy partnership.
+              </p>
+            </div>
             <ul className="space-y-5 relative">
               <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
                 <div className="flex items-center gap-4 mb-3">
@@ -83,25 +100,6 @@ const Hero = () => {
               </li>
               <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
                 <div className="flex items-center gap-4 mb-3">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white text-xl">
-                    🧑‍🏫
-                  </span>
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.3em] text-primary-200">
-                      Mentorship
-                    </p>
-                    <h3 className="font-semibold text-white">
-                      Live Expert Coaching
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 text-sm">
-                  Weekly sessions with industry professionals and guided code
-                  reviews.
-                </p>
-              </li>
-              <li className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 shadow-lg">
-                <div className="flex items-center gap-4 mb-3">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-pink-500 text-white text-xl">
                     🎯
                   </span>
@@ -110,7 +108,7 @@ const Hero = () => {
                       Job Ready
                     </p>
                     <h3 className="font-semibold text-white">
-                      Internship + Placement
+                      Internship + Placement Support
                     </h3>
                   </div>
                 </div>

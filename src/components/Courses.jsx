@@ -170,6 +170,20 @@ const Courses = () => {
           </p>
         </div>
 
+        <div className="mb-10 rounded-3xl border border-primary-200 bg-primary-50 p-6 text-center shadow-sm">
+          <p className="text-sm uppercase tracking-[0.2em] text-primary-700 font-semibold">
+            Next batch starts soon
+          </p>
+          <h3 className="mt-3 text-2xl md:text-3xl font-bold text-gray-900">
+            Limited seats available for Germany placement-ready programs
+          </h3>
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+            Enroll now for the upcoming batch and get dedicated support for
+            Germany placement, Ausbildung vocational pathways, and our Europe
+            Jobs Consultancy partnership.
+          </p>
+        </div>
+
         {/* Course Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {courses.map((course) => (
@@ -293,6 +307,15 @@ const Courses = () => {
                 </h4>
                 <p className="text-gray-600 text-sm">
                   Work on live projects for actual clients and businesses
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl mb-2">🇩🇪</div>
+                <h4 className="font-semibold text-gray-900">
+                  Germany Placement Support
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Guidance for Ausbildung and German employer-readiness.
                 </p>
               </div>
             </div>

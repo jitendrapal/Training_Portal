@@ -70,22 +70,31 @@ const Home = () => {
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
               <span className="inline-flex rounded-full bg-secondary-500/20 px-4 py-1 text-sm font-semibold text-secondary-100 mb-4">
-                MINI PROJECT MILESTONE
+                GERMANY PLACEMENT SUPPORT
               </span>
               <h2 className="text-3xl font-bold mb-4">
-                New intern project collaboration
+                Dedicated Germany/Ausbildung placement support
               </h2>
+              <p className="text-slate-300 mb-4">
+                We help trainees prepare for vocational programs and placement
+                opportunities in Germany, with guidance tailored for Ausbildung
+                pathways and employer-ready skill development.
+              </p>
+              <p className="text-sm font-semibold text-secondary-100 mb-4">
+                Partnered with Europe Jobs Consultancy for stronger European
+                placement support.
+              </p>
               <ul className="space-y-3 text-slate-300">
                 <li>
-                  ✔ New interns are building small software projects from day
-                  one
+                  ✔ Support for Germany placement and Ausbildung vocational
+                  training
                 </li>
                 <li>
-                  ✔ Hands-on experience with real use cases and coding best
-                  practices
+                  ✔ Project-based learning aligned to international work
+                  standards
                 </li>
                 <li>
-                  ✔ Guided mentorship to finish a practical demo project quickly
+                  ✔ Career mentorship focused on German employer expectations
                 </li>
               </ul>
             </div>
