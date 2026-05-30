@@ -5,6 +5,24 @@ const Courses = () => {
 
   const courses = [
     {
+      id: 3,
+      title: "Python Full Stack Development Course (with Internship)",
+      description:
+        "Comprehensive course with internship experience working with Django, React, APIs, and data handling. Gain practical experience in Python web development.",
+      duration: "6 Months",
+      schedule: "Full-time | Hybrid/Online",
+      technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
+      features: [
+        "Beginner-Friendly Environment",
+        "Data Science Projects",
+        "Web Scraping Applications",
+        "API Development Experience",
+        "Career Development Support",
+      ],
+      popular: true,
+      icon: "🐍",
+    },
+    {
       id: 1,
       title: "Java Full Stack Development Course (with Internship)",
       description:
@@ -39,24 +57,6 @@ const Courses = () => {
       ],
       popular: false,
       icon: "⚛️",
-    },
-    {
-      id: 3,
-      title: "Python Full Stack Development Course (with Internship)",
-      description:
-        "Comprehensive course with internship experience working with Django, React, APIs, and data handling. Gain practical experience in Python web development.",
-      duration: "6 Months",
-      schedule: "Full-time | Hybrid/Online",
-      technologies: ["Python", "Django", "React", "PostgreSQL", "Docker"],
-      features: [
-        "Beginner-Friendly Environment",
-        "Data Science Projects",
-        "Web Scraping Applications",
-        "API Development Experience",
-        "Career Development Support",
-      ],
-      popular: true,
-      icon: "🐍",
     },
     {
       id: 4,
