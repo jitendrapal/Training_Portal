@@ -39,7 +39,9 @@ const CoursesPage = () => {
               <p className="text-sm uppercase tracking-[0.3em] text-primary-600 mb-2">
                 Python Training Wagholi
               </p>
-              <p className="text-gray-700">Live Python projects, internship support, placement coaching.</p>
+              <p className="text-gray-700">
+                Live Python projects, internship support, placement coaching.
+              </p>
             </Link>
             <Link
               to="/full-stack-course-wagholi"
@@ -48,7 +50,9 @@ const CoursesPage = () => {
               <p className="text-sm uppercase tracking-[0.3em] text-secondary-600 mb-2">
                 Full Stack Course Wagholi
               </p>
-              <p className="text-gray-700">React, Node.js, database, deployment and job-ready outcomes.</p>
+              <p className="text-gray-700">
+                React, Node.js, database, deployment and job-ready outcomes.
+              </p>
             </Link>
             <Link
               to="/ai-ml-course-wagholi"
@@ -57,7 +61,10 @@ const CoursesPage = () => {
               <p className="text-sm uppercase tracking-[0.3em] text-primary-700 mb-2">
                 AI/ML Course Wagholi
               </p>
-              <p className="text-gray-700">Machine learning, data science, model deployment, career support.</p>
+              <p className="text-gray-700">
+                Machine learning, data science, model deployment, career
+                support.
+              </p>
             </Link>
             <Link
               to="/cyber-security-course-wagholi"
@@ -66,7 +73,10 @@ const CoursesPage = () => {
               <p className="text-sm uppercase tracking-[0.3em] text-emerald-600 mb-2">
                 Cyber Security Course Wagholi
               </p>
-              <p className="text-gray-700">Ethical hacking, network security, pentesting and placement help.</p>
+              <p className="text-gray-700">
+                Ethical hacking, network security, pentesting and placement
+                help.
+              </p>
             </Link>
           </div>
         </div>

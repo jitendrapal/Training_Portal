@@ -35,10 +35,19 @@ function App() {
             <Route path="/python-full-stack" element={<PythonLanding />} />
             <Route path="/java-full-stack" element={<JavaLanding />} />
             <Route path="/dotnet-full-stack" element={<DotNetLanding />} />
-            <Route path="/python-training-wagholi" element={<PythonWagholi />} />
-            <Route path="/full-stack-course-wagholi" element={<FullStackWagholi />} />
+            <Route
+              path="/python-training-wagholi"
+              element={<PythonWagholi />}
+            />
+            <Route
+              path="/full-stack-course-wagholi"
+              element={<FullStackWagholi />}
+            />
             <Route path="/ai-ml-course-wagholi" element={<AIMLWagholi />} />
-            <Route path="/cyber-security-course-wagholi" element={<CyberSecurityWagholi />} />
+            <Route
+              path="/cyber-security-course-wagholi"
+              element={<CyberSecurityWagholi />}
+            />
             <Route path="/services" element={<ServicesPage />} />
           </Routes>
         </main>

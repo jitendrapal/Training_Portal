@@ -87,11 +87,20 @@ const AIMLWagholi = () => {
                 What You Will Achieve
               </h2>
               <ul className="space-y-3 text-gray-700">
-                <li>✔ Build AI models with Python, scikit-learn and TensorFlow</li>
-                <li>✔ Develop real-world ML applications for business use cases</li>
-                <li>✔ Learn data preparation, feature engineering, and model tuning</li>
+                <li>
+                  ✔ Build AI models with Python, scikit-learn and TensorFlow
+                </li>
+                <li>
+                  ✔ Develop real-world ML applications for business use cases
+                </li>
+                <li>
+                  ✔ Learn data preparation, feature engineering, and model
+                  tuning
+                </li>
                 <li>✔ Deploy models and work on AI-driven solutions</li>
-                <li>✔ Get interview and placement support for AI roles in Pune</li>
+                <li>
+                  ✔ Get interview and placement support for AI roles in Pune
+                </li>
               </ul>
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-xl">

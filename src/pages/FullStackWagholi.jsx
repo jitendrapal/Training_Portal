@@ -91,7 +91,9 @@ const FullStackWagholi = () => {
                 <li>✔ Practical React + Node.js projects</li>
                 <li>✔ MongoDB and cloud deployment experience</li>
                 <li>✔ Internship with real industry feedback</li>
-                <li>✔ Live classes near Wagholi with weekday and weekend batches</li>
+                <li>
+                  ✔ Live classes near Wagholi with weekday and weekend batches
+                </li>
                 <li>✔ Career-oriented training for Pune job market</li>
               </ul>
             </div>
@@ -112,7 +114,9 @@ const FullStackWagholi = () => {
 
       <section id="enroll" className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4">Enroll in the Wagholi Batch</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Enroll in the Wagholi Batch
+          </h2>
           <p className="text-gray-600 mb-6">
             Join our next batch and build a strong full stack portfolio with
             interview-ready skills.

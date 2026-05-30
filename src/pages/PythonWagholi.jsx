@@ -33,9 +33,9 @@ const PythonWagholi = () => {
             Python Training Wagholi — Batch Starts June 10
           </h1>
           <p className="max-w-3xl mx-auto text-lg mb-6">
-            Learn Python programming, web development, data science, and AI-ready
-            skills with practical projects, internship support, and placement
-            coaching in Wagholi.
+            Learn Python programming, web development, data science, and
+            AI-ready skills with practical projects, internship support, and
+            placement coaching in Wagholi.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -91,7 +91,9 @@ const PythonWagholi = () => {
                 <li>✔ Django, Flask, REST APIs, and backend development</li>
                 <li>✔ Data science essentials with Pandas and NumPy</li>
                 <li>✔ AI-ready project work and full-stack deployment</li>
-                <li>✔ Placement support for Pune and Wagholi job opportunities</li>
+                <li>
+                  ✔ Placement support for Pune and Wagholi job opportunities
+                </li>
               </ul>
             </div>
             <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-xl">
