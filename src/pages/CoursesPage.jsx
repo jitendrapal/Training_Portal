@@ -26,6 +26,10 @@ const CoursesPage = () => {
             support, industry-aligned projects, and placement preparation to
             accelerate your career growth.
           </p>
+          <p className="mt-4 text-lg text-primary-100 max-w-3xl mx-auto">
+            Looking for the Best IT Institute Near Wagholi or IT Classes Near
+            Me? Our programs deliver the practical skills Pune employers want.
+          </p>
         </div>
       </section>
 

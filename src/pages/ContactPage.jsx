@@ -34,6 +34,11 @@ const ContactPage = () => {
             support, and placement guidance. We are here to help you begin your
             software career.
           </p>
+          <p className="mt-4 text-lg text-primary-100 max-w-3xl mx-auto">
+            Want the best IT training near you? Contact the Best IT Institute
+            Near Wagholi for IT Classes Near Me, enrollment help, and placement
+            assistance.
+          </p>
         </div>
       </section>
 

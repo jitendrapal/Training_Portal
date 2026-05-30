@@ -39,6 +39,11 @@ const Hero = () => {
               with real project experience, interview preparation, internship
               support, and placement guidance for a faster career launch.
             </p>
+            <p className="mt-4 text-lg text-gray-300">
+              Searching for IT Classes Near Me? Choose the Best IT Institute
+              Near Wagholi for Full Stack, Python, AI, Cloud, Cyber Security,
+              and Software Testing training.
+            </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
