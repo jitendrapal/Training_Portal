@@ -47,6 +47,70 @@ const Home = () => {
         structuredData={homeStructuredData}
       />
       <Hero />
+      <section className="py-12 bg-slate-950 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-300 mb-3">
+              Wagholi Course Pages
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Explore local IT training pages for Wagholi students
+            </h2>
+            <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+              Click the course page that matches your interest and discover
+              batch dates, outcomes, and local enrollment support.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a
+              href="/python-training-wagholi"
+              className="block rounded-3xl border border-white/10 bg-white/5 p-6 text-center transition hover:border-primary-300 hover:bg-white/10"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-primary-300 mb-2">
+                Python Training Wagholi
+              </p>
+              <p className="text-gray-200">
+                Free career call, live Python projects, and placement support.
+              </p>
+            </a>
+            <a
+              href="/full-stack-course-wagholi"
+              className="block rounded-3xl border border-white/10 bg-white/5 p-6 text-center transition hover:border-secondary-300 hover:bg-white/10"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary-300 mb-2">
+                Full Stack Course Wagholi
+              </p>
+              <p className="text-gray-200">
+                React + Node full stack training with internship and job prep.
+              </p>
+            </a>
+            <a
+              href="/ai-ml-course-wagholi"
+              className="block rounded-3xl border border-white/10 bg-white/5 p-6 text-center transition hover:border-primary-300 hover:bg-white/10"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-primary-300 mb-2">
+                AI/ML Course Wagholi
+              </p>
+              <p className="text-gray-200">
+                Learn AI, ML and data science with practical projects.
+              </p>
+            </a>
+            <a
+              href="/cyber-security-course-wagholi"
+              className="block rounded-3xl border border-white/10 bg-white/5 p-6 text-center transition hover:border-emerald-300 hover:bg-white/10"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300 mb-2">
+                Cyber Security Course Wagholi
+              </p>
+              <p className="text-gray-200">
+                Ethical hacking and security training with Pune placement help.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-gradient-to-r from-primary-900 via-slate-950 to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
