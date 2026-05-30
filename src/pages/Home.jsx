@@ -99,10 +99,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
       <Courses />
       <Services />
       <WhyChooseUs />
-      <Testimonials />
     </div>
   );
 };

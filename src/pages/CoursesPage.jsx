@@ -1,6 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO";
 import Courses from "../components/Courses";
+import Testimonials from "../components/Testimonials";
 import { internshipSchema } from "../utils/structuredData";
 
 const CoursesPage = () => {
@@ -30,6 +31,8 @@ const CoursesPage = () => {
 
       {/* Courses Section */}
       <Courses />
+
+      <Testimonials />
 
       {/* Additional Information */}
       <section className="py-12 bg-gray-50">

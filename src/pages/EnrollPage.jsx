@@ -1,6 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO";
 import EnrollmentForm from "../components/EnrollmentForm";
+import Testimonials from "../components/Testimonials";
 
 const EnrollPage = () => {
   const enrollStructuredData = {
@@ -34,6 +35,7 @@ const EnrollPage = () => {
         </div>
       </section>
       <EnrollmentForm />
+      <Testimonials />
     </div>
   );
 };
