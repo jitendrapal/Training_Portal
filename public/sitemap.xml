@@ -53,4 +53,33 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Wagholi Landing Pages -->
+  <url>
+    <loc>https://neuroedgetechnologies.com/python-training-wagholi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neuroedgetechnologies.com/full-stack-course-wagholi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neuroedgetechnologies.com/ai-ml-course-wagholi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neuroedgetechnologies.com/cyber-security-course-wagholi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
