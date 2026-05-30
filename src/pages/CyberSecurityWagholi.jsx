@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import EnrollmentForm from "../components/EnrollmentForm";
 import Testimonials from "../components/Testimonials";
+import { getNextBatchDate } from "../utils/batchDates";
 
 const CyberSecurityWagholi = () => {
   const structuredData = {
@@ -17,6 +18,9 @@ const CyberSecurityWagholi = () => {
     },
   };
 
+  const batchDates = ["2026-06-18", "2026-09-10", "2026-11-20"];
+  const nextBatch = getNextBatchDate(batchDates);
+
   return (
     <div className="pt-24">
       <SEO
@@ -30,7 +34,7 @@ const CyberSecurityWagholi = () => {
       <section className="bg-gradient-to-r from-slate-900 to-emerald-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Cyber Security Course Wagholi — Batch Starts June 18
+            Cyber Security Course Wagholi — Batch Starts {nextBatch || "Soon"}
           </h1>
           <p className="max-w-3xl mx-auto text-lg mb-6">
             Secure your IT future with cyber security training near Wagholi.
@@ -97,7 +101,7 @@ const CyberSecurityWagholi = () => {
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-xl">
               <h3 className="text-xl font-semibold mb-4">Batch Details</h3>
-              <p className="mb-3">Start Date: June 18</p>
+              <p className="mb-3">Start Date: {nextBatch || "Starting Soon"}</p>
               <p className="mb-3">Duration: 6 Months</p>
               <p className="mb-3">Schedule: Weekend + Evening Classes</p>
               <p className="mb-3">Mode: Hybrid (Wagholi + Online)</p>

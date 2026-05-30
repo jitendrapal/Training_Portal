@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import EnrollmentForm from "../components/EnrollmentForm";
 import Testimonials from "../components/Testimonials";
+import { getNextBatchDate } from "../utils/batchDates";
 
 const PythonWagholi = () => {
   const structuredData = {
@@ -17,6 +18,9 @@ const PythonWagholi = () => {
     },
   };
 
+  const batchDates = ["2026-06-10", "2026-08-05", "2026-10-01"];
+  const nextBatch = getNextBatchDate(batchDates);
+
   return (
     <div className="pt-24">
       <SEO
@@ -30,7 +34,7 @@ const PythonWagholi = () => {
       <section className="bg-gradient-to-r from-sky-700 to-cyan-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Python Training Wagholi — Batch Starts June 10
+            Python Training Wagholi — Batch Starts {nextBatch || "Soon"}
           </h1>
           <p className="max-w-3xl mx-auto text-lg mb-6">
             Learn Python programming, web development, data science, and
@@ -98,7 +102,7 @@ const PythonWagholi = () => {
             </div>
             <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-xl">
               <h3 className="text-xl font-semibold mb-4">Batch Details</h3>
-              <p className="mb-3">Start Date: June 10</p>
+              <p className="mb-3">Start Date: {nextBatch || "Starting Soon"}</p>
               <p className="mb-3">Duration: 6 Months</p>
               <p className="mb-3">Schedule: Weekdays/Weekends</p>
               <p className="mb-3">Mode: Hybrid (Wagholi + Online)</p>

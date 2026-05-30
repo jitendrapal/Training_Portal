@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import EnrollmentForm from "../components/EnrollmentForm";
 import Testimonials from "../components/Testimonials";
+import { getNextBatchDate } from "../utils/batchDates";
 
 const FullStackWagholi = () => {
   const structuredData = {
@@ -17,6 +18,9 @@ const FullStackWagholi = () => {
     },
   };
 
+  const batchDates = ["2026-06-12", "2026-08-20", "2026-11-01"];
+  const nextBatch = getNextBatchDate(batchDates);
+
   return (
     <div className="pt-24">
       <SEO
@@ -30,7 +34,7 @@ const FullStackWagholi = () => {
       <section className="bg-gradient-to-r from-purple-700 to-fuchsia-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Full Stack Course Wagholi — Next Batch Starts June 12
+            Full Stack Course Wagholi — Next Batch Starts {nextBatch || "Soon"}
           </h1>
           <p className="max-w-3xl mx-auto text-lg mb-6">
             Become a job-ready full stack developer with React, Node.js,
@@ -99,7 +103,7 @@ const FullStackWagholi = () => {
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-xl">
               <h3 className="text-xl font-semibold mb-4">Batch Details</h3>
-              <p className="mb-3">Start Date: June 12</p>
+              <p className="mb-3">Start Date: {nextBatch || "Starting Soon"}</p>
               <p className="mb-3">Duration: 6 Months</p>
               <p className="mb-3">Schedule: Evening and Weekend Batches</p>
               <p className="mb-3">Mode: Hybrid / Online</p>

@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import EnrollmentForm from "../components/EnrollmentForm";
 import Testimonials from "../components/Testimonials";
+import { getNextBatchDate } from "../utils/batchDates";
 
 const AIMLWagholi = () => {
   const structuredData = {
@@ -17,6 +18,9 @@ const AIMLWagholi = () => {
     },
   };
 
+  const batchDates = ["2026-06-15", "2026-09-01", "2026-12-01"];
+  const nextBatch = getNextBatchDate(batchDates);
+
   return (
     <div className="pt-24">
       <SEO
@@ -30,7 +34,7 @@ const AIMLWagholi = () => {
       <section className="bg-gradient-to-r from-indigo-700 to-slate-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            AI/ML Course Wagholi — Batch Starts June 15
+            AI/ML Course Wagholi — Batch Starts {nextBatch || "Soon"}
           </h1>
           <p className="max-w-3xl mx-auto text-lg mb-6">
             Gain practical AI and Machine Learning skills in Wagholi with real
@@ -105,7 +109,7 @@ const AIMLWagholi = () => {
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-xl">
               <h3 className="text-xl font-semibold mb-4">Batch Details</h3>
-              <p className="mb-3">Start Date: June 15</p>
+              <p className="mb-3">Start Date: {nextBatch || "Starting Soon"}</p>
               <p className="mb-3">Duration: 6 Months</p>
               <p className="mb-3">Schedule: Weekend + Evening Batches</p>
               <p className="mb-3">Mode: Hybrid (Wagholi + Online)</p>
