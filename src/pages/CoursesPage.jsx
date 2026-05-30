@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import Courses from "../components/Courses";
 import Testimonials from "../components/Testimonials";
@@ -30,6 +31,44 @@ const CoursesPage = () => {
             Looking for the Best IT Institute Near Wagholi or IT Classes Near
             Me? Our programs deliver the practical skills Pune employers want.
           </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Link
+              to="/python-training-wagholi"
+              className="block rounded-2xl bg-white p-5 text-center shadow hover:shadow-lg transition"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-primary-600 mb-2">
+                Python Training Wagholi
+              </p>
+              <p className="text-gray-700">Live Python projects, internship support, placement coaching.</p>
+            </Link>
+            <Link
+              to="/full-stack-course-wagholi"
+              className="block rounded-2xl bg-white p-5 text-center shadow hover:shadow-lg transition"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary-600 mb-2">
+                Full Stack Course Wagholi
+              </p>
+              <p className="text-gray-700">React, Node.js, database, deployment and job-ready outcomes.</p>
+            </Link>
+            <Link
+              to="/ai-ml-course-wagholi"
+              className="block rounded-2xl bg-white p-5 text-center shadow hover:shadow-lg transition"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-primary-700 mb-2">
+                AI/ML Course Wagholi
+              </p>
+              <p className="text-gray-700">Machine learning, data science, model deployment, career support.</p>
+            </Link>
+            <Link
+              to="/cyber-security-course-wagholi"
+              className="block rounded-2xl bg-white p-5 text-center shadow hover:shadow-lg transition"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-emerald-600 mb-2">
+                Cyber Security Course Wagholi
+              </p>
+              <p className="text-gray-700">Ethical hacking, network security, pentesting and placement help.</p>
+            </Link>
+          </div>
         </div>
       </section>
 
