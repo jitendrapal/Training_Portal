@@ -17,7 +17,7 @@ const ServicesPage = () => {
       <SEO
         title="IT Services & Support | Neuro Edge Technologies"
         description="Explore our IT services, custom software solutions, cloud and AI support, and training assistance. We deliver professional software services alongside training guidance for learners and businesses."
-        keywords="IT Services, Software Development Services, Cloud Services, AI Solutions, Custom Software, Digital Transformation, Training Assistance, Career Support, Internship Guidance, Placement Support, Job Oriented Course, job oriented course, Job Ready Course, job ready course, Job Placement Support, job placement support, Job Assistance, job assistance, Best institute in Wagholi"
+        keywords="IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Cloud Computing Course, AWS Training Wagholi, Azure Training Pune, DevOps Course, Cyber Security Course, Software Testing Course, AI Course in Wagholi, Artificial Intelligence Training, Data Science Course Pune, Placement Assistance IT Training, Internship Support, Placement Support, Best institute in Wagholi"
         canonical="/services"
         structuredData={servicesStructuredData}
       />

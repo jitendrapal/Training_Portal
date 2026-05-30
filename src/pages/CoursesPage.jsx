@@ -9,8 +9,8 @@ const CoursesPage = () => {
     <div className="pt-24">
       <SEO
         title="Career-Focused IT Training Programs | Full Stack & Job-Ready Courses"
-        description="Explore our career-focused IT training programs with internship support, live project learning, placement preparation, and in-demand courses like Java Full Stack, .NET Full Stack, Python Full Stack, SQL Database, Azure, and AI."
-        keywords="IT Training Programs Pune, Career-Focused IT Training, Best IT institute in Wagholi Pune, Best institute in Wagholi, Job Oriented Course, job oriented course, Job Ready Course, job ready course, Job Placement Support, job placement support, Job Assistance, job assistance, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, C++ Course, C Course, Azure Training, AI Training, AI Workshop, Agentic AI, Internship Support, Placement Preparation"
+        description="Explore our career-focused IT training programs with internship support, live project learning, placement preparation, and in-demand courses like Full Stack Development, Python, Data Science, AI/ML, Cloud Computing, Cyber Security, Software Testing, and DevOps."
+        keywords="IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Placement Assistance IT Training, Software Training Institute Wagholi, Python Training in Wagholi, Java Full Stack Course, MERN Stack Training, Full Stack Developer Course, Web Development Course, AI Course in Wagholi, Machine Learning Course, Data Science Course Pune, Cloud Computing Course, DevOps Course, Cyber Security Course, Software Testing Course, Job-Oriented Courses, Job Ready Course, Job Placement Support, Internship Support, Placement Preparation"
         canonical="/courses"
         structuredData={internshipSchema}
       />

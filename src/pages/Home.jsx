@@ -41,8 +41,8 @@ const Home = () => {
     <div>
       <SEO
         title="Job-Oriented Courses | Best Institute in Wagholi Pune"
-        description="Job-oriented courses and the best institute in Wagholi Pune for IT training, internship support, placement preparation, Ausbildung for IT and other branches, and live project learning in Java, .NET, Python, SQL, Azure, and AI."
-        keywords="Job-Oriented Courses, Best Institute in Wagholi Pune, job ready course, Job Placement Support, Job Assistance, Job Oriented Course, Job Ready Training Programs, IT Training Institute, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Training, Agentic AI, AI Workshop, Internship Support, Placement Support, Ausbildung, IT Ausbildung, Ausbildung in Germany"
+        description="Neuro Edge Technologies is the best IT training institute in Wagholi, Pune offering Full Stack Development, Python, Data Science, AI/ML, Cloud Computing, Cyber Security, Software Testing, and DevOps with live projects, expert mentorship, interview preparation, and placement assistance."
+        keywords="IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Placement Assistance IT Training, IT Classes Near Me, Software Training Institute Wagholi, Python Training in Wagholi, Java Full Stack Course, MERN Stack Training, Full Stack Developer Course, Java Programming Classes, Web Development Course, AI Course in Wagholi, Artificial Intelligence Training, Machine Learning Course, Data Science Course Pune, Data Analytics Training, Power BI Course, AWS Training Wagholi, Azure Training Pune, DevOps Course, Cloud Computing Course, Kubernetes Training, Software Testing Course, Automation Testing Training, Selenium Training, Cyber Security Course, Ethical Hacking Course, Full Stack Development, Python + AI, Data Analytics, Cloud Computing, Software Testing, Job-Oriented Courses, Job Ready Training Programs, Internship Support, Placement Support"
         canonical="/"
         structuredData={homeStructuredData}
       />

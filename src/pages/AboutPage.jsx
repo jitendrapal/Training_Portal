@@ -18,8 +18,8 @@ const AboutPage = () => {
     <div className="pt-24">
       <SEO
         title="About Us | Career-Focused IT Training Institute in Pune"
-        description="Neuro Edge Technologies is a career-focused IT training institute in Pune offering live project courses, internship support, job-ready coaching, and training in Java Full Stack, .NET Full Stack, Python Full Stack, SQL, Azure, and AI."
-        keywords="About Neuro Edge Technologies, Software Training Institute Pune, IT Training Institute, Best IT institute in Wagholi Pune, Best institute in Wagholi, Job Oriented Course, job oriented course, Job Ready Course, job ready course, Job Placement Support, job placement support, Job Assistance, job assistance, Career-Focused IT Training, Java Full Stack Course, .NET Full Stack Course, Python Full Stack Course, SQL Database Course, Azure Training, AI Workshop, Internship Support, Placement Support"
+        description="Neuro Edge Technologies is a career-focused IT training institute in Pune offering live project courses, internship support, job-ready coaching, and training in Full Stack Development, Python, Data Science, AI/ML, Cloud Computing, Cyber Security, Software Testing, and DevOps."
+        keywords="IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Placement Assistance IT Training, IT Classes Near Me, Software Training Institute Wagholi, Python Training in Wagholi, Java Full Stack Course, MERN Stack Training, Full Stack Developer Course, AI Course in Wagholi, Data Science Course Pune, Cloud Computing Course, DevOps Course, Cyber Security Course, Software Testing Course, Job-Oriented Courses, Job Ready Course, Job Placement Support, Internship Support, Placement Support"
         canonical="/about"
         structuredData={aboutStructuredData}
       />
