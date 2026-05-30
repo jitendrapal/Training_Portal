@@ -195,7 +195,7 @@ const WorkshopEnquiryForm = () => {
                     🔥 Most Popular This Month
                   </h4>
                   <p className="text-primary-100 text-sm">
-                    Java Full Stack & Python Full Stack - High Demand!
+                    Python Full Stack is our top trending course right now.
                   </p>
                 </div>
                 <div className="text-right">

@@ -19,7 +19,7 @@ const Courses = () => {
         "Performance-based Stipend",
         "Professional Experience Certificate",
       ],
-      popular: true,
+      popular: false,
       icon: "☕",
     },
     {
@@ -55,7 +55,7 @@ const Courses = () => {
         "API Development Experience",
         "Career Development Support",
       ],
-      popular: false,
+      popular: true,
       icon: "🐍",
     },
     {
@@ -79,7 +79,7 @@ const Courses = () => {
         "Performance-based Stipend",
         "Professional Experience Certificate",
       ],
-      popular: true,
+      popular: false,
       icon: "🔷",
     },
     {
@@ -97,7 +97,7 @@ const Courses = () => {
         "Data Analysis Experience",
         "Real-world AI Solutions",
       ],
-      popular: true,
+      popular: false,
       icon: "🤖",
     },
     {
