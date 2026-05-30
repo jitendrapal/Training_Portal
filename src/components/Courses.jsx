@@ -21,6 +21,7 @@ const Courses = () => {
       ],
       popular: true,
       icon: "🐍",
+      landingPage: "/python-full-stack",
     },
     {
       id: 1,
@@ -39,6 +40,7 @@ const Courses = () => {
       ],
       popular: false,
       icon: "☕",
+      landingPage: "/java-full-stack",
     },
     {
       id: 2,
@@ -60,7 +62,7 @@ const Courses = () => {
     },
     {
       id: 4,
-      title: ".NET Development Course (with Internship)",
+      title: ".NET Full Stack Development Course (with Internship)",
       description:
         "Professional course with internship experience working with C#, ASP.NET Core, Entity Framework, and Azure. Build scalable enterprise applications in a real development environment.",
       duration: "6 Months",
@@ -81,6 +83,7 @@ const Courses = () => {
       ],
       popular: false,
       icon: "🔷",
+      landingPage: "/dotnet-full-stack",
     },
     {
       id: 5,
@@ -259,7 +262,15 @@ const Courses = () => {
               </div>
 
               {/* Card Footer */}
-              <div className="px-6 pb-6">
+              <div className="px-6 pb-6 space-y-3">
+                {course.landingPage && (
+                  <button
+                    onClick={() => navigate(course.landingPage)}
+                    className="w-full py-3 px-4 rounded-lg font-semibold border border-primary-200 text-primary-700 bg-white hover:bg-primary-50 transition-all duration-300"
+                  >
+                    Learn More
+                  </button>
+                )}
                 <button
                   onClick={handleApplyClick}
                   className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${

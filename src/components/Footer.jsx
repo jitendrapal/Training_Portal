@@ -105,10 +105,13 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={navigateToCourses}
+                    onClick={() => {
+                      navigate("/java-full-stack");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Java Full Stack Development
+                    Java Full Stack Course
                   </button>
                 </li>
                 <li>
@@ -121,7 +124,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToCourses}
+                    onClick={() => {
+                      navigate("/python-full-stack");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Python Full Stack Development
@@ -129,10 +135,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={navigateToCourses}
+                    onClick={() => {
+                      navigate("/dotnet-full-stack");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    .NET Development
+                    .NET Full Stack Development
                   </button>
                 </li>
                 <li>

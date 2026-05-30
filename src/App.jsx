@@ -10,6 +10,9 @@ import EnrollPage from "./pages/EnrollPage";
 import WorkshopPage from "./pages/WorkshopPage";
 import CoursesPage from "./pages/CoursesPage";
 import ServicesPage from "./pages/ServicesPage";
+import PythonLanding from "./pages/PythonLanding";
+import JavaLanding from "./pages/JavaLanding";
+import DotNetLanding from "./pages/DotNetLanding";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
             <Route path="/enroll" element={<EnrollPage />} />
             <Route path="/workshop" element={<WorkshopPage />} />
             <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/python-full-stack" element={<PythonLanding />} />
+            <Route path="/java-full-stack" element={<JavaLanding />} />
+            <Route path="/dotnet-full-stack" element={<DotNetLanding />} />
             <Route path="/services" element={<ServicesPage />} />
           </Routes>
         </main>
