@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+oimport React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { submitToGoogleSheets, FORM_CONFIG } from "../config/googleSheets";
 
@@ -39,7 +39,7 @@ const EnrollmentForm = () => {
     "Cloud & DevOps Services",
     "IT Support & IT Outsourcing",
     "Higher Education in Germany",
-    "German Classes (A1 to A2)",
+    "German Classes (A1 to B2)",
   ];
   const jobs = [
     "Receptionist",

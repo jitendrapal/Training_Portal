@@ -7,8 +7,8 @@ const GermanyAusbildungPage = () => {
     <div className="pt-24 min-h-screen bg-gray-50">
       <SEO
         title="Best German Classes in Pune | Germany Jobs & Ausbildung Consultants"
-        description="Looking for Germany jobs, Ausbildung, or the best German language classes (A1-A2) in Pune? Neuro Edge Technologies offers expert European placement and language training (Online/Offline)."
-        keywords="Best German classes in Pune, Online German language courses India, Offline German classes Pune, German A1 A2 training Pune, Germany jobs from India, Ausbildung consultants in Pune, IT jobs in Germany for Indians, Germany Placement Support Pune, Europe Jobs Consultancy India, Study in Germany consultants Pune, Vocational Training Germany apply from India, Master's in Germany from India, Ausbildung IT branches Pune, Germany work visa assistance India, apply for Ausbildung from India"
+        description="Looking for Germany jobs, Ausbildung, or the best German language classes (A1-B2) in Pune? Neuro Edge Technologies offers expert European placement and language training (Online/Offline)."
+        keywords="Best German classes in Pune, Online German language courses India, Offline German classes Pune, German A1 to B2 training Pune, Germany jobs from India, Ausbildung consultants in Pune, IT jobs in Germany for Indians, Germany Placement Support Pune, Europe Jobs Consultancy India, Study in Germany consultants Pune, Vocational Training Germany apply from India, Master's in Germany from India, Ausbildung IT branches Pune, Germany work visa assistance India, apply for Ausbildung from India"
         canonical="/germany-placement"
       />
 
@@ -56,13 +56,13 @@ const GermanyAusbildungPage = () => {
               </h3>
               <p className="text-gray-600 mb-6">
                 Master the language! We offer the best German classes in Pune
-                (Online & Offline) from A1 to A2 levels to meet German visa and
+                (Online & Offline) from A1 to B2 levels to meet German visa and
                 employer requirements.
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-secondary-500 mr-2">✓</span>
-                  A1 & A2 Certification Training
+                  A1 to B2 Certification Training
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-500 mr-2">✓</span>
