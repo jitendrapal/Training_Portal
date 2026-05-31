@@ -17,10 +17,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Internship Page (replaced by courses) -->
-  <!-- Removed duplicate internship entry; courses are listed above -->
-  
+
+  <!-- Germany Placement Page -->
+  <url>
+    <loc>https://neuroedgetechnologies.com/germany-placement</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- About Page -->
   <url>
     <loc>https://neuroedgetechnologies.com/about</loc>

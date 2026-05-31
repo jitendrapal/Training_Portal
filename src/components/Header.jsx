@@ -85,6 +85,16 @@ const Header = () => {
               >
                 Services
               </Link>
+              <Link
+                to="/germany-placement"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  isActive("/germany-placement")
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Study in Germany
+              </Link>
 
               <Link
                 to="/contact"
@@ -229,6 +239,17 @@ const Header = () => {
                 }`}
               >
                 Services
+              </Link>
+              <Link
+                to="/germany-placement"
+                onClick={closeMenu}
+                className={`block px-3 py-2 text-base font-medium ${
+                  isActive("/germany-placement")
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Study in Germany
               </Link>
               <Link
                 to="/about"

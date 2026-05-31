@@ -17,6 +17,7 @@ import PythonWagholi from "./pages/PythonWagholi";
 import FullStackWagholi from "./pages/FullStackWagholi";
 import AIMLWagholi from "./pages/AIMLWagholi";
 import CyberSecurityWagholi from "./pages/CyberSecurityWagholi";
+import GermanyAusbildungPage from "./pages/GermanyAusbildungPage";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route
+              path="/germany-placement"
+              element={<GermanyAusbildungPage />}
+            />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/enroll" element={<EnrollPage />} />
             <Route path="/workshop" element={<WorkshopPage />} />
