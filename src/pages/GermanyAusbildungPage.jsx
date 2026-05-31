@@ -6,9 +6,9 @@ const GermanyAusbildungPage = () => {
   return (
     <div className="pt-24 min-h-screen bg-gray-50">
       <SEO
-        title="Germany Ausbildung & IT Jobs Placement Consultants in Pune, India"
-        description="Looking for Germany jobs, Ausbildung, or higher education from India? Neuro Edge Technologies in Pune offers expert European placement and study abroad support."
-        keywords="Germany jobs from India, Ausbildung consultants in Pune, IT jobs in Germany for Indians, Germany Placement Support Pune, Europe Jobs Consultancy India, Study in Germany consultants Pune, Vocational Training Germany apply from India, Master's in Germany from India, Ausbildung IT branches Pune, Germany work visa assistance India, apply for Ausbildung from India"
+        title="Best German Classes in Pune | Germany Jobs & Ausbildung Consultants"
+        description="Looking for Germany jobs, Ausbildung, or the best German language classes (A1-A2) in Pune? Neuro Edge Technologies offers expert European placement and language training (Online/Offline)."
+        keywords="Best German classes in Pune, Online German language courses India, Offline German classes Pune, German A1 A2 training Pune, Germany jobs from India, Ausbildung consultants in Pune, IT jobs in Germany for Indians, Germany Placement Support Pune, Europe Jobs Consultancy India, Study in Germany consultants Pune, Vocational Training Germany apply from India, Master's in Germany from India, Ausbildung IT branches Pune, Germany work visa assistance India, apply for Ausbildung from India"
         canonical="/germany-placement"
       />
 
@@ -47,7 +47,34 @@ const GermanyAusbildungPage = () => {
       {/* Main Content */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* German Classes */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">🇩🇪</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                German Language Classes
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Master the language! We offer the best German classes in Pune
+                (Online & Offline) from A1 to A2 levels to meet German visa and
+                employer requirements.
+              </p>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">✓</span>
+                  A1 & A2 Certification Training
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">✓</span>
+                  Online and Offline batch options
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">✓</span>
+                  Goethe Exam preparation
+                </li>
+              </ul>
+            </div>
+
             {/* Ausbildung */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">🎓</div>
