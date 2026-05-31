@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -113,8 +114,8 @@ const Home = () => {
       <section className="py-12 bg-gradient-to-r from-primary-900 via-slate-950 to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
-              <span className="inline-flex rounded-full bg-primary-500/20 px-4 py-1 text-sm font-semibold text-primary-100 mb-4">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl flex flex-col h-full">
+              <span className="inline-flex w-fit rounded-full bg-primary-500/20 px-4 py-1 text-sm font-semibold text-primary-100 mb-4">
                 LIMITED SEATS AVAILABLE
               </span>
               <h2 className="text-3xl font-bold mb-4">
@@ -131,23 +132,29 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
-              <span className="inline-flex rounded-full bg-secondary-500/20 px-4 py-1 text-sm font-semibold text-secondary-100 mb-4">
-                GERMANY EDUCATION & PLACEMENT SUPPORT
-              </span>
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl flex flex-col h-full">
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex rounded-full bg-secondary-500/20 px-4 py-1 text-sm font-semibold text-secondary-100">
+                  GERMANY EDUCATION & PLACEMENT SUPPORT
+                </span>
+                <span className="flex items-center text-xs font-bold text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">
+                  ⭐ Top Consultants in Pune
+                </span>
+              </div>
               <h2 className="text-3xl font-bold mb-4">
                 Ausbildung & Higher Education in Germany
               </h2>
               <p className="text-slate-300 mb-4">
-                We provide full guidance and support for applying to Bachelor's
-                and Master's programs, as well as vocational Ausbildung pathways
-                and placement opportunities in Germany.
+                Looking for Germany jobs or Ausbildung from India? We provide
+                expert, end-to-end guidance for applying to Bachelor's and
+                Master's programs, vocational Ausbildung pathways, and direct IT
+                placements.
               </p>
               <p className="text-sm font-semibold text-secondary-100 mb-4">
-                Partnered with Europe Jobs Consultancy for stronger European
-                placement support.
+                Partnered strategically with Europe Jobs Consultancy for
+                unmatched European placement support.
               </p>
-              <ul className="space-y-3 text-slate-300">
+              <ul className="space-y-3 text-slate-300 mb-8 flex-grow">
                 <li>
                   ✔ Full support for Bachelor's & Master's higher education
                   programs
@@ -158,6 +165,12 @@ const Home = () => {
                 </li>
                 <li>✔ Career mentorship and university application guidance</li>
               </ul>
+              <Link
+                to="/germany-placement"
+                className="inline-block text-center w-full bg-secondary-500 hover:bg-secondary-600 text-white font-bold py-3 px-6 rounded-xl transition-colors"
+              >
+                View Germany Programs & Apply
+              </Link>
             </div>
           </div>
         </div>
