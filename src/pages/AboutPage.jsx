@@ -188,68 +188,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Trainers Section */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-500 mb-3">
-              Our Trainers
-            </p>
-            <h2 className="text-3xl font-bold text-gray-900">
-              Meet our expert instructors
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
-              Experienced trainers guiding learners through Java, Python, AI/ML,
-              and full-stack career paths with industry-ready projects.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm">
-              <img
-                src="/images/Dinesh_Sripathi_JavaTrainer.JPG"
-                alt="Dine Sripathi - Java FullStack Trainer"
-                className="w-full h-80 object-cover"
-              />
-              <div className="p-8 bg-white">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Dine Sripathi
-                </h3>
-                <p className="text-primary-600 font-semibold mb-4">
-                  Java FullStack Trainer
-                </p>
-                <p className="text-gray-600">
-                  Java expert with deep experience in Spring Boot, React, and
-                  full-stack software delivery. Dine guides students through
-                  practical projects and internship-ready development.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm">
-              <img
-                src="/images/Ganesh_Jamadar_Python_AI_ML_Trainer.jpg"
-                alt="Ganesh Jamadar - Python AI/ML Trainer"
-                className="w-full h-80 object-cover"
-              />
-              <div className="p-8 bg-white">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Ganesh Jamadar
-                </h3>
-                <p className="text-primary-600 font-semibold mb-4">
-                  Python & AI/ML Trainer
-                </p>
-                <p className="text-gray-600">
-                  Specialist in Python, AI/ML, and agentic AI training. Ganesh
-                  helps learners build advanced intelligent systems and
-                  practical machine learning solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Stats Section */}
       {/* <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

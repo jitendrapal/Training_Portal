@@ -55,26 +55,47 @@ const Header = () => {
               >
                 Home
               </Link>
-              <Link
-                to="/about"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/about")
-                    ? "text-primary-600 border-b-2 border-primary-600"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                About Us
-              </Link>
-              <Link
-                to="/about/team"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/about/team")
-                    ? "text-primary-600 border-b-2 border-primary-600"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Our Team
-              </Link>
+              <div className="relative group">
+                <Link
+                  to="/about"
+                  className={`px-3 py-2 text-sm font-medium transition-colors inline-flex items-center ${
+                    isActive("/about") || isActive("/about/team")
+                      ? "text-primary-600 border-b-2 border-primary-600"
+                      : "text-gray-900 hover:text-primary-600"
+                  }`}
+                >
+                  About Us
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </Link>
+                <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                  <div className="py-1">
+                    <Link
+                      to="/about"
+                      className={`block px-4 py-2 text-sm transition-colors ${isActive("/about") ? "text-primary-600 bg-primary-50 font-semibold" : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"}`}
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      to="/about/team"
+                      className={`block px-4 py-2 text-sm transition-colors ${isActive("/about/team") ? "text-primary-600 bg-primary-50 font-semibold" : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"}`}
+                    >
+                      Our Team
+                    </Link>
+                  </div>
+                </div>
+              </div>
               <Link
                 to="/courses"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
@@ -261,28 +282,33 @@ const Header = () => {
               >
                 Study in Germany
               </Link>
-              <Link
-                to="/about"
-                onClick={closeMenu}
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/about")
-                    ? "text-primary-600 bg-primary-50"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                About
-              </Link>
-              <Link
-                to="/about/team"
-                onClick={closeMenu}
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive("/about/team")
-                    ? "text-primary-600 bg-primary-50"
-                    : "text-gray-900 hover:text-primary-600"
-                }`}
-              >
-                Our Team
-              </Link>
+              <div className="space-y-1 py-1">
+                <div className="px-3 py-2 text-base font-medium text-gray-900">
+                  About
+                </div>
+                <Link
+                  to="/about"
+                  onClick={closeMenu}
+                  className={`block pl-6 pr-3 py-2 text-base font-medium ${
+                    isActive("/about")
+                      ? "text-primary-600 bg-primary-50"
+                      : "text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+                  }`}
+                >
+                  About Us
+                </Link>
+                <Link
+                  to="/about/team"
+                  onClick={closeMenu}
+                  className={`block pl-6 pr-3 py-2 text-base font-medium ${
+                    isActive("/about/team")
+                      ? "text-primary-600 bg-primary-50"
+                      : "text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+                  }`}
+                >
+                  Our Team
+                </Link>
+              </div>
               <Link
                 to="/contact"
                 onClick={closeMenu}
