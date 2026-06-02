@@ -60,19 +60,22 @@ const CyberSecurityLanding = () => {
             <div className="p-6 border rounded-lg text-center">
               <h3 className="font-semibold mb-2">Ethical Hacking</h3>
               <p className="text-sm text-gray-600">
-                Master vulnerability assessment, exploitation, and penetration testing.
+                Master vulnerability assessment, exploitation, and penetration
+                testing.
               </p>
             </div>
             <div className="p-6 border rounded-lg text-center">
               <h3 className="font-semibold mb-2">Network Security</h3>
               <p className="text-sm text-gray-600">
-                Secure networks with firewall setups, IDS/IPS, and secure architecture.
+                Secure networks with firewall setups, IDS/IPS, and secure
+                architecture.
               </p>
             </div>
             <div className="p-6 border rounded-lg text-center">
               <h3 className="font-semibold mb-2">Job Preparation</h3>
               <p className="text-sm text-gray-600">
-                Get interview prep, resume guidance, CTF practice, and placement support.
+                Get interview prep, resume guidance, CTF practice, and placement
+                support.
               </p>
             </div>
           </div>
@@ -87,9 +90,13 @@ const CyberSecurityLanding = () => {
                 What You Will Learn
               </h2>
               <ul className="space-y-3 text-gray-700">
-                <li>✔ Ethical hacking, penetration testing, and web security</li>
+                <li>
+                  ✔ Ethical hacking, penetration testing, and web security
+                </li>
                 <li>✔ Network defense, Wireshark, firewalls, and IDS/IPS</li>
-                <li>✔ Incident response, digital forensics, and log analysis</li>
+                <li>
+                  ✔ Incident response, digital forensics, and log analysis
+                </li>
                 <li>✔ Security automation with Python and Kali Linux tools</li>
                 <li>✔ Placement support for Pune cyber security roles</li>
               </ul>
@@ -101,7 +108,8 @@ const CyberSecurityLanding = () => {
               <p className="mb-3">Schedule: Weekend + Evening Batches</p>
               <p className="mb-3">Projects: Labs, CTFs, security assessments</p>
               <p className="text-sm text-gray-600">
-                Designed for learners who want cyber security training with real labs and placement coaching in Maharashtra.
+                Designed for learners who want cyber security training with real
+                labs and placement coaching in Maharashtra.
               </p>
             </div>
           </div>
@@ -112,7 +120,8 @@ const CyberSecurityLanding = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-4">Secure Your Seat</h2>
           <p className="text-gray-600 mb-6">
-            Fill the form below to book your batch and receive a free career consultation for cyber security.
+            Fill the form below to book your batch and receive a free career
+            consultation for cyber security.
           </p>
           <EnrollmentForm />
         </div>
