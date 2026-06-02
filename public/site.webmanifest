@@ -13,19 +13,19 @@
   "categories": ["education", "technology", "training"],
   "icons": [
     {
-      "src": "/neuro-edge-logo.png",
+      "src": "/logo.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/neuro-edge-logo.png",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/neuro-edge-logo.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
