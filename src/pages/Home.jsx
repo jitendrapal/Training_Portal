@@ -41,9 +41,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="Job-Oriented Courses | Best Institute in Wagholi Pune"
-        description="Neuro Edge Technologies is the best IT training institute in Wagholi, Pune offering Full Stack Development, Python, Data Science, AI/ML, Cloud Computing, Cyber Security, Software Testing, and DevOps with live projects, expert mentorship, interview preparation, and placement assistance."
-        keywords="IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Placement Assistance IT Training, IT Classes Near Me, Software Training Institute Wagholi, Python Training in Wagholi, Java Full Stack Course, MERN Stack Training, Full Stack Developer Course, Java Programming Classes, Web Development Course, AI Course in Wagholi, Artificial Intelligence Training, Machine Learning Course, Data Science Course Pune, Data Analytics Training, Power BI Course, AWS Training Wagholi, Azure Training Pune, DevOps Course, Cloud Computing Course, Kubernetes Training, Software Testing Course, Automation Testing Training, Selenium Training, Cyber Security Course, Ethical Hacking Course, Full Stack Development, Python + AI, Data Analytics, Cloud Computing, Software Testing, Job-Oriented Courses, Job Ready Training Programs, Internship Support, Placement Support"
+        title="Job-Oriented Courses | Best Software Training Institute in Wagholi Pune"
+        description="Neuro Edge Technologies is the best software training institute in Wagholi and Pune offering Full Stack Development, Python, Data Science, AI/ML, Cloud Computing, Cyber Security, Software Testing, and DevOps with live projects, expert mentorship, interview preparation, and placement assistance."
+        keywords="Software Training Institute Wagholi, Software Training Institute in Wagholi, Software Training Institute Pune, Software Training Institute in Pune, IT Training Institute Wagholi, Best IT Institute in Wagholi, IT Training Institute in Wagholi Pune, Job Oriented IT Courses in Wagholi, Placement Assistance IT Training, IT Classes Near Me, Software Training Institute Wagholi, Python Training in Wagholi, Java Full Stack Course, MERN Stack Training, Full Stack Developer Course, Java Programming Classes, Web Development Course, AI Course in Wagholi, Artificial Intelligence Training, Machine Learning Course, Data Science Course Pune, Data Analytics Training, Power BI Course, AWS Training Wagholi, Azure Training Pune, DevOps Course, Cloud Computing Course, Kubernetes Training, Software Testing Course, Automation Testing Training, Selenium Training, Cyber Security Course, Ethical Hacking Course, Full Stack Development, Python + AI, Data Analytics, Cloud Computing, Software Testing, Job-Oriented Courses, Job Ready Training Programs, Internship Support, Placement Support"
         canonical="/"
         structuredData={homeStructuredData}
       />
@@ -108,6 +108,67 @@ const Home = () => {
                 Ethical hacking and security training with Pune placement help.
               </p>
             </a>
+          </div>
+        </div>
+      </section>
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500 mb-3">
+              Software Training Institute in Wagholi & Pune
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              The leading software training institute near Wagholi and Pune
+            </h2>
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+              We offer online and offline software training in Wagholi and Pune
+              for Java, Python, Cyber Security, Data Science, Cloud, and full
+              stack careers.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-3xl border border-slate-200 p-6 text-center">
+              <h3 className="font-semibold text-lg mb-3">Local Training</h3>
+              <p className="text-sm text-gray-600">
+                Hybrid and in-person training near Wagholi with Pune placement
+                support.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-200 p-6 text-center">
+              <h3 className="font-semibold text-lg mb-3">Industry Projects</h3>
+              <p className="text-sm text-gray-600">
+                Hands-on software projects, internship-ready work, and live
+                mentoring.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-200 p-6 text-center">
+              <h3 className="font-semibold text-lg mb-3">Career Support</h3>
+              <p className="text-sm text-gray-600">
+                Resume prep, interview coaching, and placement assistance for
+                Pune jobs.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-200 p-6 text-center">
+              <h3 className="font-semibold text-lg mb-3">Trusted Institute</h3>
+              <p className="text-sm text-gray-600">
+                Recognized as a top software training institute in Wagholi and
+                Pune.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Link
+              to="/courses"
+              className="inline-block rounded-full bg-primary-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-primary-700"
+            >
+              View Courses
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-block rounded-full border border-primary-600 px-8 py-3 text-sm font-semibold text-primary-600 hover:bg-primary-50"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
