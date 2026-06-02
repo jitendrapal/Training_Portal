@@ -95,7 +95,7 @@ const OurTeam = () => {
               <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
-                    src="/neuro-edge-logo.png"
+                    src="/logo.png"
                     alt="Rajni Rathor - Technical Counselor"
                     className="w-full h-full object-contain p-4"
                   />
