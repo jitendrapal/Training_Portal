@@ -18,6 +18,7 @@ import FullStackWagholi from "./pages/FullStackWagholi";
 import AIMLWagholi from "./pages/AIMLWagholi";
 import CyberSecurityWagholi from "./pages/CyberSecurityWagholi";
 import CyberSecurityLanding from "./pages/CyberSecurityLanding";
+import OurTeam from "./pages/OurTeam";
 import GermanyAusbildungPage from "./pages/GermanyAusbildungPage";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
               path="/cyber-security-course"
               element={<CyberSecurityLanding />}
             />
+            <Route path="/about/team" element={<OurTeam />} />
             <Route path="/services" element={<ServicesPage />} />
           </Routes>
         </main>

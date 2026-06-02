@@ -66,6 +66,16 @@ const Header = () => {
                 About Us
               </Link>
               <Link
+                to="/about/team"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  isActive("/about/team")
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Our Team
+              </Link>
+              <Link
                 to="/courses"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/courses")
@@ -261,6 +271,17 @@ const Header = () => {
                 }`}
               >
                 About
+              </Link>
+              <Link
+                to="/about/team"
+                onClick={closeMenu}
+                className={`block px-3 py-2 text-base font-medium ${
+                  isActive("/about/team")
+                    ? "text-primary-600 bg-primary-50"
+                    : "text-gray-900 hover:text-primary-600"
+                }`}
+              >
+                Our Team
               </Link>
               <Link
                 to="/contact"

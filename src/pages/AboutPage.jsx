@@ -36,6 +36,14 @@ const AboutPage = () => {
               courses, live projects, and internship-ready learning for aspiring
               developers.
             </p>
+            <div className="mt-8 flex justify-center">
+              <a
+                href="/about/team"
+                className="inline-flex items-center justify-center rounded-full bg-white text-primary-800 px-8 py-3 font-semibold shadow-lg hover:bg-slate-100"
+              >
+                Meet Our Team
+              </a>
+            </div>
           </div>
         </div>
       </section>
