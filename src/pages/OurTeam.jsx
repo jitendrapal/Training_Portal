@@ -44,24 +44,21 @@ const OurTeam = () => {
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
                     src="/logo.png"
-                    alt="Add Photo Here"
-                    className="w-full h-full object-cover"
+                    alt="Rajni - Counselor"
+                    className="w-full h-full object-contain p-4"
                   />
                 </div>
               </div>
 
               {/* Content Box */}
               <div className="p-8 text-center bg-white flex-grow">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Name Here
-                </h2>
-                <p className="text-primary-600 font-semibold mb-4">
-                  Position / Role Here
-                </p>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">Rajni</h2>
+                <p className="text-primary-600 font-semibold mb-4">Counselor</p>
                 <p className="text-gray-600 leading-relaxed">
-                  Add brief description or bio here. This layout perfectly
-                  centers the photo inside the box and keeps everything aligned
-                  cleanly.
+                  Rajni is our dedicated student counselor, helping learners
+                  navigate their career paths and choose the right training
+                  programs. She provides continuous support from enrollment to
+                  placement.
                 </p>
               </div>
             </div>
@@ -71,20 +68,20 @@ const OurTeam = () => {
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
                     src="/images/Dinesh_Sripathi_JavaTrainer.JPG"
-                    alt="Dine Sripathi - Java FullStack Trainer"
+                    alt="Dinesh Sripathi - Java FullStack Trainer"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               <div className="p-8 text-center bg-white flex-grow">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Dine Sripathi
+                  Dinesh Sripathi
                 </h2>
                 <p className="text-primary-600 font-semibold mb-4">
                   Java FullStack Trainer
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Dine Sripathi brings deep expertise in Java full-stack
+                  Dinesh Sripathi brings deep expertise in Java full-stack
                   development, Spring Boot, React, and practical enterprise
                   application delivery. He mentors students through real project
                   builds and placement-ready preparation.
