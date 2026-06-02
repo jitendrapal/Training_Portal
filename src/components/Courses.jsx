@@ -151,7 +151,7 @@ const Courses = () => {
       ],
       popular: false,
       icon: "🛡️",
-      landingPage: "/cyber-security-course-wagholi",
+      landingPage: "/cyber-security-course",
     },
   ];
 
