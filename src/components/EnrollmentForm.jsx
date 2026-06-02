@@ -23,6 +23,7 @@ const EnrollmentForm = () => {
     "Python Full Stack Development Course (with Internship)",
     ".NET Development Course (with Internship)",
     "AI & Machine Learning Course (with Internship)",
+    "Cyber Security Training Course (with Internship)",
     "Frontend Development Course (with Internship)",
     "Mobile App Development Course (with Internship)",
   ];

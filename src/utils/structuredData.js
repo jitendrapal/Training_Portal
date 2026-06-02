@@ -7,7 +7,7 @@ export const organizationSchema = {
   name: "Neuro Edge Technologies",
   alternateName: "Neuro Edge Technologies Training Institute",
   url: "https://neuroedgetechnologies.com",
-  logo: "https://neuroedgetechnologies.com/logo.png",
+  logo: "https://neuroedgetechnologies.com/neuro-edge-logo.png",
   description:
     "Leading software training institute offering career-focused IT courses, internship-supported programs, and placement-ready learning in Java, .NET, Python, SQL, Azure, AI, and more.",
   address: {
