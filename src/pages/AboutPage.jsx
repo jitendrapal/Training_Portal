@@ -107,6 +107,42 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* Leadership Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our Leadership
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Guiding Neuro Edge Technologies towards excellence in IT training
+              and software development.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center max-w-sm shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
+                <img
+                  src="/images/Pratiksha.jpg"
+                  alt="Pratiksha Rathod - Director"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Pratiksha Rathod
+              </h3>
+              <p className="text-primary-600 font-semibold mb-4">Director</p>
+              <p className="text-gray-600 leading-relaxed">
+                Driving innovation and strategic growth at Neuro Edge
+                Technologies. Pratiksha is dedicated to empowering students with
+                industry-ready skills and fostering a culture of technical
+                excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Do */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

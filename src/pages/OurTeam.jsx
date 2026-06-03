@@ -36,7 +36,7 @@ const OurTeam = () => {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-2 mb-10">
             <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
               <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
@@ -88,6 +88,32 @@ const OurTeam = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="grid gap-10 md:grid-cols-2">
+            <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
+              <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
+                  <img
+                    src="/images/Lokesh.jpg"
+                    alt="Lokesh K Shahu - HR Head"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="p-8 text-center bg-white flex-grow">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Lokesh K Shahu
+                </h2>
+                <p className="text-primary-600 font-semibold mb-4">HR Head</p>
+                <p className="text-gray-600 leading-relaxed">
+                  Lokesh oversees our human resources and talent acquisition
+                  strategies. He works closely with top tech companies to ensure
+                  our students have the best placement opportunities and career
+                  growth.
+                </p>
+              </div>
+            </div>
 
             {/* Team Member Box */}
             <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
@@ -95,9 +121,9 @@ const OurTeam = () => {
               <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
-                    src="/logo.png"
+                    src="/images/Rajni.png"
                     alt="Rajni Rathor - Technical Counselor"
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
