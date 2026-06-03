@@ -47,7 +47,7 @@ const Header = () => {
             <div className="ml-16 flex items-baseline space-x-6 justify-center">
               <Link
                 to="/"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive("/")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
@@ -58,7 +58,7 @@ const Header = () => {
               <div className="relative group">
                 <Link
                   to="/about"
-                  className={`px-3 py-2 text-sm font-medium transition-colors inline-flex items-center ${
+                  className={`px-3 py-2 text-sm font-medium transition-colors inline-flex items-center whitespace-nowrap ${
                     isActive("/about") || isActive("/about/team")
                       ? "text-primary-600 border-b-2 border-primary-600"
                       : "text-gray-900 hover:text-primary-600"
@@ -98,7 +98,7 @@ const Header = () => {
               </div>
               <Link
                 to="/courses"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive("/courses")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
@@ -108,7 +108,7 @@ const Header = () => {
               </Link>
               <Link
                 to="/services"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive("/services")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
@@ -118,7 +118,7 @@ const Header = () => {
               </Link>
               <Link
                 to="/germany-placement"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive("/germany-placement")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
@@ -129,7 +129,7 @@ const Header = () => {
 
               <Link
                 to="/contact"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive("/contact")
                     ? "text-primary-600 border-b-2 border-primary-600"
                     : "text-gray-900 hover:text-primary-600"
