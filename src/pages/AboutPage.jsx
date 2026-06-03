@@ -98,8 +98,8 @@ const AboutPage = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {/* Saroj */}
-            <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
+            <div className="bg-primary-50 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
                 <img
                   src={directorImage}
                   alt="Saroj Damedhar - Director"
@@ -134,8 +134,8 @@ const AboutPage = () => {
             </div>
 
             {/* Pratiksha */}
-            <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
+            <div className="bg-primary-50 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
                 <img
                   src="/images/Pratiksha.jpg"
                   alt="Pratiksha Rathod - Director"
@@ -155,8 +155,8 @@ const AboutPage = () => {
             </div>
 
             {/* Subhash */}
-            <div className="bg-primary-50 p-8 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white flex items-center justify-center p-4">
+            <div className="bg-primary-50 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white flex items-center justify-center p-4">
                 <img
                   src="/logo.png"
                   alt="Subhash Chandra - IT Director"
