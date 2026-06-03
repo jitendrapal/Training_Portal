@@ -90,14 +90,14 @@ const OurTeam = () => {
             </div>
           </div>
 
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-10 md:grid-cols-3">
             <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
               <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
                     src="/images/Lokesh.jpg"
                     alt="Lokesh K Shahu - HR Head"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>
@@ -111,6 +111,33 @@ const OurTeam = () => {
                   strategies. He works closely with top tech companies to ensure
                   our students have the best placement opportunities and career
                   growth.
+                </p>
+              </div>
+            </div>
+
+            {/* Finance Head */}
+            <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
+              <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center p-4">
+                  <img
+                    src="/logo.png"
+                    alt="Sanket K Shahu - Finance Head"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div className="p-8 text-center bg-white flex-grow">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Sanket K Shahu
+                </h2>
+                <p className="text-primary-600 font-semibold mb-4">
+                  Finance Head
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Sanket manages our financial operations and strategic
+                  planning. He ensures the sustainable growth of Neuro Edge
+                  Technologies while supporting its educational and corporate
+                  missions.
                 </p>
               </div>
             </div>
