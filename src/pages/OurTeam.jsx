@@ -12,7 +12,7 @@ const OurTeam = () => {
         canonical="/about/team"
       />
 
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-primary-200 mb-3">
             Our Team
@@ -38,8 +38,8 @@ const OurTeam = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 md:grid-cols-2 mb-10">
             <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-              <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
+              <div className="bg-primary-50 py-8 flex justify-center border-b border-gray-200">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
                     src="/images/Dinesh_Sripathi_JavaTrainer.JPG"
                     alt="Dinesh Sripathi - Java FullStack Trainer"
@@ -47,7 +47,7 @@ const OurTeam = () => {
                   />
                 </div>
               </div>
-              <div className="p-8 text-center bg-white flex-grow">
+              <div className="p-6 text-center bg-white flex-grow">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   Dinesh Sripathi
                 </h2>
@@ -64,8 +64,8 @@ const OurTeam = () => {
             </div>
 
             <div className="rounded-3xl border border-gray-200 shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-              <div className="bg-primary-50 py-10 flex justify-center border-b border-gray-200">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
+              <div className="bg-primary-50 py-8 flex justify-center border-b border-gray-200">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
                   <img
                     src="/images/Ganesh_Jamadar_Python_AI_ML_Trainer.jpg"
                     alt="Ganesh Jamadar - Python AI ML Trainer"
@@ -73,7 +73,7 @@ const OurTeam = () => {
                   />
                 </div>
               </div>
-              <div className="p-8 text-center bg-white flex-grow">
+              <div className="p-6 text-center bg-white flex-grow">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   Ganesh Jamadar
                 </h2>
