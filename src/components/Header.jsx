@@ -21,22 +21,6 @@ const Header = () => {
     <header className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center py-4">
-          {/* Mobile Number - Left Corner */}
-          <div className="hidden lg:flex items-center mr-6 pr-6 border-r border-gray-200">
-            <span className="text-primary-400 mr-2">📞</span>
-            <div className="flex flex-col">
-              <p className="text-xs text-gray-600 whitespace-nowrap">
-                Call Us:{" "}
-              </p>
-              <a
-                href="tel:+918055006652"
-                className="text-sm font-semibold text-gray-900 hover:text-primary-600 transition-colors whitespace-nowrap"
-              >
-                +91-8055006652
-              </a>
-            </div>
-          </div>
-
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
@@ -60,7 +44,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block flex-1">
-            <div className="ml-16 flex items-baseline space-x-6 justify-center">
+            <div className="ml-8 flex items-baseline space-x-5 justify-center">
               <Link
                 to="/"
                 className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
@@ -157,7 +141,7 @@ const Header = () => {
           </nav>
 
           {/* Social Media Icons & CTA Button */}
-          <div className="hidden lg:flex items-center space-x-6 flex-shrink-0 ml-8">
+          <div className="hidden lg:flex items-center space-x-4 flex-shrink-0 ml-6">
             {/* Social Media Icons */}
             <div className="flex items-center space-x-3">
               <a
@@ -211,7 +195,7 @@ const Header = () => {
             <div>
               <Link
                 to="/enroll"
-                className="bg-secondary-600 hover:bg-secondary-700 text-white px-8 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
+                className="bg-secondary-600 hover:bg-secondary-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
               >
                 Enquiry Now
               </Link>

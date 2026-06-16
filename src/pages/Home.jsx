@@ -236,6 +236,107 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Seminars Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500 mb-3">
+              Community Outreach
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Seminars We've Conducted
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We actively conduct seminars across Maharashtra to guide students
+              and professionals towards the right career path in technology.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Seminar 1 - Nagpur */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  src="/images/seminar_1.jpeg"
+                  alt="Neuro Edge Technologies Seminar in Nagpur"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute top-3 left-3 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  📍 Nagpur
+                </span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Career in Tech — Nagpur Seminar
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Guided aspiring IT professionals in Nagpur on career paths in
+                  software development, AI/ML, and placement opportunities.
+                </p>
+              </div>
+            </div>
+
+            {/* Seminar 2 - Pune */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  src="/images/seminar_2.jpeg"
+                  alt="Neuro Edge Technologies Seminar in Pune"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute top-3 left-3 bg-secondary-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  📍 Pune
+                </span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Tech Skills & Placement — Pune Seminar
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Conducted an interactive session in Pune on modern tech
+                  skills, live project training, and how to crack placements in
+                  top IT companies.
+                </p>
+              </div>
+            </div>
+
+            {/* Seminar 3 - Pune */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  src="/images/seminar_3.jpeg"
+                  alt="Neuro Edge Technologies Seminar in Pune"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute top-3 left-3 bg-secondary-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  📍 Pune
+                </span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Full Stack Development — Pune Seminar
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Delivered a hands-on seminar on Full Stack Development
+                  covering React, Node.js, and real-world project building to
+                  help students become job-ready developers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust Badge */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-3 bg-white border border-primary-100 rounded-full px-6 py-3 shadow-sm">
+              <span className="text-2xl">🎓</span>
+              <p className="text-sm font-semibold text-gray-700">
+                Trusted by students across Maharashtra — Nagpur, Pune & beyond
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Testimonials />
       <Courses />
       <Services />
