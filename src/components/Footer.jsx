@@ -216,6 +216,34 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
+            {/* Company Details - 4th Column */}
+            <div>
+              <h4 className="text-lg font-semibold mb-6">Company Info</h4>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">
+                    <span className="text-gray-300 font-semibold">
+                      Company Registration:
+                    </span>
+                  </p>
+                  <p className="text-gray-400 text-sm font-mono bg-gray-800 p-2 rounded">
+                    ACT-8200
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">
+                    <span className="text-gray-300 font-semibold">
+                      TAN Number:
+                    </span>
+                  </p>
+                  <p className="text-gray-400 text-sm font-mono bg-gray-800 p-2 rounded">
+                    NSKN08781D
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

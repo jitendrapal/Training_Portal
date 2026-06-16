@@ -21,6 +21,22 @@ const Header = () => {
     <header className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center py-4">
+          {/* Mobile Number - Left Corner */}
+          <div className="hidden lg:flex items-center mr-6 pr-6 border-r border-gray-200">
+            <span className="text-primary-400 mr-2">📞</span>
+            <div className="flex flex-col">
+              <p className="text-xs text-gray-600 whitespace-nowrap">
+                Call Us:{" "}
+              </p>
+              <a
+                href="tel:+918055006652"
+                className="text-sm font-semibold text-gray-900 hover:text-primary-600 transition-colors whitespace-nowrap"
+              >
+                +91-8055006652
+              </a>
+            </div>
+          </div>
+
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
