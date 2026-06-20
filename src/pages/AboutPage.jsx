@@ -122,14 +122,16 @@ const AboutPage = () => {
               <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white">
                 <img
                   src={directorImage}
-                  alt="Saroj Damedhar - Director"
+                  alt="Saroj Damedhar - Chief Executive Officer"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Saroj Damedhar
               </h3>
-              <p className="text-primary-600 font-semibold mb-4">Director</p>
+              <p className="text-primary-600 font-semibold mb-4">
+                Chief Executive Officer
+              </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Dedicated to bridging the gap between education and employment
                 for emerging talent.
@@ -165,7 +167,9 @@ const AboutPage = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Pratiksha Rathod
               </h3>
-              <p className="text-primary-600 font-semibold mb-4">Director</p>
+              <p className="text-primary-600 font-semibold mb-4">
+                Training Head
+              </p>
               <p className="text-gray-600 leading-relaxed">
                 Driving innovation and strategic growth at Neuro Edge
                 Technologies. Pratiksha is dedicated to empowering students with
