@@ -176,11 +176,11 @@ const AboutPage = () => {
 
             {/* Sanket K Shahu */}
             <div className="bg-primary-50 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 bg-white flex items-center justify-center p-4">
+              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
                 <img
-                  src="/logo.png"
+                  src="/images/sanket.jpeg"
                   alt="Sanket K Shahu - Finance Head"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
