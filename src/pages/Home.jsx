@@ -111,7 +111,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm uppercase tracking-[0.3em] text-primary-500 mb-3">

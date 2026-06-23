@@ -253,20 +253,7 @@ const Footer = () => {
             <div className="text-gray-400 text-sm">
               © {currentYear} Neuro Edge Technologies. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm text-gray-400 md:justify-end">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Refund Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Sitemap
-              </a>
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
